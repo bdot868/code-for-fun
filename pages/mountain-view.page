@@ -49,77 +49,77 @@
       <td class="table_data">{tags.0}</td>
       <td class="table_data">
         {.repeated section variants}
-          {.equal?:attributes.dates:"June 11-15"}
+          {.equal?:attributes.Date:"June 11-15"}
             <div class="enroll">Enroll Now</div>
            {.end}
         {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"June 18-22"}
+        {.equal?:attributes.Date:"June 18-22"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"June 25-29"}
+        {.equal?:attributes.Date:"June 25-29"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"July 2-6"}
+        {.equal?:attributes.Date:"July 2-6"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"July 9-13"}
+        {.equal?:attributes.Date:"July 9-13"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"July 16-20"}
+        {.equal?:attributes.Date:"July 16-20"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"July 23-27"}
+        {.equal?:attributes.Date:"July 23-27"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"July 30-Aug 3"}
+        {.equal?:attributes.Date:"July 30-Aug 3"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"Aug 6-10"}
+        {.equal?:attributes.Date:"Aug 6-10"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"Aug 13-17"}
+        {.equal?:attributes.Date:"Aug 13-17"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
-        {.equal?:attributes.dates:"Aug 20-24"}
+        {.equal?:attributes.Date:"Aug 20-24"}
           <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
