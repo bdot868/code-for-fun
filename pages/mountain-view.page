@@ -159,6 +159,10 @@
   .table tr, td {
     border: 1px solid #FFDBB1 !important;
   }
+
+  .table>tbody>tr>td {
+  padding: 8px;
+  }
   
   th {
     width: 200px;
