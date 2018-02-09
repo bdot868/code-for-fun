@@ -268,5 +268,4 @@ for(var i = 0; i < $cells.length; i++){
 }
 
 
-//{# {.equal? collection.typeName "index"} }
 </script>
