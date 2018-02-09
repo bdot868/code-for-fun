@@ -156,6 +156,10 @@
     width: 85%;
 
   }
+  .table tr, td {
+    border: 1px solid #FFDBB1 !important;
+  }
+  
   th {
     width: 200px;
   }
