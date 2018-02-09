@@ -261,9 +261,9 @@ var $cells = $('.table_data')
 
 for(var i = 0; i < $cells.length; i++){
 
-  if($cells[i].innerText === ''){
+  if($cells[i].innerHTML === ''){
   console.log('yo')
-    $cells[i].innerText = 'N/A'
+    $cells[i].innerHTML = 'N/A'
   }
 }
 
