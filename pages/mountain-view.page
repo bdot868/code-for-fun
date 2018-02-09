@@ -260,10 +260,9 @@ window.onclick = function(event) {
 var $cells = $('.table_data')
 
 for(var i = 0; i < $cells.length; i++){
-  console.log(i)
-  if($cells.text() === ''){
+  if($cells.innerText === ''){
   console.log('yo')
-    $cells.text('N/A')
+    $cells.innerText = 'N/A'
   }
 }
 
