@@ -1,4 +1,4 @@
-<squarespace:query collection="summer-2017-camps-1" limit="10" category="mountain view">
+<squarespace:query collection="summer-2018" limit="10" category="mountain view">
   <ol>
     {.repeated section items}
       <li><a href="{fullUrl}">{title}</a></li>
