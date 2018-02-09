@@ -257,7 +257,9 @@ window.onclick = function(event) {
 var $cells = document.querySelector('.table_data')
 
 for(var i = 0; i < $cells.length; i++){
+  console.log(i)
   if($cells.text() === ''){
+  console.log('yo')
     $cells.text('N/A')
   }
 }
