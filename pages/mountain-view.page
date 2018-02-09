@@ -228,6 +228,9 @@
 </style>
 
 <script type="text/javascript">
+var boy = 'brandon'
+console.log(boy)
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
