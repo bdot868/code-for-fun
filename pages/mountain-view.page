@@ -254,5 +254,14 @@ window.onclick = function(event) {
   }
 }
 
+var $cells = document.querySelector('.table_data')
+
+for(var i = 0; i < $cells.length; i++){
+  if($cells.text() === ''){
+    $cells.text('N/A')
+  }
+}
+
+
 //{.equal? collection.typeName "index"}
 </script>
