@@ -162,8 +162,9 @@
 
   .table>tbody>tr>td {
   padding: 8px;
+  line-height: 1.42857143
   }
-  
+
   th {
     width: 200px;
   }
@@ -171,10 +172,16 @@
     width: 70px;
   }
   .enroll {
-    height: 15px;
-    width: 15px;
-    background: green;
-    color: white
+    background: #5cc4b4;
+    color: #fff;
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 11px;
+    width: 44px;
+    margin: 0 auto;
   }
 
   /* The Modal (background) */
