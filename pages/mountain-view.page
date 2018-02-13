@@ -283,14 +283,15 @@ var span = document.getElementById("closeBtn");
 /* window.onload = function(){
   btn.onclick = function() {
     modal.style.display = "block";
-    console.log(#myBtn)
-    console.log('.table_data')
-    console.log('im inside')
+
   }
 } */
 $(document).ready(function(){
   $(btn).click(function(){
       modal.style.display = "block";
+      console.log(#myBtn)
+      console.log('.table_data')
+      console.log('im inside')
   });
 });
 
