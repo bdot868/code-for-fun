@@ -283,6 +283,8 @@ var span = document.getElementById("closeBtn");
 /* window.onload = function(){
   btn.onclick = function() {
     modal.style.display = "block";
+    console.log(#myBtn)
+    console.log(.table_data)
   }
 } */
 $(document).ready(function(){
