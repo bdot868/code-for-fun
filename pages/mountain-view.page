@@ -126,7 +126,7 @@
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 20-24"}
-          <button id="myBtn" class="enroll">Enroll Now</button>
+          <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
@@ -249,7 +249,7 @@ for(var i = 0; i < $cells.length; i++){
 
 
 <!-- Button trigger modal -->
-<button >Open Modal</button>
+<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
