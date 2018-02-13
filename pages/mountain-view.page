@@ -256,8 +256,16 @@ for(var i = 0; i < $cells.length; i++){
 
   <!-- Modal-content -->
   <div class="modal-content">
-    <span id="closeBtn" class="close">&times;</span>
-    <p>Some text in the Modal...</p>
+    <div class="modal-header">
+      <span id="closeBtn" class="close">&times;</span>
+      <h3>{title}</h3>
+    </div>
+    <div class="modal-body">
+      <p>{excerpt}</p>
+    </div>
+    <div class="modal-footer">
+      <button class="success">Enroll Now</button>
+    </div>
   </div>
 </div>
 
