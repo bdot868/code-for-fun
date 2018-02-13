@@ -112,7 +112,7 @@
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
-          <div class="enroll">Enroll Now</div>
+          <div id="myBtn" class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
@@ -126,7 +126,7 @@
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 20-24"}
-          <div id="myBtn" class="enroll">Enroll Now</div>
+          <div class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
