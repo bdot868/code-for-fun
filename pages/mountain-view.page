@@ -256,7 +256,7 @@ for(var i = 0; i < $cells.length; i++){
 
   <!-- Modal-content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span id="closeBtn" class="close">&times;</span>
     <p>Some text in the Modal...</p>
   </div>
 </div>
@@ -269,7 +269,7 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("closeBtn");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
