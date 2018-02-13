@@ -289,8 +289,7 @@ var span = document.getElementById("closeBtn");
 $(document).ready(function(){
   $(btn).click(function(){
       modal.style.display = "block";
-      console.log('#myBtn')
-      console.log('.table_data')
+      console.log($(this))
       console.log('im inside')
   });
 });
