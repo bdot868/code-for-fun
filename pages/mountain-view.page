@@ -50,7 +50,7 @@
         </div>
       </td>
       <td class="table_data">
-        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">{title}</a>
+        <a href="#exampleModalCenter" data-toggle="modal">{title}</a>
       </td>
       <td class="table_data">{tags.0}</td>
       <td class="table_data">
