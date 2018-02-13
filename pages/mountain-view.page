@@ -126,8 +126,7 @@
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 20-24"}
-          <div class="enroll">Enroll Now</div>
-          <button id="myBtn">Open Modal</button>
+          <div id="myBtn" class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
