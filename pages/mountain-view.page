@@ -105,14 +105,14 @@
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 30-Aug 3"}
-          <div class="enroll">Enroll Now</div>
+          <div id="2 class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
-          <div id="{id}" class="enroll">Enroll Now</div>
+          <div id="1" class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
@@ -274,7 +274,7 @@ for(var i = 0; i < $cells.length; i++){
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("id");
+var btn = document.getElementById("1");
 
 // Get the <span> element that closes the modal
 var span = document.getElementById("closeBtn");
