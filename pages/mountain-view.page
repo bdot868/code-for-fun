@@ -113,6 +113,7 @@
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
           <div id="myBtn" class="enroll">Enroll Now</div>
+          console.log(variants)
          {.end}
       {.end}
       </td>
