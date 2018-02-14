@@ -112,8 +112,7 @@
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
-          <div id="myBtn" class="enroll">Enroll Now</div>
-          console.log(variants)
+          <div id="{id}" class="enroll">Enroll Now</div>
          {.end}
       {.end}
       </td>
@@ -275,7 +274,7 @@ for(var i = 0; i < $cells.length; i++){
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("id");
 
 // Get the <span> element that closes the modal
 var span = document.getElementById("closeBtn");
