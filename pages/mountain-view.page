@@ -15,9 +15,12 @@
     {.end}
   </ol>
 
+
+<!-- Table view for desktop  -->
   <table class="table table-bordered course_table">
   <thead>
     <tr class="head">
+      <th id="all-info"></th>
       <th class="course_video_head" rowspan="2">Course Promo</th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head" rowspan="2">Age</th>
@@ -41,6 +44,13 @@
       </td>
     {.repeated section items}
     <tr>
+      <td id="all-info">
+        <a href="#">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
+        <p id="price">{structuredContent.priceMoney}</p>
+        <p id="product-title">{title}</p>
+        <p id="product-body">{excerpt}</p>
+        <p id="product-url">{fullUrl}</p>
+      </td>
       <td class="table_data image"><a href="#" id="openModal-k">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
         <div id="myModal-k" class="modal">
           <div class="modal-content">
@@ -297,19 +307,22 @@ $(document).ready(function(){
       console.log(courseName)
   });
 
+// When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
   }
 });
 
 
-// When the user clicks on <span> (x), close the modal
 
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-  }
-}
+
+
 </script>
