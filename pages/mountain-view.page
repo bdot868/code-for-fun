@@ -46,9 +46,8 @@
     <tr>
       <td id="all-info">
         <a href="#">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
-        <p id="price">{structuredContent.priceMoney}</p>
         <p id="product-title">{title}</p>
-        <p id="product-body">{excerpt}</p>
+        <div id="product-body">{excerpt}</div>
         <p id="product-url">{fullUrl}</p>
       </td>
       <td class="table_data image"><a href="#" id="openModal-k">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
