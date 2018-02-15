@@ -266,11 +266,12 @@ for(var i = 0; i < $cells.length; i++){
   <!-- Modal-content -->
   <div class="modal-content">
     <div class="modal-header">
+      <h2>Select This Amazing Course!</h2>
       <span id="closeBtn" class="close">&times;</span>
-      <h3>{title}</h3>
     </div>
     <div class="modal-body">
-      <p id="modal-info">{excerpt}</p>
+      <h3 id="course-title"></h3>
+      <p id="modal-info"></p>
     </div>
     <div class="modal-footer">
       <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
@@ -308,7 +309,7 @@ $(document).ready(function(){
       // console.log(imgSrc)
       // console.log(courseName)
       // console.log(url)
-      $('.modal-header').text(courseName)
+      $('#course-title').text(courseName)
       $('#modal-info').text(desc)
       $('#enrollBtn').attr("href", url)
 
