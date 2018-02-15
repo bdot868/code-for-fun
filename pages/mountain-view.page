@@ -49,7 +49,7 @@
           </div>
         </div>
       </td>
-      <td class="table_data">
+      <td class="table_data course_name">
         <a href="#exampleModalCenter" data-toggle="modal">{title}</a>
       </td>
       <td class="table_data">{tags.0}</td>
@@ -291,8 +291,10 @@ $(document).ready(function(){
   $btns.click(function(){
       modal.style.display = "block";
       var $row = $(this).parent().parent()
-      imgSrc = $row.find('.table-data.image').children().first().children().first().attr('src')
+      var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
+      var courseName = $row.find('.table_data.course_name').children().first().text()
       console.log(imgSrc)
+      console.log(courseName)
   });
 });
 
