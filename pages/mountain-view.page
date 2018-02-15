@@ -273,7 +273,7 @@ for(var i = 0; i < $cells.length; i++){
       <p>{excerpt}</p>
     </div>
     <div class="modal-footer">
-      <button class="success">Enroll Now</button>
+      <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
     </div>
   </div>
 </div>
@@ -309,6 +309,7 @@ $(document).ready(function(){
       // console.log(courseName)
       // console.log(url)
       $('.modal-header').text(courseName)
+      $('#enrollBtn').attr("href", url)
 
   });
 
