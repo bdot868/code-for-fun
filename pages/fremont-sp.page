@@ -14,7 +14,7 @@
       {.end}
     {.end}
   </ol> -->
-  <h1 id="pageTitle">Mountain View</h1>
+  <h1 id="pageTitle">{category}</h1>
 
 
 <!-- Table view for desktop  -->
