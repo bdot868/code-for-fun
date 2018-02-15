@@ -302,7 +302,7 @@ $(document).ready(function(){
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('.table_data.course_name').children().first().text()
-      var desc = $row.find('#all-info')
+      var desc = $row.find('#all-info').children().eq(1)
       console.log(desc)
       console.log(imgSrc)
       console.log(courseName)
