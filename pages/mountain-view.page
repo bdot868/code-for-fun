@@ -270,24 +270,25 @@ for(var i = 0; i < $cells.length; i++){
 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementById("closeBtn");
-
-// When the user clicks on the button, open the modal
-/* window.onload = function(){
-  btn.onclick = function() {
-    modal.style.display = "block";
-
-  }
-} */
 $(document).ready(function(){
-  $(btn).click(function(){
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var $btns = $('.enroll');
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementById("closeBtn");
+
+  // When the user clicks on the button, open the modal
+  /* window.onload = function(){
+    btn.onclick = function() {
+      modal.style.display = "block";
+
+    }
+  } */
+  $btns.click(function(){
       modal.style.display = "block";
       console.log($(this).parent())
       console.log('im inside')
