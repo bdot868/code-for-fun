@@ -1,0 +1,338 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<squarespace:query collection="summer-2018" limit="10" category="fremont">
+  <!-- <ol>
+    {.repeated section items}
+      <li><a href="{fullUrl}">{title}</a></li>
+      {.repeated section variants}
+        {.equal?:attributes.dates:"July 2-6"}
+          <article>{attributes.Date}</article>
+         {.end}
+      {.end}
+    {.end}
+  </ol> -->
+  <h1 id="pageTitle">Mountain View</h1>
+
+
+<!-- Table view for desktop  -->
+  <table class="table table-bordered course_table">
+  <thead>
+    <tr class="head">
+      <th id="all-info" style="display: none;"></th>
+      <th class="course_video_head" rowspan="2">Course Promo</th>
+      <th class="course_name_head" rowspan="2">Course Name</th>
+      <th class="age_head" rowspan="2">Age</th>
+      <th class="date">June <br> 11-15</th>
+      <th class="date">June <br> 18-22</th>
+      <th class="date">June <br> 25-29</th>
+      <th class="date">July <br> 2-6</th>
+      <th class="date">July <br> 9-13</th>
+      <th class="date">July <br> 16-20</th>
+      <th class="date">July <br> 23-27</th>
+      <th class="date">July <br> 30-Aug 3</th>
+      <th class="date">Aug <br> 6-10</th>
+      <th class="date">Aug <br> 13-17</th>
+      <th class="date">Aug <br>20-24</th>
+    </tr>
+
+  </thead>
+    <tbody>
+      <td colspan="3" class="course-divider" style=" ">
+        Code For Fun: Ages 5 - 10
+      </td>
+    {.repeated section items}
+    <tr>
+      <td id="all-info" style="display: none;">
+        <a href="#">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
+        <p id="product-title">{title}</p>
+        <div id="product-body">{excerpt}</div>
+        <p id="product-url">{fullUrl}</p>
+      </td>
+      <td class="table_data image"><a href="#" id="openModal-k">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
+        <div id="myModal-k" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>{excerpt}</p>
+          </div>
+        </div>
+      </td>
+      <td class="table_data course_name">
+        <a href="#exampleModalCenter" data-toggle="modal">{title}</a>
+      </td>
+      <td class="table_data">{tags.0}</td>
+      <td class="table_data">
+        {.repeated section variants}
+          {.equal?:attributes.Date:"June 11-15"}
+            <div class="enroll">Enroll Now</div>
+           {.end}
+        {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"June 18-22"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"June 25-29"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"July 2-6"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"July 9-13"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"July 16-20"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"July 23-27"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"July 30-Aug 3"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"Aug 6-10"}
+          <div id="{myBtn}" class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"Aug 13-17"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+      <td class="table_data">
+      {.repeated section variants}
+        {.equal?:attributes.Date:"Aug 20-24"}
+          <div class="enroll">Enroll Now</div>
+         {.end}
+      {.end}
+      </td>
+    </tr>
+  {.end}
+  </tbody>
+</table>
+
+</squarespace:query>
+
+<style media="screen">
+
+  .course_table {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  .table {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  table {
+    max-width: 100%;
+  }
+  .course_table .head {
+    background-color: #f7941e;
+    color: #fff;
+    padding: 12px !important;
+  }
+  .table tr {
+    margin-left: 45px;
+    margin-right: 45px;
+    width: 85%;
+
+  }
+
+  .table tr, td {
+    border: 1px solid #FFDBB1 !important;
+  }
+
+  .table>tbody>tr>td {
+  padding: 8px;
+  line-height: 1.42857143
+  }
+
+  th {
+    width: 200px;
+  }
+  .head .age {
+    width: 70px;
+  }
+  .enroll {
+    background: #5cc4b4;
+    color: #fff;
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 11px;
+    width: 44px;
+    margin: 0 auto;
+  }
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+<script type="text/javascript">
+var boy = 'brandon'
+console.log(boy)
+
+
+/* var $cells = $('.table_data')
+
+for(var i = 0; i < $cells.length; i++){
+
+  if($cells[i].innerText === ""){
+  console.log('yo')
+    $cells[i].innerText = 'N/A'
+  }
+} */
+
+
+</script>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal-content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Select This Amazing Course!</h3>
+      <span id="closeBtn" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <h4 id="course-title"></h4>
+      <p id="modal-info"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
+    </div>
+  </div>
+</div>
+
+<script>
+
+$(document).ready(function(){
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var $btns = $('.enroll');
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementById("closeBtn");
+
+  // When the user clicks on the button, open the modal
+  /* window.onload = function(){
+    btn.onclick = function() {
+      modal.style.display = "block";
+
+    }
+  } */
+  $btns.click(function(){
+      modal.style.display = "block";
+      var $row = $(this).parent().parent()
+      var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
+      var courseName = $row.find('#all-info').children().eq(1).text()
+      var desc = $row.find('#all-info').children().eq(2).first().children().text()
+      var url = $row.find('#all-info').children().eq(3).text()
+      // console.log(desc)
+      // console.log(imgSrc)
+      // console.log(courseName)
+      // console.log(url)
+      $('#course-title').text(courseName)
+      $('#modal-info').text(desc)
+      $('#enrollBtn').attr("href", url)
+
+  });
+
+// When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+});
+
+
+
+
+
+
+</script>
