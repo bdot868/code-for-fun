@@ -301,8 +301,9 @@ $(document).ready(function(){
       modal.style.display = "block";
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
-      var courseName = $row.find('.table_data.course_name').children().first().text()
-      var desc = $row.find('#all-info').children().eq(1).text()
+      var courseName = $row.find('#all-info').children().eq(1).text()
+      var desc = $row.find.find('#all-info').children().eq(2).first()
+      var url = $row.find.find('#all-info').children().eq(3).text()
       console.log(desc)
       console.log(imgSrc)
       console.log(courseName)
