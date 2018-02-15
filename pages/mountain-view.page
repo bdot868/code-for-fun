@@ -20,7 +20,7 @@
   <table class="table table-bordered course_table">
   <thead>
     <tr class="head">
-      <th id="all-info"></th>
+      <th id="all-info" style="display: none;"></th>
       <th class="course_video_head" rowspan="2">Course Promo</th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head" rowspan="2">Age</th>
@@ -44,7 +44,7 @@
       </td>
     {.repeated section items}
     <tr>
-      <td id="all-info">
+      <td id="all-info" style="display: none;">
         <a href="#">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
         <p id="product-title">{title}</p>
         <div id="product-body">{excerpt}</div>
@@ -172,9 +172,6 @@
 
   }
 
-  .table tr td #all-info {
-    display: none;
-  }
   .table tr, td {
     border: 1px solid #FFDBB1 !important;
   }
