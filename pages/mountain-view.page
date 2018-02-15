@@ -41,7 +41,7 @@
       </td>
     {.repeated section items}
     <tr>
-      <td class="table_data"><a href="#" id="openModal-k">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
+      <td class="table_data image"><a href="#" id="openModal-k">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
         <div id="myModal-k" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
@@ -290,8 +290,9 @@ $(document).ready(function(){
   } */
   $btns.click(function(){
       modal.style.display = "block";
-      console.log($(this).parent())
-      console.log('im inside')
+      var $row = $(this).parent().parent()
+      imgSrc = $row.find('.table-data.image').children().first().children().first().attr('src')
+      console.log(imgSrc)
   });
 });
 
