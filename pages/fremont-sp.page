@@ -4,7 +4,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <squarespace:query collection="summer-2018" limit="10" category="fremont">
-  <!-- <ol>
+  <ol>
     {.repeated section items}
       <li><a href="{fullUrl}">{title}</a></li>
       {.repeated section variants}
@@ -13,7 +13,26 @@
          {.end}
       {.end}
     {.end}
-  </ol> -->
+  </ol>
+  <div class="container">
+    <div class="row">
+      {.repeated section items}
+      <div class="col-sm">
+        <div class="item-img">
+          {.main-image?}<img src="{fullUrl}?format=100w" />{.end}
+        </div>
+        <h3 class="item-title">{title}</h3>
+        <p><span>{tags}</span></p>
+        <div class="item-descr">
+          {excerpt}
+        </div>
+        <div class="">
+          <a href="{fullUrl}" class="enrollBtn">Enroll</a>
+        </div>
+      </div>
+      {.end}
+    </div>
+  </div>
   <h1 id="pageTitle">Fremont</h1>
 
 
