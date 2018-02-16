@@ -4,22 +4,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <squarespace:query collection="summer-2018" limit="10" category="fremont">
-  <ol>
-    {.repeated section items}
-      <li><a href="{fullUrl}">{title}</a></li>
-      {.repeated section variants}
-        {.equal?:attributes.dates:"July 2-6"}
-          <article>{attributes.Date}</article>
-         {.end}
-      {.end}
-    {.end}
-  </ol>
-  <div class="container">
+
+  <!-- Mobile view container of camps -->
+  <div class="container .d-none .d-sm-block .d-md-none">
     <div class="row">
       {.repeated section items}
       <div class="col-sm">
         <div class="item-img">
-          {.main-image?}<img src="{fullUrl}?format=100w" />{.end}
+          {.main-image?}<img src="{fullUrl}?format=300w" />{.end}
         </div>
         <h3 class="item-title">{title}</h3>
         <p><span>{tags}</span></p>
@@ -36,10 +28,10 @@
   <h1 id="pageTitle">Fremont</h1>
 
 
-<!-- Table view for desktop  -->
-  <table class="table table-bordered course_table">
+<!-- Table view of camps for desktop  -->
+  <table class="table table-bordered course_table .d-sm-none .d-md-block">
   <thead>
-    <tr class="head">
+    <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
       <th class="course_video_head" rowspan="2">Course Promo</th>
       <th class="course_name_head" rowspan="2">Course Name</th>
@@ -58,11 +50,11 @@
     </tr>
 
   </thead>
-    <tbody>
+    <tbody> <!-- Table body -->
       <td colspan="3" class="course-divider" style=" ">
         Code For Fun: Ages 5 - 10
       </td>
-    {.repeated section items}
+    {.repeated section items} <!-- looping through camps -->
     <tr>
       <td id="all-info" style="display: none;">
         <a href="#">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
@@ -168,6 +160,10 @@
 
 <style media="screen">
 
+  /* .container {
+    display: none
+  } */
+
   .course_table {
     font-size: 14px;
     vertical-align: middle;
@@ -257,6 +253,15 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* @media only screen and (max-width: 500px) {
+  .container {
+    display: show;
+  }
+  .table {
+    display: none;
+  }
+} */
 </style>
 
 <script type="text/javascript">
