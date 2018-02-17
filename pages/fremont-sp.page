@@ -5,6 +5,8 @@
 
 <squarespace:query collection="summer-2018" limit="10" category="fremont">
 
+<h1 id="pageTitle">Fremont</h1>
+
   <!-- Mobile view container of camps -->
   <div class="container">
     <div class="row">
@@ -25,7 +27,7 @@
       {.end}
     </div>
   </div>
-  <h1 id="pageTitle">Fremont</h1>
+
 
 
 <!-- Table view of camps for desktop  -->
@@ -260,6 +262,16 @@
   }
   .table {
     display: none;
+  }
+  .col-sm {
+    border: 1px solid orange;
+    border-radius: 5px;
+  }
+  .container div {
+    text-align: center;
+  }
+  .container div a {
+    margin: 20px 0 20px 0;
   }
 }
 </style>
