@@ -21,7 +21,7 @@
           {excerpt}
         </div>
         <div class="">
-          <a href="{fullUrl}" class="enrollBtn">Enroll</a>
+          <a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a>
         </div>
       </div>
       {.end}
@@ -266,6 +266,7 @@
   .col-sm {
     border: 1px solid orange;
     border-radius: 5px;
+    margin: 10px 0 10px 0;
   }
   .container div {
     text-align: center;
