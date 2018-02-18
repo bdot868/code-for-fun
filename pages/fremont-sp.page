@@ -5,7 +5,10 @@
 
 <squarespace:query collection="summer-2018" limit="10" category="fremont">
 
-<h1 id="pageTitle">Fremont</h1>
+<div class="heading-div">
+  <h1 id="pageTitle">Fremont</h1>
+</div>
+
 
   <!-- Mobile view container of camps -->
   <div class="container">
@@ -161,6 +164,12 @@
 </squarespace:query>
 
 <style media="screen">
+
+  .heading-div {
+    background-color: #5cc4b4;
+    border-radius: 10px;
+    color: #fff
+  }
 
   .container {
     display: none
