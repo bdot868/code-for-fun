@@ -166,9 +166,12 @@
 <style media="screen">
 
   .heading-div {
-    background-color: #5cc4b4;
+    background-color: #015618;
     border-radius: 10px;
-    color: #fff
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 40px
   }
 
   .container {
@@ -215,7 +218,7 @@
     width: 70px;
   }
   .enroll {
-    background: #5cc4b4;
+    background: #015618;
     color: #fff;
     padding: 5px 0;
     display: block;
