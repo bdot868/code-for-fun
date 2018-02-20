@@ -363,7 +363,7 @@ $(document).ready(function(){
   var $title = $('.course');
 
   // Get the <span> element that closes the modal
-  var span = document.querySelector("close");
+  var span = document.getElementById("closeBtn");
 
   // When the user clicks on the button, open the modal
   /* window.onload = function(){
