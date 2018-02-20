@@ -258,7 +258,7 @@
     width: 50%; /* Could be more or less, depending on screen size */
 }
 .modal-header {
-  background-color: #018c26;
+  background-color: #f7941e;
   color: #fff
 }
 
