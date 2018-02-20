@@ -398,7 +398,7 @@ $(document).ready(function(){
   $btns.click(function(){
       modal.style.display = "block";
       var $row = $(this).parent().parent()
-      var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
+      var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(3).text()
@@ -422,7 +422,7 @@ $(document).ready(function(){
       console.log(imgSrc);
       console.log($row);
       var img = document.createElement("IMG");
-       img.src = imgSrc+'?format=300w'
+       img.src = imgSrc+'?format=750w'
        $('#modal-image').html(img);
 
   });
