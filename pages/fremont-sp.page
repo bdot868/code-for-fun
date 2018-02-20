@@ -419,7 +419,7 @@ $(document).ready(function(){
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
 
-      $('#modal-body').prepend('<img src=imgSrc />')
+      $('#modal-body').text(imgSrc)
 
   });
 
