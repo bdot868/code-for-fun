@@ -415,10 +415,10 @@ $(document).ready(function(){
   $btns1.click(function(){
       modal1.style.display = "block";
       var $row = $(this).parent().parent()
-      var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
+      var imgSrc = $row.find('.#all-info').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
-
+      console.log(#all-info);
       console.log(imgSrc);
       var img = document.createElement("IMG");
        img.src = imgSrc
