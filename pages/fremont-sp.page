@@ -420,7 +420,7 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
 
       $('#modal-image').text('Hey')
-      $('#modal-image').prepend('<img src='+ imgSrc + '/>')
+      $('#modal-image').prepend($('<img>',{id:'theImg', src:imgSrc}))
 
   });
 
