@@ -76,8 +76,7 @@
         </div>
       </td>
       <td class="table_data course_name">
-        <button type="button" class="btn btn-success launch">Launch modal</button>
-        <a href="#exampleModalCenter">{title}</a>
+        <a href="#exampleModalCenter" class="launch">{title}</a>
       </td>
       <td class="table_data">{tags.0}</td>
       <td class="table_data">
@@ -411,7 +410,7 @@ $(document).ready(function(){
     modal.style.display = "none";
   }
   span2.onclick = function() {
-    modal.style.display = "none";
+    modal2.style.display = "none";
   }
 
   // When the user clicks anywhere outside of the modal, close it
