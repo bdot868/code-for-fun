@@ -82,7 +82,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h3>Course details</h3>
-              <span id="closeBtn" class="close">&times;</span>
+              <span id="closeTitleModal" class="close">&times;</span>
             </div>
             <div class="modal-body">
               <h4 id="course-title">{title}</h4>
@@ -364,6 +364,7 @@ $(document).ready(function(){
 
   // Get the <span> element that closes the modal
   var span = document.getElementById("closeBtn");
+  var span2 = document.getElementById('closeTitleModal')
 
   // When the user clicks on the button, open the modal
   /* window.onload = function(){
@@ -404,6 +405,9 @@ $(document).ready(function(){
 // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     modal.style.display = "none";
+  }
+  span2.onclick = function() {
+    modal2.style.display = "none";
   }
 
   // When the user clicks anywhere outside of the modal, close it
