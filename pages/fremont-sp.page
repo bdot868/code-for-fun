@@ -67,13 +67,10 @@
         <div id="product-body">{excerpt}</div>
         <p id="product-url">{fullUrl}</p>
       </td>
-      <td class="table_data image"><a href="#" id="openModal-k">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
-        <div id="myModal-k" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>{excerpt}</p>
-          </div>
-        </div>
+      <td class="table_data image">
+          {.main-image?}
+            <img class="imgModal" src="{fullUrl}?format=100w" />
+          {.end}
       </td>
       <td class="table_data course_name">
         <a href="#exampleModalCenter" class="launch">{title}</a>
@@ -235,7 +232,7 @@
   }
 
   /* The Modal (background) */
-.modal, .modal2 {
+.modal, .modal2, .modal1 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -354,20 +351,38 @@ for(var i = 0; i < $cells.length; i++){
   </div>
 </div>
 
+<!-- Image Modal -->
+<div id="videoModal" class="modal1">
+
+  <!-- Modal-content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Course Video</h3>
+      <span id="closeBtn1" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+
+    </div>
+  </div>
+</div>
+
 <script>
 
 $(document).ready(function(){
   // Get the modal
   var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
+  var modal1 = document.getElementById('videoModal');
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
   var $btns2 = $('.launch');
+  var $btns1 = $('.imgModal');
 
   // Get the <span> element that closes the modal
   var span = document.getElementById("closeBtn");
   var span2 = document.getElementById("closeBtn2");
+  var span1 = document.getElementById("closeBtn1");
 
   // When the user clicks on the button, open the modal
   /* window.onload = function(){
@@ -393,6 +408,17 @@ $(document).ready(function(){
 
   });
 
+  $btns1.click(function(){
+      modal1.style.display = "block";
+      var $row = $(this).parent().parent()
+      var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
+      var courseName = $row.find('#all-info').children().eq(1).text()
+      var desc = $row.find('#all-info').children().eq(2).first().children().text()
+
+      $('#modal-body').innerHtml = imgSrc
+
+  });
+
   $btns2.click(function(){
       modal2.style.display = "block";
       var $row = $(this).parent().parent()
@@ -409,14 +435,18 @@ $(document).ready(function(){
   span.onclick = function() {
     modal.style.display = "none";
   }
+  span1.onclick = function() {
+    modal1.style.display = "none";
+  }
   span2.onclick = function() {
     modal2.style.display = "none";
   }
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == modal || event.target == modal2) {
+    if (event.target == modal || event.target == modal1 || event.target == modal2) {
         modal.style.display = "none";
+        modal1.style.display = "none";
         modal2.style.display = "none";
     }
   }
