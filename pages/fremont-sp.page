@@ -76,8 +76,20 @@
         </div>
       </td>
       <td class="table_data course_name">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#titleModal">Launch modal</button>
-        <a href="#exampleModalCenter" data-toggle="modal">{title}</a>
+        <a href="#exampleModalCenter" class="course">{title}</a>
+
+        <div id="titleModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Course details</h3>
+              <span id="closeBtn" class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+              <h4 id="course-title">{title}</h4>
+              <p id="modal-info">{excerpt}</p>
+            </div>
+          </div>
+        </div>
       </td>
       <td class="table_data">{tags.0}</td>
       <td class="table_data">
@@ -320,7 +332,7 @@ for(var i = 0; i < $cells.length; i++){
 <!-- Button trigger modal -->
 
 
-<!-- The Modal -->
+<!-- Enroll Button Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal-content -->
@@ -344,9 +356,11 @@ for(var i = 0; i < $cells.length; i++){
 $(document).ready(function(){
   // Get the modal
   var modal = document.getElementById('myModal');
+  var detailsModal = document.getElementById('titleModal');
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
+  var $title = $('.course');
 
   // Get the <span> element that closes the modal
   var span = document.getElementById("closeBtn");
@@ -373,6 +387,10 @@ $(document).ready(function(){
       $('#modal-info').text(desc)
       $('#enrollBtn').attr("href", url)
 
+  });
+
+  $title.click(function() {
+    modal.style.display = "block";
   });
 
 // When the user clicks on <span> (x), close the modal
