@@ -78,7 +78,7 @@
       <td class="table_data course_name">
         <a href="#exampleModalCenter" class="course">{title}</a>
 
-        <div id="titleModal" class="modal">
+        <div id="titleModal" class="modal2">
           <div class="modal-content">
             <div class="modal-header">
               <h3>Course details</h3>
@@ -248,7 +248,7 @@
   }
 
   /* The Modal (background) */
-.modal {
+.modal, .modal2, .modal3 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -390,12 +390,12 @@ $(document).ready(function(){
   });
 
   $title.click(function() {
-    modal.style.display = "block";
+    modal2.style.display = "block";
     var $row = $(this).parent().parent()
     var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
     var courseName = $row.find('#all-info').children().eq(1).text()
     var desc = $row.find('#all-info').children().eq(2).first().children().text()
-    
+
 
     $('#course-title').text(courseName)
     $('#modal-info').text(desc)
