@@ -76,8 +76,8 @@
         </div>
       </td>
       <td class="table_data course_name">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#titleModal">Launch modal</button>
-        <a href="#exampleModalCenter" data-toggle="modal">{title}</a>
+        <button type="button" class="btn btn-success launch" data-toggle="modal" data-target="#titleModal">Launch modal</button>
+        <a href="#exampleModalCenter">{title}</a>
       </td>
       <td class="table_data">{tags.0}</td>
       <td class="table_data">
@@ -339,17 +339,36 @@ for(var i = 0; i < $cells.length; i++){
   </div>
 </div>
 
+<!-- Course Details Modal -->
+<div id="titleModal" class="modal2">
+
+  <!-- Modal-content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Course Details</h3>
+      <span id="closeBtn2" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <h4 id="course-title2"></h4>
+      <p id="modal-info2"></p>
+    </div>
+  </div>
+</div>
+
 <script>
 
 $(document).ready(function(){
   // Get the modal
   var modal = document.getElementById('myModal');
+  var modal2 = document.getElementById('titleModal');
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
+  var $btns2 = $('.launch');
 
   // Get the <span> element that closes the modal
   var span = document.getElementById("closeBtn");
+  var span2 = document.getElementById("closeBtn2");
 
   // When the user clicks on the button, open the modal
   /* window.onload = function(){
@@ -375,15 +394,31 @@ $(document).ready(function(){
 
   });
 
+  $btns2.click(function(){
+      modal2.style.display = "block";
+      var $row = $(this).parent().parent()
+      var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
+      var courseName = $row.find('#all-info').children().eq(1).text()
+      var desc = $row.find('#all-info').children().eq(2).first().children().text()
+
+      $('#course-title2').text(courseName)
+      $('#modal-info2').text(desc)
+
+  });
+
 // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
+    modal.style.display = "none";
+  }
+  span2.onclick = function() {
     modal.style.display = "none";
   }
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == modal || event.target == modal2) {
         modal.style.display = "none";
+        modal2.style.display = "none";
     }
   }
 });
