@@ -78,7 +78,7 @@
       <td class="table_data course_name">
         <a href="#exampleModalCenter" class="course">{title}</a>
 
-        <div id="titleModal" class="modal">
+        <div id="titleModal" class="modal2">
           <div class="modal-content">
             <div class="modal-header">
               <h3>Course details</h3>
@@ -363,7 +363,7 @@ $(document).ready(function(){
   var $title = $('.course');
 
   // Get the <span> element that closes the modal
-  var span = document.querySelector("close");
+  var span = document.getElementsByTagName("span");
 
   // When the user clicks on the button, open the modal
   /* window.onload = function(){
@@ -390,25 +390,27 @@ $(document).ready(function(){
   });
 
   $title.click(function() {
-    modal.style.display = "block";
-    var $row = $(this).parent().parent()
-    var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
-    var courseName = $row.find('#all-info').children().eq(1).text()
-    var desc = $row.find('#all-info').children().eq(2).first().children().text()
-
-    $('.course-title').text(courseName)
-    $('.modal-info').text(desc)
+    modal2.style.display = "block";
+    // var $row = $(this).parent().parent()
+    // var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
+    // var courseName = $row.find('#all-info').children().eq(1).text()
+    // var desc = $row.find('#all-info').children().eq(2).first().children().text()
+    //
+    // $('.course-title').text(courseName)
+    // $('.modal-info').text(desc)
   });
 
 // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     modal.style.display = "none";
+    modal2.style.display = "none";
   }
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == modal || event.target == modal2) {
         modal.style.display = "none";
+        modal2.style.display = "none";
     }
   }
 });
