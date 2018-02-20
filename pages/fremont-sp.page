@@ -62,7 +62,7 @@
     {.repeated section items} <!-- looping through camps -->
     <tr>
       <td id="all-info" style="display: none;">
-        <a href="#">{.main-image?}<img src="{fullUrl}?format=100w" />{.end}</a>
+        <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
         <p id="product-title">{title}</p>
         <div id="product-body">{excerpt}</div>
         <p id="product-url">{fullUrl}</p>
@@ -422,7 +422,7 @@ $(document).ready(function(){
       console.log(imgSrc);
       console.log($row);
       var img = document.createElement("IMG");
-       img.src = imgSrc
+       img.src = imgSrc+'?format=300w'
        $('#modal-image').html(img);
 
   });
