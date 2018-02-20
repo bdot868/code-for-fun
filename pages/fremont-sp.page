@@ -356,7 +356,7 @@ for(var i = 0; i < $cells.length; i++){
 $(document).ready(function(){
   // Get the modal
   var modal = document.getElementById('myModal');
-  var detailsModal = document.getElementById('titleModal');
+  var modal2 = document.getElementById('titleModal');
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
