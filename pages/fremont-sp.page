@@ -419,6 +419,7 @@ $(document).ready(function(){
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
 
+      console.log(imgSrc);
       var img = document.createElement("IMG");
        img.src = imgSrc
        $('#modal-image').html(img);
