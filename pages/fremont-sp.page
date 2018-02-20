@@ -219,7 +219,7 @@
     width: 70px;
   }
 
-  .imageModal {
+  .imgModal {
     cursor: pointer;
   }
   .enroll {
