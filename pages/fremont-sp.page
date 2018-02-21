@@ -341,7 +341,7 @@
   }
 
   .table>tbody>tr>td {
-  padding: 8px;
+  padding: 4px;
   line-height: 1.42857143
   }
 
@@ -358,13 +358,13 @@
   .enroll {
     background: #018c26;
     color: #fff;
-    padding: 5px 0;
+    padding: 5px;
     display: block;
     text-align: center;
     cursor: pointer;
     border: none;
     font-size: 11px;
-    width: 44px;
+    width: 50px;
     margin: 0 auto;
   }
 
