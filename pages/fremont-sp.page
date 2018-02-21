@@ -56,7 +56,7 @@
 
   </thead>
     <tbody> <!-- Table body -->
-      <td colspan="3" class="course-divider" style=" ">
+      <td colspan="3" class="course_divider" style=" ">
         Code For Fun: Ages 5 - 10
       </td>
     {.repeated section items} <!-- looping through camps -->
@@ -174,7 +174,7 @@
     <th class="date">Aug <br> 13-17</th>
     <th class="date">Aug <br>20-24</th>
   </tr>
-  <tr class="course-divider">
+  <tr class="course_divider">
     <p>Code For Fun: Ages 10 - 15</p>
   </tr>
   </tbody>
