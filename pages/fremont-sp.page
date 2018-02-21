@@ -155,6 +155,25 @@
       </td>
     </tr>
   {.end}
+
+  <!-- 10-15 Year Olds table -->
+  <tr class="head"> <!-- Table header -->
+    <th id="all-info" style="display: none;"></th>
+    <th class="course_video_head" rowspan="2">Course Promo</th>
+    <th class="course_name_head" rowspan="2">Course Name</th>
+    <th class="age_head" rowspan="2">Age</th>
+    <th class="date">June <br> 11-15</th>
+    <th class="date">June <br> 18-22</th>
+    <th class="date">June <br> 25-29</th>
+    <th class="date">July <br> 2-6</th>
+    <th class="date">July <br> 9-13</th>
+    <th class="date">July <br> 16-20</th>
+    <th class="date">July <br> 23-27</th>
+    <th class="date">July <br> 30-Aug 3</th>
+    <th class="date">Aug <br> 6-10</th>
+    <th class="date">Aug <br> 13-17</th>
+    <th class="date">Aug <br>20-24</th>
+  </tr>
   </tbody>
 </table>
 
@@ -317,8 +336,6 @@ for(var i = 0; i < $cells.length; i++){
 </script>
 
 
-<!-- Button trigger modal -->
-
 
 <!-- Enroll Modal -->
 <div id="myModal" class="modal">
@@ -395,6 +412,7 @@ $(document).ready(function(){
 
     }
   } */
+  //Enroll Button Modal
   $btns.click(function(){
       modal.style.display = "block";
       var $row = $(this).parent().parent()
@@ -412,6 +430,7 @@ $(document).ready(function(){
 
   });
 
+//Course Image Modal
   $btns1.click(function(){
       modal1.style.display = "block";
       var $row = $(this).parent().parent()
@@ -422,11 +441,12 @@ $(document).ready(function(){
       console.log(imgSrc);
       console.log($row);
       var img = document.createElement("IMG");
-       img.src = imgSrc+'?format=750w'
+       img.src = imgSrc+'?format=300w'
        $('#modal-image').html(img);
 
   });
 
+  //Course Name Modal
   $btns2.click(function(){
       modal2.style.display = "block";
       var $row = $(this).parent().parent()
