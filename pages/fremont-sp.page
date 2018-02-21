@@ -175,7 +175,7 @@
     <th class="date">Aug <br>20-24</th>
   </tr>
   <tr class="course-divider">
-    <p>Code For Fun: Ages 5 - 10</p>
+    <p>Code For Fun: Ages 10 - 15</p>
   </tr>
   </tbody>
 </table>
@@ -224,6 +224,15 @@
     width: 85%;
 
   }
+
+  .course_table .course_divider {
+    border-right: 1px solid #CACACA !important;
+    background: #eee;
+    font-weight: bold;
+    color: #444;
+    font-size: 16px;
+    text-align: left;
+}
 
   .table tr, td {
     border: 1px solid #FFDBB1 !important;
