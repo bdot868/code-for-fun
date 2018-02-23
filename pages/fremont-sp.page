@@ -449,7 +449,7 @@ console.log(boy)
 var $cells = $('.table_data')
 
 for(var i = 0; i < $cells.length; i++){
-console.log($cells[i].innerHTML);
+console.log($cells);
   // if($cells[i].innerHTML === ""){
   // console.log($cells[i])
   //   // $cells[i].innerText = 'N/A'
