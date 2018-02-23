@@ -60,6 +60,7 @@
         Code For Fun: Ages 5 - 10
       </td>
     {.repeated section items} <!-- looping through camps -->
+    {.equal?:tags.0:"5-10"}
     <tr>
       <td id="all-info" style="display: none;">
         <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
@@ -153,6 +154,7 @@
          {.end}
       {.end}
       </td>
+      {.end}
     </tr>
   {.end}
 
@@ -181,6 +183,7 @@
   </td>
 
   {.repeated section items} <!-- looping through camps -->
+  {.equal?:tags.0:"10-15"}
   <tr>
     <td id="all-info" style="display: none;">
       <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
@@ -275,6 +278,7 @@
     {.end}
     </td>
   </tr>
+  {.end}
 {.end}
   </tbody>
 </table>
