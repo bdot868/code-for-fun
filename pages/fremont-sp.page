@@ -449,13 +449,13 @@ console.log(boy)
 var $cells = $('.table_data')
 
 for(var i = 0; i < $cells.length; i++){
-
-  if($cells[i].innerHTML == ""){
-    $cells[i].innerText = 'N/A'
-  console.log($cells)
-  console.log('yo');
-
-  }
+$cells[i].innerHTML
+  // if($cells[i].innerHTML == ""){
+  //   $cells[i].innerText = 'N/A'
+  // console.log($cells)
+  // console.log('yo');
+  //
+  // }
 }
 
 
