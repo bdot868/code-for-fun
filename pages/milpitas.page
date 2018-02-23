@@ -61,6 +61,9 @@
       </td>
     {.repeated section items} <!-- looping through camps -->
     <tr>
+      {.equal?:tags.0:"5-10"}
+
+
       <td id="all-info" style="display: none;">
         <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
         <p id="product-title">{title}</p>
@@ -153,6 +156,7 @@
          {.end}
       {.end}
       </td>
+       {.end}
     </tr>
   {.end}
 
