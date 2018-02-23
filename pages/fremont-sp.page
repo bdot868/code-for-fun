@@ -446,15 +446,15 @@ var boy = 'brandon'
 console.log(boy)
 
 
-/* var $cells = $('.table_data')
+var $cells = $('.table_data')
 
 for(var i = 0; i < $cells.length; i++){
 
-  if($cells[i].innerText === ""){
-  console.log('yo')
-    $cells[i].innerText = 'N/A'
+  if($cells[i].innerHTML === ""){
+  console.log($cells[i])
+    // $cells[i].innerText = 'N/A'
   }
-} */
+}
 
 
 </script>
