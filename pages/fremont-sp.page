@@ -451,7 +451,7 @@ var $cells = $('.cells')
 for(var i = 0; i < $cells.length; i++){
 
   if($cells[i].innerText === ""){
-    $cells[i].html('<p class="na">N/A</p>')
+    $($cells[i]).html('<p class="na">N/A</p>')
 
   console.log('yo');
 
