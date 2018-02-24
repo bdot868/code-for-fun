@@ -378,6 +378,13 @@ body {
     margin: 0 auto;
   }
 
+  .cells {
+    text-align: center;
+  }
+  .cells p {
+    font-size: 10px;
+  }
+
   /* The Modal (background) */
 .modal, .modal2, .modal1 {
     display: none; /* Hidden by default */
