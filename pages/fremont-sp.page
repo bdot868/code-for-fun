@@ -239,6 +239,8 @@
     {.repeated section variants}
       {.equal?:attributes.Date:"July 16-20"}
         <div class="enroll">Enroll Now</div>
+        {.or}
+        <p>N/A</p>
        {.end}
     {.end}
     </td>
