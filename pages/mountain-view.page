@@ -351,6 +351,8 @@ $(document).ready(function(){
         $('#enrollBtn').attr("href", url)
         $($(this).attr("href", url), function(html) {
           $(html).appendTo('body').modal();
+          console.log(this);
+          console.log(html);
         });
         // $('.modal-content').html(url)
       })
