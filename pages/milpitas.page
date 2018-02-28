@@ -31,9 +31,6 @@
     </div>
   </div>
 
-  {
-    "dates": ["June <br> 11-15", "June <br> 18-22", "June <br> 25-29", "July <br> 2-6", "July <br> 9-13", "July <br> 16-20", July <br> 23-27, "July <br> 30-Aug 3", "Aug <br> 6-10", "Aug <br> 13-17", "Aug <br>20-24"]
-  }
 
 <!-- Table view of camps for desktop  -->
   <table class="table table-bordered course_table">
@@ -43,10 +40,7 @@
       <th class="course_video_head" rowspan="2">Course Promo</th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
-      {.repeated section dates}
-        <th class="date">{@}</th>
-      {.end}
-      <!-- <th class="date">June <br> 11-15</th>
+      <th class="date">June <br> 11-15</th>
       <th class="date">June <br> 18-22</th>
       <th class="date">June <br> 25-29</th>
       <th class="date">July <br> 2-6</th>
@@ -56,7 +50,7 @@
       <th class="date">July <br> 30-Aug 3</th>
       <th class="date">Aug <br> 6-10</th>
       <th class="date">Aug <br> 13-17</th>
-      <th class="date">Aug <br>20-24</th> -->
+      <th class="date">Aug <br>20-24</th>
     </tr>
 
   </thead>

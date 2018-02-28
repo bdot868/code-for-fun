@@ -366,7 +366,7 @@ body {
     cursor: pointer;
   }
   .enroll {
-    background: #018c26;
+    background: rgba(36,143,0,.6);
     color: #fff;
     padding: 5px;
     display: block;

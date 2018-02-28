@@ -66,77 +66,99 @@
       <td class="table_data">
         {.repeated section variants}
           {.equal?:attributes.Date:"June 11-15"}
-            <div class="enroll">Enroll Now</div>
-           {.end}
+            {.equal?:attributes.Location:"Mountain View"}
+              <div class="enroll">Enroll Now</div>
+            {.end}
+          {.end}
         {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 18-22"}
-          <div class="enroll">Enroll Now</div>
+          {.equal?:attributes.Location:"Mountain View"}
+            <div class="enroll">Enroll Now</div>
+          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 25-29"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 2-6"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 9-13"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 16-20"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 23-27"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 30-Aug 3"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
-          <div id="{myBtn}" class="enroll">Enroll Now</div>
+        {.equal?:attributes.Location:"Mountain View"}
+          <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 13-17"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 20-24"}
+        {.equal?:attributes.Location:"Mountain View"}
           <div class="enroll">Enroll Now</div>
+        {.end}
          {.end}
       {.end}
       </td>
