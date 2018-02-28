@@ -349,7 +349,7 @@ $(document).ready(function(){
         modal.style.display = "none";
         product.style.display = "block";
         $('#enrollBtn').attr("href", url)
-        $.get(this.href, function(html) {
+        $($(this).attr("href", url), function(html) {
           $(html).appendTo('body').modal();
         });
         // $('.modal-content').html(url)
