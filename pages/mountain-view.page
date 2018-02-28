@@ -3,8 +3,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 <squarespace:query collection="summer-2018" limit="10" category="mountain view">
   <!-- <ol>
@@ -288,40 +286,38 @@ for(var i = 0; i < $cells.length; i++){
 
 
 <!-- The Modal -->
-<div id="myModal" class="modal full reveal" data-reveal>
+<div id="myModal" class="modal" >
 
   <!-- Modal-content -->
   <div class="modal-content">
     <div class="modal-header">
-      <h3 id="course-title">Select This Amazing Course!</h3>
+      <h3 id="course-title"></h3>
       <span id="closeBtn" class="close">&times;</span>
     </div>
     <div class="modal-body">
       <p id="modal-info"></p>
     </div>
     <div class="modal-footer">
-      <!-- <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a> -->
-      <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+      <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
     </div>
   </div>
 </div>
 
-<div id="ex1" class="modal">
-  <p>Thanks for clicking. That felt good.</p>
-  <a href="#" rel="modal:close">Close</a>
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+  </div>
 </div>
-
-<!-- Link to open the modal -->
-
 
 <script>
 
 $(document).ready(function(){
   // Get the modal
   var modal = document.getElementById('myModal');
+  var product = document.getElementById('product-modal')
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
+  var $buy = $('#enrollBtn')
 
   // Get the <span> element that closes the modal
   var span = document.getElementById("closeBtn");
@@ -347,6 +343,12 @@ $(document).ready(function(){
       $('#course-title').text(courseName)
       $('#modal-info').text(desc)
       // $('#enrollBtn').attr("href", url)
+
+      $buy.click(function() {
+        modal.style.display = "none";
+        product.style.display = "block";
+        $('.modal-content').html(url)
+      })
 
 
 
