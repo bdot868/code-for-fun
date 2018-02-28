@@ -338,7 +338,7 @@ $(document).ready(function(){
       $('#enrollBtn').on("click", function(e) {
         e.preventDefault();
 
-        modal.html('<object width="100%" height="100%" type="text/html" data=url ></object>').foundation("open")
+        $('#myModal').html('<object width="100%" height="100%" type="text/html" data=url ></object>').foundation("open")
       })
 
   });
