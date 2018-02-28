@@ -350,9 +350,10 @@ $(document).ready(function(){
         product.style.display = "block";
         $('#enrollBtn').attr("href", url)
         $($(this).attr("href", url), function(html) {
-          $(html).appendTo('body').modal();
           console.log(this);
           console.log(html);
+          $(html).appendTo('body').modal();
+
         });
         // $('.modal-content').html(url)
       })
