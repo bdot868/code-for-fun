@@ -344,10 +344,15 @@ $(document).ready(function(){
       $('#modal-info').text(desc)
       // $('#enrollBtn').attr("href", url)
 
-      $buy.click(function() {
+      $buy.click(function(event) {
+        event.preventDefault();
         modal.style.display = "none";
         product.style.display = "block";
-        $('.modal-content').html(url)
+        $('#enrollBtn').attr("href", url)
+        $.get(this.href, function(html) {
+          $(html).appendTo('body').modal();
+        });
+        // $('.modal-content').html(url)
       })
 
 
