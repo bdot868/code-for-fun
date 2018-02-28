@@ -349,12 +349,12 @@ $(document).ready(function(){
         modal.style.display = "none";
         product.style.display = "block";
         $('#enrollBtn').attr("href", url)
-        $($(this).attr("href", url), function(html) {
-          console.log(this);
-          console.log(html);
-          $(html).appendTo('body').modal();
-
-        });
+        // $((this).attr("href", url), function(html) {
+        //   console.log(this);
+        //   console.log(html);
+        //   $(html).appendTo('body').modal();
+        //
+        // });
         // $('.modal-content').html(url)
       })
 
