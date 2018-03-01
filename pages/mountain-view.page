@@ -349,7 +349,7 @@ $(document).ready(function(){
         modal.style.display = "none";
         product.style.display = "block";
 
-        $('.modal-content').html('<iframe style="height:600px; width:800px" src=' + url + '></iframe>')
+        $('.modal-content').html('<iframe style="height:100%; width:100%" src=' + url + '></iframe>')
       })
 
 
