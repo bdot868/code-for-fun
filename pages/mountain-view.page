@@ -348,8 +348,8 @@ $(document).ready(function(){
         event.preventDefault();
         modal.style.display = "none";
         product.style.display = "block";
-        
-        $('.modal-content').html(url)
+
+        $('.modal-content').html('<iframe src=' + url + '></iframe>')
       })
 
 
