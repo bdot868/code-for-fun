@@ -342,15 +342,15 @@ $(document).ready(function(){
       // console.log(url)
       $('#course-title').text(courseName)
       $('#modal-info').text(desc)
-      // $('#enrollBtn').attr("href", url)
+      $('#enrollBtn').attr("href", url)
 
-      $buy.click(function(event) {
-        event.preventDefault();
-        modal.style.display = "none";
-        product.style.display = "block";
-
-        $('.modal-content').html('<iframe style="height:100%; width:100%" src=' + url + '></iframe>')
-      })
+      // $buy.click(function(event) {
+      //   event.preventDefault();
+      //   modal.style.display = "none";
+      //   product.style.display = "block";
+      //
+      //   $('.modal-content').html('<iframe style="height:700px; width:100%" src=' + url + '></iframe>')
+      // })
 
 
 
