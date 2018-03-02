@@ -677,7 +677,11 @@ $(document).ready(function(){
       console.log(video);
       var img = document.createElement("IMG");
        img.src = imgSrc+'?format=300w'
-       $('#modal-image').html(video);
+       if(video == undefined){
+         $('#modal-image').html(img);
+       } else {
+         $('#modal-image').html(video);
+       }
 
   });
 
