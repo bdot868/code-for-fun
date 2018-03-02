@@ -565,11 +565,10 @@ for(var i = 0; i < $cells.length; i++){
   <!-- Modal-content -->
   <div class="modal-content">
     <div class="modal-header">
-      <h3>Select This Amazing Course!</h3>
+      <h3 id="course-title"></h3>
       <span id="closeBtn" class="close">&times;</span>
     </div>
     <div class="modal-body">
-      <h4 id="course-title"></h4>
       <p id="modal-info"></p>
     </div>
     <div class="modal-footer">
