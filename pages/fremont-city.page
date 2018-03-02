@@ -3,10 +3,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<squarespace:query collection="summer-2018" limit="10" category="menlo park">
+<squarespace:query collection="summer-2018" limit="10" category="fremont">
 
 <div class="heading-div">
-  <h1 id="pageTitle">Menlo Park</h1>
+  <h1 id="pageTitle">Fremont City Rec Center</h1>
 </div>
 
 
@@ -74,13 +74,13 @@
           {.end}
       </td>
       <td class="table_data course_name">
-        <a href="#" class="launch">{title}</a>
+        <a href="#exampleModalCenter" class="launch">{title}</a>
       </td>
       <td class="table_data tags">{tags.0}</td>
       <td class="table_data cells">
         {.repeated section variants}
           {.equal?:attributes.Date:"June 11-15"}
-            {.equal?:attributes.Location:"Menlo Park"}
+            {.equal?:attributes.Location:"Fremont"}
               {.equal?:attributes.After Care:"No"}
                 <div class="enroll">Enroll Now</div>
               {.end}
@@ -91,7 +91,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 18-22"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -102,7 +102,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 25-29"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -113,7 +113,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 2-6"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -124,7 +124,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 9-13"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -135,7 +135,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 16-20"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -146,7 +146,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 23-27"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -157,7 +157,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 30-Aug 3"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -168,7 +168,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -179,7 +179,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 13-17"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -190,7 +190,7 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 20-24"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -247,7 +247,7 @@
     <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 11-15"}
-          {.equal?:attributes.Location:"Menlo Park"}
+          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -258,7 +258,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"June 18-22"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
@@ -269,7 +269,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"June 25-29"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -280,7 +280,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 2-6"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -291,7 +291,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 9-13"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -302,7 +302,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 16-20"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -313,7 +313,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 23-27"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -324,7 +324,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 30-Aug 3"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -335,7 +335,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 6-10"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -346,7 +346,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 13-17"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -357,7 +357,7 @@
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 20-24"}
-        {.equal?:attributes.Location:"Menlo Park"}
+        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
@@ -373,59 +373,6 @@
 
 </squarespace:query>
 
-
-<!-- Enroll Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal-content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>Select This Amazing Course!</h3>
-      <span id="closeBtn" class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <h4 id="course-title"></h4>
-      <p id="modal-info"></p>
-    </div>
-    <div class="modal-footer">
-      <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
-    </div>
-  </div>
-</div>
-
-<!-- Course Details Modal -->
-<div id="titleModal" class="modal2">
-
-  <!-- Modal-content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>Course Details</h3>
-      <span id="closeBtn2" class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <h4 id="course-title2"></h4>
-      <p id="modal-info2"></p>
-    </div>
-  </div>
-</div>
-
-<!-- Image Modal -->
-<div id="videoModal" class="modal1">
-
-  <!-- Modal-content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>Course Video</h3>
-      <span id="closeBtn1" class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <div id="modal-image"></div>
-    </div>
-  </div>
-</div>
-
-
-<!-- CSS For entire page -->
 <style media="screen">
 
 body {
@@ -612,7 +559,55 @@ for(var i = 0; i < $cells.length; i++){
 
 
 
+<!-- Enroll Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal-content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Select This Amazing Course!</h3>
+      <span id="closeBtn" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <h4 id="course-title"></h4>
+      <p id="modal-info"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Details Modal -->
+<div id="titleModal" class="modal2">
+
+  <!-- Modal-content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Course Details</h3>
+      <span id="closeBtn2" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <h4 id="course-title2"></h4>
+      <p id="modal-info2"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Image Modal -->
+<div id="videoModal" class="modal1">
+
+  <!-- Modal-content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Course Video</h3>
+      <span id="closeBtn1" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div id="modal-image"></div>
+    </div>
+  </div>
+</div>
 
 <script>
 
