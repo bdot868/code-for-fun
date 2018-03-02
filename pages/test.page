@@ -649,7 +649,7 @@ $(document).ready(function(){
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
-      $('#modal-info').text({@|product-status})
+      $('#modal-info').text(desc)
       $('#enrollBtn').attr("href", url)
 
   });
