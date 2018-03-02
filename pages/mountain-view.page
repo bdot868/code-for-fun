@@ -16,7 +16,7 @@
     {.end}
   </ol> -->
   <h1 id="pageTitle">Mountain View</h1>
-
+{.repeated section items}
   {.var @firstImg items.title}
   {.var @pageThumb item.mainImage}
   <h3>{@firstImg}</h3>
@@ -24,6 +24,7 @@
     <div class="wrapper{.if @firstImg} has-image{.end}">
       <p>{@firstImg}</p>
     </div>
+    {.end}
   {.end}
 <!-- Table view for desktop  -->
   <table class="table table-bordered course_table">
