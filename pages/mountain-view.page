@@ -15,10 +15,11 @@
       {.end}
     {.end}
   </ol> -->
-
+  <h1 id="pageTitle">Mountain View</h1>
   {.var @myTitle website.siteTitle}
   <h3>{@myTitle}</h3>
-
+  {.var @word 'hey'}
+  <p>{@word}</p>
 <!-- Table view for desktop  -->
   <table class="table table-bordered course_table">
   <thead>
