@@ -671,12 +671,13 @@ $(document).ready(function(){
       var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
+      var video = $row.find('#all-info').children().eq(4).first().children().html()
 
       console.log(imgSrc);
-      console.log($row);
+      console.log(video);
       var img = document.createElement("IMG");
        img.src = imgSrc+'?format=300w'
-       $('#modal-image').html(img);
+       $('#modal-image').html(video);
 
   });
 
