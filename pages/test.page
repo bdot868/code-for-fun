@@ -618,7 +618,7 @@ $(document).ready(function(){
   function buildCells() {
     for(var i = 0; i < dates.length; i++){
       // $('<td class="table_data cells">{.repeated section variants}{.equal?:attributes.Date:"+'dates[i]'+"}{.equal?:attributes.Location:"Fremont"}<div class="enroll">Enroll Now</div>{.end}{.end}{.end}</td>').appendTo('#individual-product')
-      $('#individual-product').append('<td class="table_data cells">{.repeated section variants}{.equal?:attributes.Date:"+'dates[i]'+"}{.equal?:attributes.Location:"Fremont"}<div class="enroll">Enroll Now</div>{.end}{.end}{.end}</td>')
+      $('#individual-product').append(<td class="table_data cells">{.repeated section variants}{.equal?:attributes.Date:"+'dates[i]'+"}{.equal?:attributes.Location:"Fremont"}<div class="enroll">Enroll Now</div>{.end}{.end}{.end}</td>)
       console.log(dates[i]);
     }
   }
