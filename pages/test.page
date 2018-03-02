@@ -613,7 +613,7 @@ for(var i = 0; i < $cells.length; i++){
 
 $(document).ready(function(){
 
-  
+
   // Get the modal
   var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
@@ -649,7 +649,7 @@ $(document).ready(function(){
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
-      $('#modal-info').text(desc)
+      $('#modal-info').append(desc)
       $('#enrollBtn').attr("href", url)
 
   });
