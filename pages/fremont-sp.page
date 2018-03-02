@@ -3,7 +3,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<squarespace:query collection="summer-2018" limit="10" category="fremont-42">
+<squarespace:query collection="summer-2018" limit="30" category="fremont-42">
 
 <div class="heading-div">
   <h1 id="pageTitle">Fremont</h1>
@@ -76,14 +76,7 @@
       <td class="table_data course_name">
         <a href="#exampleModalCenter" class="launch">{title}</a>
       </td>
-      {.repeated section tags}
-        {.equal?:{@}:"5-10"}{.or}
-          {.equal?:{@}:"10-15"}{.or}
-            <td class="table_data tags">{@}</td>
-          {.end}
-        {.end}
-      {.end}
-
+      <td class="table_data tags">{tags.0}</td>
       <td class="table_data cells">
         {.repeated section variants}
           {.equal?:attributes.Date:"June 11-15"}
