@@ -17,10 +17,16 @@
   </ol> -->
   <h1 id="pageTitle">Mountain View</h1>
 
-{.var @dates ['hey', 'yo', 'nice']}
-{.repeated section @dates}
-  <p>{@}</p>
-{.end}
+  {.var @firstImg items.0}
+  {.var @pageThumb collection.mainImage}
+
+  {.section collection}
+    <div class="wrapper{.if @firstImg} has-image{.end}">
+      <div class="thumbnail-container">
+        <img {@pageThumb|image-meta} data-load="false" />
+      </div>
+    </div>
+  {.end}
 <!-- Table view for desktop  -->
   <table class="table table-bordered course_table">
   <thead>
