@@ -17,14 +17,12 @@
   </ol> -->
   <h1 id="pageTitle">Mountain View</h1>
 
-  {.var @firstImg items.0}
-  {.var @pageThumb collection.mainImage}
-
+  {.var @firstImg items.title}
+  {.var @pageThumb item.mainImage}
+  <h3>{@firstImg}</h3>
   {.section collection}
     <div class="wrapper{.if @firstImg} has-image{.end}">
-      <div class="thumbnail-container">
-        <img {@pageThumb|image-meta} data-load="false" />
-      </div>
+      <p>{@firstImg}</p>
     </div>
   {.end}
 <!-- Table view for desktop  -->
