@@ -19,12 +19,12 @@
           {.main-image?}<img src="{fullUrl}?format=300w" />{.end}
         </div>
         {.video?}
-          <div class="">
-            {@}
-          </div>
+          <iframe
+            src="{fullUrl}?format=750w">
+          </iframe>
         {.end}
         <h3 class="item-title">{title}</h3>
-        <p><span>{tags}</span></p>
+        <p><span><strong>Ages:</strong>{tags.1}</span></p>
         <div class="item-descr">
           {excerpt}
         </div>
@@ -537,6 +537,9 @@ body {
   }
   .container div a {
     margin: 20px 0 20px 0;
+  }
+  .item-img{
+    margin: 10px;
   }
 }
 </style>
