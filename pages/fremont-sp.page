@@ -18,9 +18,9 @@
         <div class="item-img">
           {.main-image?}<img src="{fullUrl}?format=300w" />{.end}
         </div>
-        <div class="video">
+        <!-- <div class="video">
           {body}
-        </div>
+        </div> -->
         <h3 class="item-title">{title}</h3>
         <p><span><strong>Ages: </strong>{tags.1}</span></p>
         <div class="item-descr">
@@ -70,6 +70,9 @@
         <p id="product-title">{title}</p>
         <div id="product-body">{excerpt}</div>
         <p id="product-url">{fullUrl}</p>
+        <div class="video">
+          {body}
+        </div>
       </td>
       <td class="table_data image">
           {.main-image?}
@@ -237,6 +240,9 @@
       <p id="product-title">{title}</p>
       <div id="product-body">{excerpt}</div>
       <p id="product-url">{fullUrl}</p>
+      <div class="video">
+        {body}
+      </div>
     </td>
     <td class="table_data image">
         {.main-image?}
@@ -647,8 +653,9 @@ $(document).ready(function(){
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(3).text()
+      var video = $row.find('#all-info').children().eq(4).first().children().text()
       // console.log(desc)
-      console.log(imgSrc)
+      console.log(video)
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
