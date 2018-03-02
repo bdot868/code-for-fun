@@ -235,7 +235,7 @@
     {.repeated section variants}
       {.equal?:attributes.Date:"June 18-22"}
         {.equal?:attributes.Location:"Fremont-42"}
-            {.equal?:attributes.['After Care']:"No"}
+            {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
         {.end}
