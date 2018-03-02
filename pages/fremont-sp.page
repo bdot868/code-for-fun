@@ -243,7 +243,7 @@
     <td class="table_data course_name">
       <a href="#exampleModalCenter" class="launch">{title}</a>
     </td>
-    <td class="table_data tags">{tags.0}</td>
+    <td class="table_data tags">{tags.1}</td>
     <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 11-15"}
