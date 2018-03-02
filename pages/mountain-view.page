@@ -316,7 +316,7 @@ var dates = ["June 11-15", "June 18-22", "June 25-29", "July 2-6", "July 9-13", 
 function buildCells() {
   for(var i = 0; i < dates.length; i++){
     // $('<td class="table_data cells">{.repeated section variants}{.equal?:attributes.Date:"+'dates[i]'+"}{.equal?:attributes.Location:"Mountain View"}<div class="enroll">Enroll Now</div>{.end}{.end}{.end}</td>').appendTo('#individual-product')
-    $("<td>'Hello World!'</td>").appendTo("#individual-product");
+    $("<td>'Hello World!'</td>").appendTo("#pageTitle");
     console.log(dates[i]);
   }
 }
