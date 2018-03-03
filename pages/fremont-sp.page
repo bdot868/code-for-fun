@@ -482,6 +482,11 @@ body {
     font-size: 10px;
   }
 
+/* feedback text */
+  .sqs-block-content {
+    display: none;
+  }
+
   /* The Modal (background) */
 .modal, .modal2, .modal1 {
     display: none; /* Hidden by default */

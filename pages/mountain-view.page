@@ -5,16 +5,20 @@
 
 
 <squarespace:query collection="summer-2018" limit="10" category="mountain view">
-  <!-- <ol>
+  <ol>
     {.repeated section items}
       <li><a href="{fullUrl}">{title}</a></li>
       {.repeated section variants}
         {.equal?:attributes.dates:"July 2-6"}
           <article>{attributes.Date}</article>
          {.end}
+         <p>{@|product-price}</p>
+         <div class="">
+           {@|product-status}
+         </div>
       {.end}
     {.end}
-  </ol> -->
+  </ol>
   <h1 id="pageTitle">Mountain View</h1>
 
 <!-- Table view for desktop  -->
@@ -60,10 +64,10 @@
         </div>
       </td>
       <td class="table_data course_name">
-        <a href="#exampleModalCenter" data-toggle="modal">{title}</a>
+        <a href="#exampleModalCenter" data-toggle="modal">{title|truncate 4}</a>
       </td>
       <td class="table_data">{tags.0}</td>
-      <!-- <td class="table_data cells">
+      <td class="table_data cells">
         {.repeated section variants}
           {.equal?:attributes.Date:"June 11-15"}
             {.equal?:attributes.Location:"Mountain View"}
@@ -161,7 +165,7 @@
           {.end}
          {.end}
       {.end}
-      </td> -->
+      </td>
     </tr>
   {.end}
   </tbody>
@@ -311,17 +315,6 @@ for(var i = 0; i < $cells.length; i++){
 
 $(document).ready(function(){
 
-var dates = ["June 11-15", "June 18-22", "June 25-29", "July 2-6", "July 9-13", "July 16-20", "July 23-27", "July 30-Aug 3", "Aug 6-10", "Aug 13-17", "Aug 20-24"];
-
-function buildCells() {
-  for(var i = 0; i < dates.length; i++){
-    // $('<td class="table_data cells">{.repeated section variants}{.equal?:attributes.Date:"+'dates[i]'+"}{.equal?:attributes.Location:"Mountain View"}<div class="enroll">Enroll Now</div>{.end}{.end}{.end}</td>').appendTo('#individual-product')
-    $("<td>'Hello World!'</td>").appendTo("#pageTitle");
-    console.log(dates[i]);
-  }
-}
-
-buildCells()
 
   // Get the modal
   var modal = document.getElementById('myModal');
