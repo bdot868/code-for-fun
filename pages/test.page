@@ -9,14 +9,8 @@
 <ol>
   {.repeated section items}
     <li><a href="{fullUrl}">{title}</a></li>
-    {.repeated section variants}
-      {.equal?:attributes.dates:"July 2-6"}
-        <article>{attributes.Date}</article>
-       {.end}
-       <p>{@|product-price}</p>
-       <div class="">
-         {@|product-status}
-       </div>
+    {.repeated section tags}
+      <p>{@}</p>
     {.end}
   {.end}
 </ol>
@@ -90,7 +84,7 @@
           {.end}
       </td>
       <td class="table_data course_name">
-        <a href="#exampleModalCenter" class="launch">{title|truncate 100}</a>
+        <a href="#exampleModalCenter" class="launch">{title|truncate 20}</a>
       </td>
       <td class="table_data tags">{tags.0}</td>
       <td class="table_data cells">
