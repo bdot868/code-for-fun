@@ -664,8 +664,8 @@ $(document).ready(function(){
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
-      $('#modal-info').text(desc)
-      $('#enrollBtn').attr("href", url)
+      $('#modal-info').html('<div><object id="page-info" type="text/html" data="url" width="800px" height="600px" style="overflow:auto;border:5px ridge blue"></object></div>')
+      // $('#enrollBtn').attr("href", url)
 
   });
 
