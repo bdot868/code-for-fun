@@ -390,6 +390,9 @@
   <ol>
     {.repeated section items}
       <li><a href="{fullUrl}">{title}</a></li>
+      {.repeated section tags}
+      <p>{@}</p>
+      {.end}
     {.end}
   </ol>
 
