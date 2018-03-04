@@ -10,8 +10,8 @@
   {.repeated section items}
     <!-- <li><a href="{fullUrl}">{title}</a></li> -->
     {.repeated section tags}
-    {.equal?:{@}:'5-10'}
-      <p><li><a href="{fullUrl}">{title}</a></li></p>
+    {.equal?:{@}:"5-10"}
+      {@}
       {.end}
     {.end}
   {.end}
