@@ -670,7 +670,7 @@ $(document).ready(function(){
       obj.type = 'text/html';
       obj.height = '90%';
       obj.width = '90%';
-      obj.style = "overflow:auto;border:5px ridge blue"
+      obj.style = "overflow:auto"
       $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
 
