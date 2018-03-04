@@ -508,6 +508,7 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%
 }
 .modal-header {
   background-color: #f7941e;
@@ -668,8 +669,8 @@ $(document).ready(function(){
       var obj = document.createElement('object');
       obj.data = url;
       obj.type = 'text/html';
-      obj.height = '90%';
-      obj.width = '90%';
+      obj.height = '100%';
+      obj.width = '100%';
       obj.style = "overflow:auto"
       $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
