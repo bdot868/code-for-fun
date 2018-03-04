@@ -587,7 +587,7 @@ for(var i = 0; i < $cells.length; i++){
       <span id="closeBtn" class="close">&times;</span>
     </div>
     <div class="modal-body">
-      <!-- <p id="modal-info"></p> -->
+      <div id="modal-info"></div>
     </div>
     <!-- <div class="modal-footer">
       <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
@@ -672,7 +672,7 @@ $(document).ready(function(){
       obj.height = '500px';
       obj.width = '100%';
       obj.style = "overflow:auto"
-      $('#modal-body').html(obj)
+      $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
 
   });
