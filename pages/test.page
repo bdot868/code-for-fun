@@ -378,10 +378,6 @@
 </squarespace:query>
 
 
-<div class="" id="block-yui_3_17_2_2_1481681953844_8480" style="height: 400px; width: 400px; border: 1px solid black">
-
-  </div>
-
 
 
 <style media="screen">
@@ -555,19 +551,11 @@ console.log(boy)
 var $cells = $('.cells')
 
 for(var i = 0; i < $cells.length; i++){
-
   if($cells[i].innerText === ""){
     $($cells[i]).html('<p class="na">N/A</p>')
-
   console.log('yo');
-
+  }
 }
-
-}
-
-$( "#block-yui_3_17_2_2_1481681953844_8480" ).load( "codeforfun.com", function() {
-  alert( "Load was performed." );
-} );
 
 </script>
 
