@@ -507,7 +507,7 @@ body {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    width: 80%; /* Could be more or less, depending on screen size */
 }
 .modal-header {
   background-color: #f7941e;
@@ -588,9 +588,9 @@ for(var i = 0; i < $cells.length; i++){
     <div class="modal-body">
       <p id="modal-info"></p>
     </div>
-    <div class="modal-footer">
+    <!-- <div class="modal-footer">
       <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -668,8 +668,8 @@ $(document).ready(function(){
       var obj = document.createElement('object');
       obj.data = url;
       obj.type = 'text/html';
-      obj.height = '400px';
-      obj.width = '300px';
+      obj.height = '90%';
+      obj.width = '90%';
       obj.style = "overflow:auto;border:5px ridge blue"
       $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
