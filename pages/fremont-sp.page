@@ -669,7 +669,7 @@ $(document).ready(function(){
       var obj = document.createElement('object');
       obj.data = url;
       obj.type = 'text/html';
-      obj.height = '100%';
+      obj.height = '500px';
       obj.width = '100%';
       obj.style = "overflow:auto"
       $('#modal-info').html(obj)
