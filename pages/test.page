@@ -6,16 +6,16 @@
 <squarespace:query collection="summer-2018" limit="10" category="fremont">
 
 
-<ol>
+<!-- <ol>
   {.repeated section items}
-    <!-- <li><a href="{fullUrl}">{title}</a></li> -->
+    <li><a href="{fullUrl}">{title}</a></li>
     {.repeated section tags}
     {.equal?:tags:"5-10"}
       {@}
       {.end}
     {.end}
   {.end}
-</ol>
+</ol> -->
 
 <div class="heading-div">
   <h2 id="pageTitle">Fremont City Rec Center</h2>
