@@ -34,10 +34,8 @@
     </div>
   </div>
 
-  </squarespace:query>
 
 
-<squarespace:query collection="summer-2018" limit="40" category="fremont-42" tag="5-10">
 <!-- Table view of camps for desktop  -->
   <table class="table table-bordered course_table">
   <thead>
@@ -65,6 +63,7 @@
         Code For Fun: Ages 5 - 10
       </td>
     {.repeated section items} <!-- looping through camps -->
+    {.equal?:tags.0:"5-10"}
     <tr>
       <td id="all-info" style="display: none;">
         <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
@@ -81,7 +80,7 @@
           {.end}
       </td>
       <td class="table_data course_name">
-        <a href="#exampleModalCenter" class="launch">{title|truncate 30}</a>
+        <a href="#exampleModalCenter" class="launch">{title}</a>
       </td>
       <td class="table_data tags">{tags.1}</td>
       <td class="table_data cells">
@@ -205,12 +204,11 @@
          {.end}
       {.end}
       </td>
+      {.end}
     </tr>
   {.end}
-  </squarespace:query>
 
   <!-- 10-15 Year Olds table -->
-  <squarespace:query collection="summer-2018" limit="40" category="fremont" tag="10-15">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
@@ -235,6 +233,7 @@
   </td>
 
   {.repeated section items} <!-- looping through camps -->
+  {.equal?:tags.0:"10-15"}
   <tr>
     <td id="all-info" style="display: none;">
       <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
@@ -251,7 +250,7 @@
         {.end}
     </td>
     <td class="table_data course_name">
-      <a href="#" class="launch">{title|truncate 30}</a>
+      <a href="#exampleModalCenter" class="launch">{title}</a>
     </td>
     <td class="table_data tags">{tags.1}</td>
     <td class="table_data cells">
@@ -376,6 +375,7 @@
     {.end}
     </td>
   </tr>
+  {.end}
 {.end}
   </tbody>
 </table>
