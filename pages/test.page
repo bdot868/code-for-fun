@@ -385,7 +385,7 @@
 
 </squarespace:query>
 
-<squarespace:query collection="summer-2018" limit="10" category="fremont" tags="10-15">
+<squarespace:query collection="summer-2018" limit="20" category="fremont" tag="10-15">
 
   <ol>
     {.repeated section items}
