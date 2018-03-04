@@ -8,10 +8,10 @@
 
 <ol>
   {.repeated section items}
-    <li><a href="{fullUrl}">{title}</a></li>
+    <!-- <li><a href="{fullUrl}">{title}</a></li> -->
     {.repeated section tags}
-    {.if @ = '5-10'}
-      <p>{@}</p>
+    {.equal:@:'5-10'}
+      <p><li><a href="{fullUrl}">{title}</a></li></p>
       {.end}
     {.end}
   {.end}
