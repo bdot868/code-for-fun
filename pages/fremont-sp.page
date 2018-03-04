@@ -664,7 +664,14 @@ $(document).ready(function(){
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
-      $('#modal-info').html('<div><object type="text/html" data="+'url'+" width="100%" height="100%" style="overflow:auto;border:5px ridge blue"></object></div>')
+
+      var obj = document.createElement('object');
+      obj.data = url;
+      obj.type = 'text/html';
+      obj.height = '400px';
+      obj.width = '300px';
+      obj.style = "overflow:auto;border:5px ridge blue"
+      $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
 
   });
