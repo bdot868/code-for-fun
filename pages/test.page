@@ -6,17 +6,6 @@
 <squarespace:query collection="summer-2018" limit="10" category="fremont">
 
 
-<!-- <ol>
-  {.repeated section items}
-    <li><a href="{fullUrl}">{title}</a></li>
-    {.repeated section tags}
-    {.equal?:tags:"5-10"}
-      {@}
-      {.end}
-    {.end}
-  {.end}
-</ol> -->
-
 <div class="heading-div">
   <h2 id="pageTitle">Fremont City Rec Center</h2>
 </div>
@@ -43,8 +32,9 @@
     </div>
   </div>
 
+</squarespace:query>
 
-
+<squarespace:query collection="summer-2018" limit="20" category="fremont" tag="5-10">
 <!-- Table view of camps for desktop  -->
   <table class="table table-bordered course_table">
   <thead>
@@ -72,7 +62,6 @@
         Code For Fun: Ages 5 - 10
       </td>
     {.repeated section items} <!-- looping through camps -->
-    {.equal?:tags.0:"5-10"}
     <tr>
       <td id="all-info" style="display: none;">
         <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
@@ -210,11 +199,14 @@
          {.end}
       {.end}
       </td>
-      {.end}
     </tr>
   {.end}
 
+  </squarespace:query>
+
+
   <!-- 10-15 Year Olds table -->
+  <squarespace:query collection="summer-2018" limit="20" category="fremont" tag="10-15">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
@@ -239,7 +231,7 @@
   </td>
 
   {.repeated section items} <!-- looping through camps -->
-  {.equal?:tags.0:"10-15"}
+
   <tr>
     <td id="all-info" style="display: none;">
       <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
@@ -378,25 +370,13 @@
     {.end}
     </td>
   </tr>
-  {.end}
 {.end}
   </tbody>
 </table>
 
 </squarespace:query>
 
-<squarespace:query collection="summer-2018" limit="20" category="fremont" tag="10-15">
 
-  <ol>
-    {.repeated section items}
-      <li><a href="{fullUrl}">{title}</a></li>
-      {.repeated section tags}
-      <p>{@}</p>
-      {.end}
-    {.end}
-  </ol>
-
-</squarespace:query>
 
 <style media="screen">
 
