@@ -235,7 +235,6 @@
   </td>
 
   {.repeated section items} <!-- looping through camps -->
-  {.equal?:tags.0:"10-15"}
   <tr>
     <td id="all-info" style="display: none;">
       <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
@@ -377,7 +376,6 @@
     {.end}
     </td>
   </tr>
-  {.end}
 {.end}
   </tbody>
 </table>
