@@ -10,7 +10,9 @@
   {.repeated section items}
     <li><a href="{fullUrl}">{title}</a></li>
     {.repeated section tags}
+    {.if @ = '5-10'}
       <p>{@}</p>
+      {.end}
     {.end}
   {.end}
 </ol>
