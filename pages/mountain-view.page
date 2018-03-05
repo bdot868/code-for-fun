@@ -646,13 +646,14 @@ $(document).ready(function(){
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(2).first().children().last().html()
+      var link = $(url).attr('href')
       // console.log(desc)
       console.log($(url).attr('href'))
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
       $('#modal-info').text(desc)
-      $('#enrollBtn').attr("href", url)
+      $('#enrollBtn').attr("href", link)
 
   });
 
