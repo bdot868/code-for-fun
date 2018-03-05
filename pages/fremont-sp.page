@@ -483,9 +483,9 @@ body {
   }
 
 /* feedback text */
-  .sqs-block-content {
+  /* .sqs-block-content {
     display: none;
-  }
+  } */
 
   /* The Modal (background) */
 .modal, .modal2, .modal1 {
@@ -696,15 +696,15 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var video = $row.find('#all-info').children().eq(4).first().children().html()
 
-      // console.log(imgSrc);
-      // console.log(video);
-      // var img = document.createElement("IMG");
-      //  img.src = imgSrc+'?format=300w'
-      //  if(video == undefined){
-      //    $('#modal-image').html(img);
-      //  } else {
-      //    $('#modal-image').html(video);
-      //  }
+      console.log(imgSrc);
+      console.log(video);
+      var img = document.createElement("IMG");
+       img.src = imgSrc+'?format=300w'
+       if(video == undefined){
+         $('#modal-image').html(img);
+       } else {
+         $('#modal-image').html(video);
+       }
 
   });
 
