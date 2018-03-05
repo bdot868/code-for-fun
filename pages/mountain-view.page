@@ -647,7 +647,7 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(2).first().children().last().html()
       // console.log(desc)
-      console.log(url.attr('href'))
+      console.log($(url).attr('href'))
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
