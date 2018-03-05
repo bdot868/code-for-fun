@@ -507,8 +507,16 @@ body {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    height: 100%;
+    width: 50%; /* Could be more or less, depending on screen size */
+    /* height: 100%; */
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 100%
 }
 .modal-header {
   background-color: #f7941e;
@@ -671,7 +679,7 @@ $(document).ready(function(){
       obj.id = 'checkout'
       obj.type = 'text/html';
       obj.standby = 'Product Page is loading...'
-      obj.height = '450px';
+      obj.height = '400px';
       obj.width = '100%';
       obj.style = "overflow:auto"
       $('#modal-info').html(obj)
