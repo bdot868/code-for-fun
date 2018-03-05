@@ -671,7 +671,7 @@ $(document).ready(function(){
       obj.id = 'checkout'
       obj.type = 'text/html';
       obj.standby = 'Product Page is loading...'
-      obj.height = '500px';
+      obj.height = '450px';
       obj.width = '100%';
       obj.style = "overflow:auto"
       $('#modal-info').html(obj)
