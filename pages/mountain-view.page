@@ -645,9 +645,9 @@ $(document).ready(function(){
       var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
-      var url = "https://www.regerec.com/Activities/ActivitiesDetails.asp?aid=70216"
+      var url = $row.find('#all-info').children().eq(2).first().children()
       console.log(desc)
-      console.log(imgSrc)
+      console.log(url)
       // console.log(courseName)
       // console.log(url)
       $('#course-title').text(courseName)
