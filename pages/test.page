@@ -35,7 +35,7 @@
 
 </squarespace:query>
 
-<squarespace:query collection="summer-2018" limit="20" category="fremont" tag="5-10">
+<squarespace:query collection="summer-2018" limit="30" category="fremont" tag="5-10">
 <!-- Table view of camps for desktop  -->
   <table class="table table-bordered course_table">
   <thead>
@@ -78,7 +78,7 @@
       <td class="table_data course_name">
         <a href="#exampleModalCenter" class="launch">{title|truncate 20}</a>
       </td>
-      <td class="table_data tags">{tags.1}</td>
+      <td class="table_data tags">{tags.0}</td>
       <td class="table_data cells">
         {.repeated section variants}
           {.equal?:attributes.Date:"June 11-15"}
@@ -207,7 +207,7 @@
 
 
   <!-- 10-15 Year Olds table -->
-  <squarespace:query collection="summer-2018" limit="20" category="fremont" tag="10-15">
+  <squarespace:query collection="summer-2018" limit="30" category="fremont" tag="10-15">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
@@ -248,7 +248,7 @@
     <td class="table_data course_name">
       <a href="#exampleModalCenter" class="launch">{title|truncate 20}</a>
     </td>
-    <td class="table_data tags">{tags.1}</td>
+    <td class="table_data tags">{tags.0}</td>
     <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 11-15"}
@@ -663,12 +663,15 @@ $(document).ready(function(){
       var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
+      var video = $row.find('#all-info').children().eq(4).first().children().html()
 
-      console.log(imgSrc);
-      console.log($row);
       var img = document.createElement("IMG");
        img.src = imgSrc+'?format=300w'
-       $('#modal-image').html(img);
+       if(video == undefined){
+         $('#modal-image').html(img);
+       } else {
+         $('#modal-image').html(video);
+       }
 
   });
 
