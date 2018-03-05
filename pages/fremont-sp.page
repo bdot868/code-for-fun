@@ -668,6 +668,7 @@ $(document).ready(function(){
 
       var obj = document.createElement('object');
       obj.data = url;
+      obj.id = 'checkout'
       obj.type = 'text/html';
       obj.standby = 'Product Page is loading...'
       obj.height = '500px';
