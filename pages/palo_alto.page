@@ -575,7 +575,7 @@ for(var i = 0; i < $cells.length; i++){
       <p id="modal-info"></p>
     </div>
     <div class="modal-footer">
-      <a href="" id="enrollBtn" class="btn btn-success" target="_blank">Enroll Now</a>
+      <a href="#" id="enrollBtn" class="btn btn-success" target="_blank">Enroll Now</a>
     </div>
   </div>
 </div>
