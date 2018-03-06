@@ -420,7 +420,7 @@ body {
 
   table tbody {
     overflow: auto;
-    height: 200px
+    height: 400px;
   }
   .course_table .head {
     background-color: #f7941e;
@@ -456,7 +456,8 @@ body {
 
   .table>tbody>tr>td {
   padding: 4px;
-  line-height: 1.42857143
+  line-height: 1.42857143;
+  width: 66px
   }
 
   th {
