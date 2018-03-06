@@ -719,8 +719,8 @@ $(document).ready(function(){
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
-
-      console.log(desc);
+      var dbox = $row.find('#all-info').children().eq(2).first().children()
+      console.log(dbox);
       $('#course-title2').text(courseName)
       $('#modal-info2').text(desc)
 
@@ -730,12 +730,13 @@ $(document).ready(function(){
   span.onclick = function() {
     modal.style.display = "none";
   }
-  span1.onclick = function() {
-    modal1.style.display = "none";
-  }
   span2.onclick = function() {
     modal2.style.display = "none";
   }
+  span1.onclick = function() {
+    modal1.style.display = "none";
+  }
+
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
