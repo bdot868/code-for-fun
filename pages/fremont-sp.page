@@ -724,7 +724,7 @@ $(document).ready(function(){
       console.log(desc);
       $.each(dbox, function() {
         console.log($(this).html());
-          $('#modal-info2').append($(this).html());
+          $('#modal-info2').html($(this));
           $('#modal-info2').html('<br>')
       })
       $('#course-title2').text(courseName)
