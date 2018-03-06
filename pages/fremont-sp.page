@@ -721,11 +721,11 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var dbox = $row.find('#all-info').children().eq(2).first().children()
       console.log(dbox);
-      console.log(desc);
+      // console.log(desc);
       $.each(dbox, function() {
         console.log($(this).html());
-          $('#modal-info2').html($(this));
-          $('#modal-info2').html('<br>')
+          $('#modal-info2').append($(this));
+          $('#modal-info2').append('<br>')
       })
       $('#course-title2').text(courseName)
       // $('#modal-info2').text(desc)
