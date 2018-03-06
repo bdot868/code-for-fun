@@ -713,7 +713,8 @@ $(document).ready(function(){
   });
 
   //Course Name Modal
-  $btns2.click(function(){
+  $btns2.click(function(evt){
+    evt.preventDefault()
       modal2.style.display = "block";
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
