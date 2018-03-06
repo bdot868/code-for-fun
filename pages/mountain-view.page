@@ -413,6 +413,14 @@ body {
   table {
     max-width: 100%;
   }
+
+  table tbody, table thead {
+    display: block;
+  }
+
+  table tbody {
+    overflow: auto;
+  }
   .course_table .head {
     background-color: #f7941e;
     color: #fff;
