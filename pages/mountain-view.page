@@ -420,6 +420,7 @@ body {
 
   table tbody {
     overflow: auto;
+    height: 200px
   }
   .course_table .head {
     background-color: #f7941e;
