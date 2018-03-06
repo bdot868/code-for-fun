@@ -457,7 +457,34 @@ body {
   .table>tbody>tr>td {
   padding: 4px;
   line-height: 1.42857143;
-  width: 66px
+  }
+
+  .table thead th .date {
+    width: 83px
+  }
+  .table>tbody>tr>td>.cells {
+    width: 83px
+  }
+
+  .table>tbody>tr>td>.image {
+    width: 109px;
+  }
+  .table>thead>tr>th>.course_video_head {
+    width: 109px;
+  }
+
+  .table>thead>tr>th>.course_name_head {
+    width: 103px;
+  }
+  .table>tbody>tr>td>.course_name {
+    width: 103px;
+  }
+
+  .table>thead>tr>th>.age_head {
+    width: 75px;
+  }
+  .table>tbody>tr>td>.tags {
+    width: 75px;
   }
 
   th {
