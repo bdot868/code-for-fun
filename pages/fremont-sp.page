@@ -618,7 +618,7 @@ for(var i = 0; i < $cells.length; i++){
     </div>
     <div class="modal-body">
       <h4 id="course-title2"></h4>
-      <p id="modal-info2"></p>
+      <div id="modal-info2"></div>
     </div>
   </div>
 </div>
