@@ -644,6 +644,7 @@ $(document).ready(function(){
   // Get the modal
   var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
+  var content = document.getElementById('modal-info2');
   var modal1 = document.getElementById('videoModal');
 
   // Get the button that opens the modal
@@ -739,6 +740,7 @@ $(document).ready(function(){
   }
   span2.onclick = function() {
     modal2.style.display = "none";
+    content.innerHTML = ''
   }
   span1.onclick = function() {
     modal1.style.display = "none";
@@ -751,6 +753,7 @@ $(document).ready(function(){
         modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
+        content.innerHTML = ''
     }
   }
 });
