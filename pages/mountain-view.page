@@ -41,7 +41,7 @@
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2">Course Promo</th>
+      <th class="course_video_head" rowspan="2"></th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -60,7 +60,7 @@
   </thead>
     <tbody> <!-- Table body -->
       <td colspan="14" class="course_divider" style=" ">
-        Code For Fun: Ages 5 - 10
+        Camps for Ages 5 - 10
       </td>
     {.repeated section items} <!-- looping through camps -->
     <tr>
@@ -211,7 +211,7 @@
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2">Course Promo</th>
+      <th class="course_video_head" rowspan="2"></th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -228,7 +228,7 @@
     </tr>
   </thead>
   <td colspan="14" class="course_divider">
-    Code For Fun: Ages 10 - 15
+    Camps for Ages 10 - 15
   </td>
 
   {.repeated section items} <!-- looping through camps -->
@@ -420,7 +420,7 @@ body {
 
   table tbody {
     overflow: auto;
-    height: 400px;
+    height: 350px;
   }
   .course_table .head {
     background-color: #f7941e;
