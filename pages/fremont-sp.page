@@ -718,9 +718,10 @@ $(document).ready(function(){
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
-      var desc = $row.find('#all-info').children().eq(2).first().children().text()
+      var desc = $row.find('#all-info').children().eq(2).first().children().html()
       var dbox = $row.find('#all-info').children().eq(2).first().children()
       console.log(dbox);
+      console.log(desc);
       $('#course-title2').text(courseName)
       $('#modal-info2').text(desc)
 
