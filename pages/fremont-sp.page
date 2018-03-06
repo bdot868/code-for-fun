@@ -723,7 +723,7 @@ $(document).ready(function(){
       console.log(dbox);
       console.log(desc);
       $.each(dbox, function(value) {
-        console.log(value);
+        console.log(i, value);
           $('#modal-info2').append(value);
           $('#modal-info2').html('<br>')
       })
