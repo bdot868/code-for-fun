@@ -722,9 +722,9 @@ $(document).ready(function(){
       var dbox = $row.find('#all-info').children().eq(2).first().children()
       console.log(dbox);
       console.log(desc);
-      $.each(dbox, function(item) {
-        console.log(item);
-          $('#modal-info2').append(item);
+      $.each(dbox, function() {
+        console.log($(this));
+          $('#modal-info2').append($(this));
           $('#modal-info2').html('<br>')
       })
       $('#course-title2').text(courseName)
