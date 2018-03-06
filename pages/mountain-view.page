@@ -459,31 +459,31 @@ body {
   line-height: 1.42857143;
   }
 
-  .table thead th .date {
+  .table thead .head th .date {
     width: 83px
   }
-  .table>tbody>tr>td>.cells {
+  .table td .cells {
     width: 83px
   }
 
-  .table>tbody>tr>td>.image {
+  .table td .image {
     width: 109px;
   }
-  .table>thead>tr>th>.course_video_head {
+  .table thead .head th .course_video_head {
     width: 109px;
   }
 
-  .table>thead>tr>th>.course_name_head {
+  .table thead .head th .course_name_head {
     width: 103px;
   }
-  .table>tbody>tr>td>.course_name {
+  .table td .course_name {
     width: 103px;
   }
 
-  .table>thead>tr>th>.age_head {
+  .table thead .head th .age_head {
     width: 75px;
   }
-  .table>tbody>tr>td>.tags {
+  .table td .tags {
     width: 75px;
   }
 
