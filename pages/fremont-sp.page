@@ -665,7 +665,7 @@ $(document).ready(function(){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
-         var block = $('.video-block').children('iframe').attr('src', src);
+         var block = $('.#modal-image').children('iframe').attr('src', src);
          console.log(block)
        }
 
