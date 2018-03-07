@@ -1,24 +1,52 @@
-<html>
-<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="myModal" class="modal">
 
-	<script>
-		$(function(){
-			$('#exweb').html('<object id="webloader" data="http://blog.theonlytutorials.com"/>');
-		});
-	</script>
-	<style>
-		#exweb, #webloader{
-			width: 1200px;
-			height: 1000px;
-			margin: 0 auto;
-		}
-	</style>
-</head>
-<body>
-	<h3 align="center">Demo of how to load an external website with a simple jQuery function! - Tutorial by <a href="">tutorialsmade.com</a></h3>
+  <!-- Modal-content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="course-title"></h3>
+      <span id="closeBtn" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div id="variants"></div>
+      <div id="quantity"></div>
+    </div>
+    <div id="cartBtn" class="modal-footer">
 
-	<!-- load a website into this div -->
-	<div id="exweb"></div>
-</body>
-</html>
+    </div>
+  </div>
+</div>
+
+$btns.click(function(){
+		modal.style.display = "block";
+		var $row = $(this).parent().parent()
+		var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
+		var courseName = $row.find('#all-info').children().eq(1).text()
+		var desc = $row.find('#all-info').children().eq(2).first().children().text()
+		var url = $row.find('#all-info').children().eq(3).text()
+		var video = $row.find('#all-info').children().eq(4).first().children().html()
+		// console.log(desc)
+		console.log(video)
+		// console.log(courseName)
+		// console.log(url)
+		$('#course-title').text(courseName)
+
+		// var obj = document.createElement('object');
+		// obj.data = url;
+		// obj.id = 'checkout'
+		// obj.type = 'text/html';
+		// obj.standby = 'Product Page is loading...'
+		// obj.height = '400px';
+		// obj.width = '100%';
+		// obj.style = "overflow:auto"
+		// $('#modal-info').html(obj)
+		// $('#enrollBtn').attr("href", url)
+		$("#variants").load(url + ' '+ '.product-variants')
+			$("#quantity").load(url + ' '+ '.product-quantity-input')
+		$("#cartBtn").load(url + ' '+ '.sqs-add-to-cart-button')
+ // if (status == "error") {
+ //    var msg = "Sorry but there was an error: ";
+ //    alert(msg + xhr.status + " " + xhr.statusText);
+ // }
+// });
+
+});

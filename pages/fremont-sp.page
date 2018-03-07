@@ -94,7 +94,7 @@
           {.equal?:attributes.Date:"June 11-15"}
             {.equal?:attributes.Location:"Fremont-42"}
               {.equal?:attributes.After Care:"No"}
-                <div class="enroll">Enroll Now</div>
+                <div class="enroll"><a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a></div>
               {.end}
             {.end}
            {.end}
@@ -105,7 +105,7 @@
         {.equal?:attributes.Date:"June 18-22"}
           {.equal?:attributes.Location:"Fremont-42"}
             {.equal?:attributes.After Care:"No"}
-              <div class="enroll">Enroll Now</div>
+              <div class="enroll"><a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a></div>
             {.end}
           {.end}
          {.end}
@@ -576,14 +576,9 @@ console.log(boy)
 var $cells = $('.cells')
 
 for(var i = 0; i < $cells.length; i++){
-
   if($cells[i].innerText === ""){
     $($cells[i]).html('<p class="na">N/A</p>')
-
-  console.log('yo');
-
-}
-
+  }
 }
 
 
@@ -592,9 +587,9 @@ for(var i = 0; i < $cells.length; i++){
 
 
 <!-- Enroll Modal -->
-<div id="myModal" class="modal">
+<!-- <div id="myModal" class="modal">
 
-  <!-- Modal-content -->
+-  Modal-content -
   <div class="modal-content">
     <div class="modal-header">
       <h3 id="course-title"></h3>
@@ -608,7 +603,7 @@ for(var i = 0; i < $cells.length; i++){
 
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Course Details Modal -->
 <div id="titleModal" class="modal2">
@@ -644,7 +639,7 @@ for(var i = 0; i < $cells.length; i++){
 
 $(document).ready(function(){
   // Get the modal
-  var modal = document.getElementById('myModal');
+  // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
   var content = document.getElementById('modal-info2');
   var modal1 = document.getElementById('videoModal');
@@ -655,50 +650,24 @@ $(document).ready(function(){
   var $btns1 = $('.imgModal');
 
   // Get the <span> element that closes the modal
-  var span = document.getElementById("closeBtn");
+  // var span = document.getElementById("closeBtn");
   var span2 = document.getElementById("closeBtn2");
   var span1 = document.getElementById("closeBtn1");
 
-  // When the user clicks on the button, open the modal
-  /* window.onload = function(){
-    btn.onclick = function() {
-      modal.style.display = "block";
 
-    }
-  } */
   //Enroll Button Modal
   $btns.click(function(){
-      modal.style.display = "block";
-      var $row = $(this).parent().parent()
-      var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
-      var courseName = $row.find('#all-info').children().eq(1).text()
-      var desc = $row.find('#all-info').children().eq(2).first().children().text()
+      // modal.style.display = "block";
+      // var $row = $(this).parent().parent()
+      // var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
+      // var courseName = $row.find('#all-info').children().eq(1).text()
+      // var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(3).text()
-      var video = $row.find('#all-info').children().eq(4).first().children().html()
-      // console.log(desc)
-      console.log(video)
-      // console.log(courseName)
-      // console.log(url)
-      $('#course-title').text(courseName)
 
-      // var obj = document.createElement('object');
-      // obj.data = url;
-      // obj.id = 'checkout'
-      // obj.type = 'text/html';
-      // obj.standby = 'Product Page is loading...'
-      // obj.height = '400px';
-      // obj.width = '100%';
-      // obj.style = "overflow:auto"
-      // $('#modal-info').html(obj)
-      // $('#enrollBtn').attr("href", url)
-      $("#variants").load(url + ' '+ '.product-variants')
-        $("#quantity").load(url + ' '+ '.product-quantity-input')
-      $("#cartBtn").load(url + ' '+ '.sqs-add-to-cart-button')
-   // if (status == "error") {
-   //    var msg = "Sorry but there was an error: ";
-   //    alert(msg + xhr.status + " " + xhr.statusText);
-   // }
- // });
+      // var video = $row.find('#all-info').children().eq(4).first().children().html()
+      //
+      // $('#course-title').text(courseName)
+
 
   });
 
@@ -759,8 +728,8 @@ $(document).ready(function(){
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == modal || event.target == modal1 || event.target == modal2) {
-        modal.style.display = "none";
+    if ( event.target == modal1 || event.target == modal2) {
+        // modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
     }
