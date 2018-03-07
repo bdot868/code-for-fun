@@ -48,7 +48,7 @@
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2"></th>
+      <th class="course_video_head" rowspan="2">Course Video</th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -220,7 +220,7 @@
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2"></th>
+      <th class="course_video_head" rowspan="2">Course Video</th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -422,6 +422,7 @@ body {
     max-width: 100%;
   }
 
+
   table tbody, table thead {
     display: block;
   }
@@ -429,6 +430,9 @@ body {
   table tbody {
     overflow: auto;
     height: 350px;
+  }
+  .course_video_head {
+    background-color: #f7941e
   }
 
   .course_table .head {
