@@ -568,23 +568,6 @@ body {
 }
 </style>
 
-<script type="text/javascript">
-var boy = 'brandon'
-console.log(boy)
-
-
-var $cells = $('.cells')
-
-for(var i = 0; i < $cells.length; i++){
-  if($cells[i].innerText === ""){
-    $($cells[i]).html('<p class="na">N/A</p>')
-  }
-}
-
-
-</script>
-
-
 
 <!-- Enroll Modal -->
 <!-- <div id="myModal" class="modal">
@@ -659,17 +642,8 @@ $(document).ready(function(){
   $btns.click(function(){
       // modal.style.display = "block";
       var $row = $(this).parent().parent()
-      // var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
-      // var courseName = $row.find('#all-info').children().eq(1).text()
-      // var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(3).text()
       window.open(url, '_blank');
-      // $(this).find("a").attr("href"); return false;
-      // var video = $row.find('#all-info').children().eq(4).first().children().html()
-      //
-      // $('#course-title').text(courseName)
-
-
   });
 
 //Course Image Modal
@@ -702,16 +676,14 @@ $(document).ready(function(){
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var dbox = $row.find('#all-info').children().eq(2).first().children()
-      console.log(dbox);
+
       $('#modal-info2').html('')
-      // console.log(desc);
+
       $.each(dbox, function() {
-        console.log($(this).html());
           $('#modal-info2').append($(this));
           $('#modal-info2').append('<br>')
       })
       $('#course-title2').text(courseName)
-      // $('#modal-info2').text(desc)
 
   });
 
@@ -737,9 +709,16 @@ $(document).ready(function(){
   }
 });
 
+var boy = 'brandon'
+console.log(boy)
 
 
+var $cells = $('.cells')
 
-
+for(var i = 0; i < $cells.length; i++){
+  if($cells[i].innerText === ""){
+    $($cells[i]).html('<p class="na">N/A</p>')
+  }
+}
 
 </script>
