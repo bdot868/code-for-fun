@@ -693,10 +693,10 @@ $(document).ready(function(){
   // }
   span2.click(function() {
     modal2.style.display = "none";
-  }
+  })
   span1.click(function() {
     modal1.style.display = "none";
-  }
+  })
 
 
   // When the user clicks anywhere outside of the modal, close it
