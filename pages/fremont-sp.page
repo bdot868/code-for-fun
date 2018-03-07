@@ -631,6 +631,7 @@ $(document).ready(function(){
   var $btns = $('.enroll');
   var $btns2 = $('.launch');
   var $btns1 = $('.imgModal');
+  var src = $('.video-block').children('iframe').attr('src');
 
   // Get the <span> element that closes the modal
   // var span = document.getElementById("closeBtn");
@@ -664,7 +665,7 @@ $(document).ready(function(){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
-         $('#modal-image iframe').addClass("activeVideo")
+         $('.video-block').children('iframe').attr('src', src);
        }
 
   });
@@ -714,7 +715,7 @@ $(document).ready(function(){
 });
 
 function stop(){
-  $('.activeVideo').attr('src', $('.activeVideo').attr('src'));
+  $('.video-block').children('iframe').attr('src', '');
 }
 
 var boy = 'brandon'
