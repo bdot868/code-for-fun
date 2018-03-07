@@ -414,9 +414,9 @@ body {
     max-width: 100%;
   }
 
-  table tbody, table thead {
+  /* table tbody, table thead {
     display: block;
-  }
+  } */
   th {
     white-space: nowrap;
   }
