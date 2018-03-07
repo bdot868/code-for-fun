@@ -427,9 +427,6 @@ body {
     height: 450px;
   }
 
-  thead {
-    position: fixed;
-  }
 
   .course_table .head {
     background-color: #F58220;
