@@ -696,7 +696,8 @@ $(document).ready(function(){
   }
   span1.onclick = function() {
     modal1.style.display = "none";
-    stop()
+    var iframe = document.querySelector("iframe");
+    iframe.src = iframe.src;
   }
 
 
@@ -706,15 +707,16 @@ $(document).ready(function(){
         // modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
-        stop()
+        var iframe = document.querySelector("iframe");
+        iframe.src = iframe.src;
     }
   }
 });
 
-function stop(){
-       var iframe = document.querySelector("iframe");
-       iframe.src = iframe.src;
-}
+// function stop(){
+//        var iframe = document.querySelector("iframe");
+//        iframe.src = iframe.src;
+// }
 
 var boy = 'brandon'
 console.log(boy)
