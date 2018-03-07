@@ -665,7 +665,8 @@ $(document).ready(function(){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
-         $('.video-block').children('iframe').attr('src', src);
+         var block = $('.video-block').children('iframe').attr('src', src);
+         console.log(block)
        }
 
   });
