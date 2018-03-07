@@ -429,7 +429,6 @@ body {
 
   thead {
     position: fixed;
-    top: 0
   }
 
   .course_table .head {
