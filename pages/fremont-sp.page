@@ -601,11 +601,12 @@ for(var i = 0; i < $cells.length; i++){
       <span id="closeBtn" class="close">&times;</span>
     </div>
     <div class="modal-body">
-      <div id="modal-info"></div>
+      <div id="variants"></div>
+      <div id="quantity"></div>
     </div>
-    <!-- <div class="modal-footer">
-      <a href="" id="enrollBtn" class="btn btn-success">Enroll Now</a>
-    </div> -->
+    <div id="cartBtn" class="modal-footer">
+
+    </div>
   </div>
 </div>
 
@@ -690,12 +691,14 @@ $(document).ready(function(){
       // obj.style = "overflow:auto"
       // $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
-      $("#modal-info").load(url + ' '+ '.ProductItem-details', function(response, status, xhr) {
-   if (status == "error") {
-      var msg = "Sorry but there was an error: ";
-      alert(msg + xhr.status + " " + xhr.statusText);
-   }
- });
+      $("#variants").load(url + ' '+ '.product-variants')
+        $("#quantity").load(url + ' '+ '.product-quantity-input')
+      $("#cartBtn").load(url + ' '+ '.sqs-add-to-cart-button-wrapper')
+   // if (status == "error") {
+   //    var msg = "Sorry but there was an error: ";
+   //    alert(msg + xhr.status + " " + xhr.statusText);
+   // }
+ // });
 
   });
 
