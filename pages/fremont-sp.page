@@ -648,7 +648,7 @@ $(document).ready(function(){
 
 //Course Image Modal
   $btns1.click(function(){
-      modal1.style.display = "block";
+      modal1.css({"display":"block"});
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
@@ -670,7 +670,7 @@ $(document).ready(function(){
   //Course Name Modal
   $btns2.click(function(evt){
     evt.preventDefault()
-      modal2.style.display = "block";
+      modal2.css({"display":"block"});
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
@@ -691,10 +691,10 @@ $(document).ready(function(){
   // span.onclick = function() {
   //   modal.style.display = "none";
   // }
-  span2.onclick = function() {
+  span2.click(function() {
     modal2.style.display = "none";
   }
-  span1.onclick = function() {
+  span1.click(function() {
     modal1.style.display = "none";
   }
 
