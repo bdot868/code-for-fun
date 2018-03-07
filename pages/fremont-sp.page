@@ -86,7 +86,7 @@
           {.end}
       </td>
       <td class="table_data course_name">
-        <a href="#" class="launch">{title|truncate 25}</a>
+        <a href="#" class="launch">{title|truncate 30}</a>
       </td>
       <td class="table_data tags">{tags.0}</td>
       <td class="table_data cells">
@@ -257,7 +257,7 @@
         {.end}
     </td>
     <td class="table_data course_name">
-      <a href="#" class="launch">{title|truncate 25}</a>
+      <a href="#" class="launch">{title|truncate 30}</a>
     </td>
     <td class="table_data tags">{tags.0}</td>
     <td class="table_data cells">
