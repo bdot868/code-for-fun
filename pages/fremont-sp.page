@@ -696,8 +696,7 @@ $(document).ready(function(){
   }
   span1.onclick = function() {
     modal1.style.display = "none";
-    var iframe = document.querySelector("iframe");
-    iframe.src = iframe.src;
+    stop()
   }
 
 
@@ -707,16 +706,18 @@ $(document).ready(function(){
         // modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
-        var iframe = document.querySelector("iframe");
-        iframe.src = iframe.src;
+        stop()
     }
   }
 });
 
-// function stop(){
-//        var iframe = document.querySelector("iframe");
-//        iframe.src = iframe.src;
-// }
+function stop(){
+  $('iframe').contents().find('video').each(function ()
+   {
+       this.currentTime = 0;
+       this.pause();
+   });
+}
 
 var boy = 'brandon'
 console.log(boy)
