@@ -476,6 +476,9 @@ body {
     width: 70px;
   }
 
+  .course_video_head {
+    width: 100px;
+  }
   .imgModal {
     cursor: pointer;
   }
