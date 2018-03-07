@@ -432,7 +432,7 @@ body {
     height: 350px;
   }
   .course_video_head {
-    background-color: #f7941e
+    color: #f7941e
   }
 
   .course_table .head {
