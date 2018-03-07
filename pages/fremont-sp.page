@@ -48,7 +48,7 @@
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2">Course Video</th>
+      <th class="course_video_head" rowspan="2"></th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -220,7 +220,7 @@
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2">Course Video</th>
+      <th class="course_video_head" rowspan="2"></th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -422,17 +422,9 @@ body {
     max-width: 100%;
   }
 
-
-  table tbody, table thead {
-    display: block;
-  }
-
-  table tbody {
-    overflow: auto;
-    height: 350px;
-  }
-  .course_video_head {
-    color: #f7941e
+  .table {
+    overflow-y: auto;
+    height: 500px
   }
 
   .course_table .head {
@@ -469,26 +461,17 @@ body {
 
   .table>tbody>tr>td {
   padding: 4px;
-  line-height: 1.42857143;
-  width: 100px
+  line-height: 1.42857143
   }
 
   th {
+    position: absolute;
     width: 200px;
   }
-  /* .head .age {
+  .head .age {
     width: 70px;
-  } */
-  th .course_name_head {
-    width: 10%
   }
 
-  th .date,  th .age_head{
-      width: 6%;
-  }
-  th .course_video_head {
-    width: 9%;
-  }
   .imgModal {
     cursor: pointer;
   }
