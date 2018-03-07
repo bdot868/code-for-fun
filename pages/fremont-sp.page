@@ -665,8 +665,7 @@ $(document).ready(function(){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
-         $('.sqs-block-video iframe').attr('src', src);
-         console.log(src)
+
        }
 
   });
@@ -700,7 +699,7 @@ $(document).ready(function(){
   }
   span1.onclick = function() {
     modal1.style.display = "none";
-    $('.sqs-block-video').children('iframe').attr('src', '');
+    modal1.innerHTML = ''
   }
 
 
@@ -710,7 +709,7 @@ $(document).ready(function(){
         // modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
-        $('.sqs-block-video').children('iframe').attr('src', '');
+        modal1.innerHTML = ''
     }
   }
 });
