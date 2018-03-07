@@ -94,7 +94,7 @@
           {.equal?:attributes.Date:"June 11-15"}
             {.equal?:attributes.Location:"Fremont-42"}
               {.equal?:attributes.After Care:"No"}
-                <div class="enroll"><a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a></div>
+                <div class="enroll">Enroll Now</div>
               {.end}
             {.end}
            {.end}
@@ -105,7 +105,7 @@
         {.equal?:attributes.Date:"June 18-22"}
           {.equal?:attributes.Location:"Fremont-42"}
             {.equal?:attributes.After Care:"No"}
-              <div class="enroll"><a href="{fullUrl}">Enroll</a></div>
+              <div class="enroll">Enroll Now</div>
             {.end}
           {.end}
          {.end}
@@ -663,7 +663,8 @@ $(document).ready(function(){
       // var courseName = $row.find('#all-info').children().eq(1).text()
       // var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(3).text()
-
+      window.location = url
+      // $(this).find("a").attr("href"); return false;
       // var video = $row.find('#all-info').children().eq(4).first().children().html()
       //
       // $('#course-title').text(courseName)
