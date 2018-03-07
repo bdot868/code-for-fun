@@ -421,6 +421,12 @@ body {
   table {
     max-width: 100%;
   }
+
+  table tbody {
+    overflow: auto;
+    height: 350px;
+  }
+
   .course_table .head {
     background-color: #f7941e;
     color: #fff;
