@@ -655,6 +655,8 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var video = $row.find('#all-info').children().eq(4).first().children().html()
 
+      $('iframe').addClass("activeVideo")
+
       console.log(imgSrc);
       console.log(video);
       var img = document.createElement("IMG");
@@ -712,11 +714,7 @@ $(document).ready(function(){
 });
 
 function stop(){
-  $('iframe').contents().find('video').each(function ()
-   {
-       this.currentTime = 0;
-       this.pause();
-   });
+  $('.activeVideo').attr('src', $('.activeVideo').attr('src'));
 }
 
 var boy = 'brandon'
