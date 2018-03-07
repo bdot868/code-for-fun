@@ -424,11 +424,11 @@ body {
 
   .table {
     overflow-y: auto;
-    height: 500px
+    height: 450px;
   }
 
   .course_table .head {
-    background-color: #f7941e;
+    background-color: #F58220;
     color: #fff;
     padding: 12px !important;
   }
@@ -531,7 +531,7 @@ body {
   height: 100%
 }
 .modal-header {
-  background-color: #f7941e;
+  background-color: #F58220;
   color: #fff
 }
 
