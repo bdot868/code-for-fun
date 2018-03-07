@@ -427,6 +427,11 @@ body {
     height: 450px;
   }
 
+  .course_divider {
+    position: fixed;
+    top: 0
+  }
+
   .course_table .head {
     background-color: #F58220;
     color: #fff;
