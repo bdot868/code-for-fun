@@ -690,7 +690,7 @@ $(document).ready(function(){
       // obj.style = "overflow:auto"
       // $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
-      $("#modal-info").load(url, function(response, status, xhr) {
+      $("#modal-info").load(url + ' '+ '.ProductItem-details', function(response, status, xhr) {
    if (status == "error") {
       var msg = "Sorry but there was an error: ";
       alert(msg + xhr.status + " " + xhr.statusText);
