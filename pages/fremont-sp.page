@@ -476,9 +476,9 @@ body {
   th {
     width: 200px;
   }
-  .head .age {
+  /* .head .age {
     width: 70px;
-  }
+  } */
   th .course_name_head {
     width: 10%
   }
@@ -486,8 +486,8 @@ body {
   th .date,  th .age_head{
       width: 6%;
   }
-  .course_video_head {
-    width: 100px;
+  th .course_video_head {
+    width: 9%;
   }
   .imgModal {
     cursor: pointer;
