@@ -422,6 +422,10 @@ body {
     max-width: 100%;
   }
 
+  table tbody, table thead {
+    display: block;
+  }
+
   table tbody {
     overflow: auto;
     height: 350px;
