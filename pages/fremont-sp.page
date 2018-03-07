@@ -678,16 +678,22 @@ $(document).ready(function(){
       // console.log(url)
       $('#course-title').text(courseName)
 
-      var obj = document.createElement('object');
-      obj.data = url;
-      obj.id = 'checkout'
-      obj.type = 'text/html';
-      obj.standby = 'Product Page is loading...'
-      obj.height = '400px';
-      obj.width = '100%';
-      obj.style = "overflow:auto"
-      $('#modal-info').html(obj)
+      // var obj = document.createElement('object');
+      // obj.data = url;
+      // obj.id = 'checkout'
+      // obj.type = 'text/html';
+      // obj.standby = 'Product Page is loading...'
+      // obj.height = '400px';
+      // obj.width = '100%';
+      // obj.style = "overflow:auto"
+      // $('#modal-info').html(obj)
       // $('#enrollBtn').attr("href", url)
+      $("#modal-info").load(url + ' #yui_3_17_2_1_1520388326310_202', function(response, status, xhr) {
+   if (status == "error") {
+      var msg = "Sorry but there was an error: ";
+      alert(msg + xhr.status + " " + xhr.statusText);
+   }
+ });
 
   });
 
