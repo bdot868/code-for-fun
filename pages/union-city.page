@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('#exweb').html('<object id="webloader" data="http://blog.theonlytutorials.com"/>');
+		});
+	</script>
+	<style>
+		#exweb, #webloader{
+			width: 1200px;
+			height: 1000px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<h3 align="center">Demo of how to load an external website with a simple jQuery function! - Tutorial by <a href="">tutorialsmade.com</a></h3>
+
+	<!-- load a website into this div -->
+	<div id="exweb"></div>
+</body>
+</html>
