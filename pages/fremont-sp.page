@@ -73,7 +73,7 @@
     <tr>
       <td id="all-info" style="display: none;">
         <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
-        <p id="product-title">{title|truncate 25}</p>
+        <p id="product-title">{title|truncate 20}</p>
         <div id="product-body">{excerpt}</div>
         <p id="product-url">{fullUrl}</p>
         <div class="video">
@@ -244,7 +244,7 @@
   <tr>
     <td id="all-info" style="display: none;">
       <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
-      <p id="product-title">{title|truncate 25}</p>
+      <p id="product-title">{title|truncate 20}</p>
       <div id="product-body">{excerpt}</div>
       <p id="product-url">{fullUrl}</p>
       <div class="video">
