@@ -665,7 +665,7 @@ $(document).ready(function(){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
-         var src = $('#yui_3_17_2_1_1520406500831_152').attr('src', video);
+         var src = $('.sqs-block-video iframe').attr('src', video);
          console.log(src)
        }
 
