@@ -626,12 +626,13 @@ $(document).ready(function(){
   var modal2 = document.getElementById('titleModal');
   var content = document.getElementById('modal-info2');
   var modal1 = document.getElementById('videoModal');
+  var vid = document.getElementById('modal-image')
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
   var $btns2 = $('.launch');
   var $btns1 = $('.imgModal');
-  var src = $('.sqs-block-video').children('iframe').attr('src');
+
 
   // Get the <span> element that closes the modal
   // var span = document.getElementById("closeBtn");
@@ -699,7 +700,7 @@ $(document).ready(function(){
   }
   span1.onclick = function() {
     modal1.style.display = "none";
-    modal1.innerHTML = ''
+    vid.innerHTML = ''
   }
 
 
@@ -709,6 +710,7 @@ $(document).ready(function(){
         // modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
+        vid.innerHTML = ''
     }
   }
 });
