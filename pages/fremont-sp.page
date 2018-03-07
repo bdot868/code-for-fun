@@ -631,7 +631,7 @@ $(document).ready(function(){
   var $btns = $('.enroll');
   var $btns2 = $('.launch');
   var $btns1 = $('.imgModal');
-  var src = $('#yui_3_17_2_1_1520406500831_152').attr('src');
+  var src;
 
   // Get the <span> element that closes the modal
   // var span = document.getElementById("closeBtn");
@@ -665,8 +665,8 @@ $(document).ready(function(){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
-         var block = $('#yui_3_17_2_1_1520406500831_152').attr('src', src);
-         console.log(block)
+         var src = $('#yui_3_17_2_1_1520406500831_152').attr('src', video);
+         console.log(src)
        }
 
   });
@@ -700,7 +700,7 @@ $(document).ready(function(){
   }
   span1.onclick = function() {
     modal1.style.display = "none";
-    $('#yui_3_17_2_1_1520406500831_152').attr('src', '');
+    src.attr('src', '');
   }
 
 
