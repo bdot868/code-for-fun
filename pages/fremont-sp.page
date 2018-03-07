@@ -712,8 +712,7 @@ $(document).ready(function(){
 });
 
 function stop(){
-       var iframe = document.querySelector('.video-block');
-       iframe.src = iframe.src;
+      $('iframe').attr('src', $('iframe').attr('src'));
 }
 
 var boy = 'brandon'
