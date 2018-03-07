@@ -427,7 +427,7 @@ body {
     height: 450px;
   }
 
-  .course_divider {
+  thead {
     position: fixed;
     top: 0
   }
