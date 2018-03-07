@@ -623,9 +623,9 @@ body {
 $(document).ready(function(){
   // Get the modal
   // var modal = document.getElementById('myModal');
-  var modal2 = document.getElementById('titleModal');
-  var content = document.getElementById('modal-info2');
-  var modal1 = document.getElementById('videoModal');
+  var modal2 = $('#titleModal');
+  var content = $('#modal-info2');
+  var modal1 = $('#videoModal');
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
@@ -634,8 +634,8 @@ $(document).ready(function(){
 
   // Get the <span> element that closes the modal
   // var span = document.getElementById("closeBtn");
-  var span2 = document.getElementById("closeBtn2");
-  var span1 = document.getElementById("closeBtn1");
+  var span2 = $("#closeBtn2");
+  var span1 = $("#closeBtn1");
 
 
   //Enroll Button Modal
