@@ -696,6 +696,7 @@ $(document).ready(function(){
   }
   span1.onclick = function() {
     modal1.style.display = "none";
+    stop()
   }
 
 
@@ -705,9 +706,15 @@ $(document).ready(function(){
         // modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
+        stop()
     }
   }
 });
+
+function stop(){
+       var iframe = document.querySelector('.video-block');
+       iframe.src = iframe.src;
+}
 
 var boy = 'brandon'
 console.log(boy)
@@ -720,5 +727,6 @@ for(var i = 0; i < $cells.length; i++){
     $($cells[i]).html('<p class="na">N/A</p>')
   }
 }
+
 
 </script>
