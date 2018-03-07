@@ -623,9 +623,9 @@ body {
 $(document).ready(function(){
   // Get the modal
   // var modal = document.getElementById('myModal');
-  var modal2 = $('#titleModal');
-  var content = $('#modal-info2');
-  var modal1 = $('#videoModal');
+  var modal2 = document.getElementById('titleModal');
+  var content = document.getElementById('modal-info2');
+  var modal1 = document.getElementById('videoModal');
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
@@ -634,8 +634,8 @@ $(document).ready(function(){
 
   // Get the <span> element that closes the modal
   // var span = document.getElementById("closeBtn");
-  var span2 = $("#closeBtn2");
-  var span1 = $("#closeBtn1");
+  var span2 = document.getElementById("closeBtn2");
+  var span1 = document.getElementById("closeBtn1");
 
 
   //Enroll Button Modal
@@ -648,7 +648,7 @@ $(document).ready(function(){
 
 //Course Image Modal
   $btns1.click(function(){
-      modal1.css({"display":"block"});
+      modal1.style.display = "block";
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
@@ -670,7 +670,7 @@ $(document).ready(function(){
   //Course Name Modal
   $btns2.click(function(evt){
     evt.preventDefault()
-      modal2.css({"display":"block"});
+      modal2.style.display = "block";
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
@@ -691,12 +691,12 @@ $(document).ready(function(){
   // span.onclick = function() {
   //   modal.style.display = "none";
   // }
-  span2.click(function() {
+  span2.onclick = function() {
     modal2.style.display = "none";
-  })
-  span1.click(function() {
+  }
+  span1.onclick = function() {
     modal1.style.display = "none";
-  })
+  }
 
 
   // When the user clicks anywhere outside of the modal, close it
