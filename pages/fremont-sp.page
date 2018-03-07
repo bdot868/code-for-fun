@@ -693,7 +693,7 @@ $(document).ready(function(){
       // $('#enrollBtn').attr("href", url)
       $("#variants").load(url + ' '+ '.product-variants')
         $("#quantity").load(url + ' '+ '.product-quantity-input')
-      $("#cartBtn").load(url + ' '+ '.sqs-add-to-cart-button-wrapper')
+      $("#cartBtn").load(url + ' '+ '.sqs-add-to-cart-button')
    // if (status == "error") {
    //    var msg = "Sorry but there was an error: ";
    //    alert(msg + xhr.status + " " + xhr.statusText);
