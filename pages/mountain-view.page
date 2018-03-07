@@ -414,7 +414,7 @@ body {
     max-width: 100%;
   }
 
-  table tbody, table thead {
+  table tbody tr, table thead tr{
     display: block;
   }
 
