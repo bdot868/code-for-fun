@@ -631,7 +631,7 @@ $(document).ready(function(){
   var $btns = $('.enroll');
   var $btns2 = $('.launch');
   var $btns1 = $('.imgModal');
-  var src;
+  var src = $('.sqs-block-video iframe').attr('src');
 
   // Get the <span> element that closes the modal
   // var span = document.getElementById("closeBtn");
@@ -665,7 +665,7 @@ $(document).ready(function(){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
-         var src = $('.sqs-block-video iframe').attr('src', src);
+         $('.sqs-block-video iframe').attr('src', src);
          console.log(src)
        }
 
@@ -700,7 +700,7 @@ $(document).ready(function(){
   }
   span1.onclick = function() {
     modal1.style.display = "none";
-    src.attr('src', '');
+    $('.sqs-block-video iframe').attr('src', '');
   }
 
 
@@ -710,7 +710,7 @@ $(document).ready(function(){
         // modal.style.display = "none";
         modal1.style.display = "none";
         modal2.style.display = "none";
-
+        $('.sqs-block-video iframe').attr('src', '');
     }
   }
 });
