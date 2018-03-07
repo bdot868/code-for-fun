@@ -658,7 +658,7 @@ $(document).ready(function(){
   //Enroll Button Modal
   $btns.click(function(){
       // modal.style.display = "block";
-      // var $row = $(this).parent().parent()
+      var $row = $(this).parent().parent()
       // var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
       // var courseName = $row.find('#all-info').children().eq(1).text()
       // var desc = $row.find('#all-info').children().eq(2).first().children().text()
