@@ -105,7 +105,7 @@
         {.equal?:attributes.Date:"June 18-22"}
           {.equal?:attributes.Location:"Fremont-42"}
             {.equal?:attributes.After Care:"No"}
-              <div class="enroll"><a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a></div>
+              <div class="enroll"><a href="{fullUrl}">Enroll</a></div>
             {.end}
           {.end}
          {.end}
