@@ -663,7 +663,7 @@ $(document).ready(function(){
       // var courseName = $row.find('#all-info').children().eq(1).text()
       // var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var url = $row.find('#all-info').children().eq(3).text()
-      window.location = url
+      window.open(url, '_blank');
       // $(this).find("a").attr("href"); return false;
       // var video = $row.find('#all-info').children().eq(4).first().children().html()
       //
