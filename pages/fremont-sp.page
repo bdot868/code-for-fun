@@ -5,6 +5,19 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+
+<div class="location-dropdown">
+  <select name="list" id="list" accesskey="target">
+      <option value='none' selected>Select a Location</option>
+      <option value="/fremont-sp">Fremont 42</option>
+      <option value="/fremont-city">Fremont City Rec Center</option>
+      <option value="/mountain-view-1">Mountain View</option>
+    	<option> More Locations coming soon! </option>
+    <select>
+    <input class="btn" type=button value="Go" onclick="goToNewPage()" />
+</div>
+
+
 <squarespace:query collection="summer-2018" limit="30" category="fremont-42">
 
 <div class="heading-div">
@@ -394,6 +407,37 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+/* dropdown menu */
+	select {
+    color: #fff;
+    border: 1px solid #f7941e;
+    background-color: #f7941e;
+    padding: 5px;
+    font-size: 21px;
+    line-height: 50px;
+    font-weight: bold;
+    height: 60px;
+      width: 80%;
+}
+  .btn {
+    background-color: rgba(36,143,0,.6);
+    color: #fff;
+    vertical-align: top;
+    height: 60px;
+    width: 15%
+  }
+  #dropdown-header {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 0px;
+}
+    #block-yui_3_17_2_1_1520410602260_70605 .sqs-block-content {
+      display: inline;
+      text-align: center
+  }
+
+/* page */
   .heading-div {
     color: #018c26;
     display: inline-block;
@@ -734,6 +778,17 @@ for(var i = 0; i < $cells.length; i++){
     $($cells[i]).html('<p class="na">N/A</p>')
   }
 }
+
+
+
+
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
 
 
 </script>
