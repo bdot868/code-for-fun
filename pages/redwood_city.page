@@ -707,7 +707,7 @@ $(document).ready(function(){
 
   //Enroll Button Modal
   $btns.click(function(){
-      // modal.style.display = "block";
+      var $row = $(this).parent().parent()
       var url = $row.find('#all-info').children().eq(2).first().children().last().html()
       var link = $(url).attr('href')
       // console.log(desc)
