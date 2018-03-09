@@ -5,7 +5,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
+<h3 id="dropdown-header">
+  CHOOSE A DIFFERENT LOCATION!
+</h3>
 <div class="location-dropdown">
   <select name="list" id="list" accesskey="target">
       <option value='none' selected>Select a Location</option>
@@ -21,7 +23,7 @@
 <squarespace:query collection="summer-2018" limit="30" category="fremont-42">
 
 <div class="heading-div">
-  <h1 id="pageTitle">Fremont - Code for fun learning center @42 USA</h1>
+  <h2 id="pageTitle">Fremont - Code for fun learning center @42 USA</h2>
 </div>
 <!-- <div class="location">
   <p>Location: Code for fun @ 42 USA
@@ -57,6 +59,9 @@
 
 <squarespace:query collection="summer-2018" limit="30" category="fremont-42" tag="5-10">
 <!-- Table view of camps for desktop  -->
+<div class="container">
+
+
   <table class="table table-bordered course_table">
   <thead>
     <tr class="head"> <!-- Table header -->
@@ -398,6 +403,7 @@
 {.end}
   </tbody>
 </table>
+</div>
 
 </squarespace:query>
 
@@ -408,6 +414,9 @@ body {
 }
 
 /* dropdown menu */
+.location-dropdown {
+  display: -webkit-inline-box;
+}
 	select {
     color: #fff;
     border: 1px solid #f7941e;
@@ -440,12 +449,11 @@ body {
 /* page */
   .heading-div {
     color: #018c26;
-    display: inline-block;
     padding: 20px 10px 20px 10px;
-    margin-bottom: 40px
+    margin-top: 40px
   }
 
-  .heading-div h1 {
+  .heading-div h2 {
     margin: 0 auto;
   }
 
