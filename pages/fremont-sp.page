@@ -428,7 +428,7 @@ body {
     height: 60px;
       width: 80%;
 }
-  input.btn {
+  .location-dropdown .btn {
     background-color: rgba(36,143,0,.6);
     color: #fff;
     vertical-align: top;
