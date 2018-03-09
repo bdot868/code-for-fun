@@ -14,7 +14,7 @@
       <option value="/fremont-sp">Fremont 42</option>
       <option value="/fremont-city">Fremont City Rec Center</option>
       <option value="/lgs">LGS</option>
-      <option value="/menlo-park">Menlo Park</option>
+      <option value="/menlo_park">Menlo Park</option>
       <option value="/milpitas">Milpitas</option>
       <option value="/mountain-view-1">Mountain View</option>
       <option value="/palo_alto">Palo Alto</option>
@@ -113,66 +113,54 @@
       <td class="table_data cells">
         {.repeated section variants}
           {.equal?:attributes.Date:"June 11-15"}
-            {.equal?:attributes.Location:"redwood city"}
               {.equal?:attributes.After Care:"No"}
                 <div class="enroll">Enroll Now</div>
               {.end}
-            {.end}
            {.end}
         {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 18-22"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 25-29"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 2-6"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 9-13"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 16-20"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
