@@ -21,7 +21,6 @@
       <option value="/redwood_city">Redwood City</option>
       <option value="/sunnyvale">Menlo Park</option>
       <option value="/union-city">Union City</option>
-    	<option> More Locations coming soon! </option>
     <select>
     <input class="btn" type=button value="Go" onclick="goToNewPage()" />
 </div>
@@ -167,55 +166,45 @@
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 23-27"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 30-Aug 3"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 13-17"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 20-24"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
@@ -272,121 +261,99 @@
     <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 11-15"}
-          {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"June 18-22"}
-        {.equal?:attributes.Location:"redwood city"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"June 25-29"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 2-6"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 9-13"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 16-20"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 23-27"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 30-Aug 3"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 6-10"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 13-17"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 20-24"}
-        {.equal?:attributes.Location:"redwood city"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
@@ -547,9 +514,9 @@ body {
   }
 
 /* feedback text */
-  /* .sqs-block-content {
+  .modal1 .sqs-block-content {
     display: none;
-  } */
+  }
 
   /* The Modal (background) */
 .modal, .modal2, .modal1 {
@@ -627,24 +594,6 @@ body {
 </style>
 
 
-<!-- Enroll Modal -->
-<!-- <div id="myModal" class="modal">
-
--  Modal-content -
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="course-title"></h3>
-      <span id="closeBtn" class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <div id="variants"></div>
-      <div id="quantity"></div>
-    </div>
-    <div id="cartBtn" class="modal-footer">
-
-    </div>
-  </div>
-</div> -->
 
 <!-- Course Details Modal -->
 <div id="titleModal" class="modal2">
