@@ -4,8 +4,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
 
-<squarespace:query collection="summer-2018" limit="10" category="fremont">
 
+<h3 id="dropdown-header">
+  CHOOSE A DIFFERENT LOCATION!
+</h3>
+<div class="location-dropdown">
+  <select name="list" id="list" accesskey="target">
+      <option value='none' selected>Select a Location</option>
+      <option value="/fremont-sp">Fremont 42</option>
+      <option value="/fremont-city">Fremont City Rec Center</option>
+      <option value="/mountain-view-1">Mountain View</option>
+    	<option> More Locations coming soon! </option>
+    <select>
+    <input class="btn" type=button value="Go" onclick="goToNewPage()" />
+</div>
+
+<squarespace:query collection="summer-2018" limit="10" category="fremont">
 
 <div class="heading-div">
   <h2 id="pageTitle">Fremont City Rec Center</h2>
@@ -13,7 +27,7 @@
 
 
   <!-- Mobile view container of camps -->
-  <div class="container">
+  <div class="container mobile">
     <div class="row">
       {.repeated section items}
       <div class="col-sm">
@@ -21,7 +35,7 @@
           {.main-image?}<img src="{fullUrl}?format=300w" />{.end}
         </div>
         <h3 class="item-title">{title}</h3>
-        <p><span>{tags}</span></p>
+        <!-- <p><span>{tags}</span></p> -->
         <div class="item-descr">
           {excerpt}
         </div>
@@ -386,18 +400,50 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-  .heading-div {
-    color: #018c26;
-    display: inline-block;
-    padding: 20px 10px 20px 10px;
-    margin-bottom: 40px
+.dropdown-header {
+  max-width: 100%;
+}
+/* dropdown menu */
+.location-dropdown {
+  display: -webkit-inline-box;
+}
+	select {
+    color: #fff;
+    border: 1px solid #f7941e;
+    background-color: #f7941e;
+    padding: 5px;
+    font-size: 21px;
+    line-height: 50px;
+    font-weight: bold;
+    height: 60px;
+      width: 80%;
+}
+  .location-dropdown .btn {
+    background-color: rgba(36,143,0,.6);
+    color: #fff;
+    vertical-align: top;
+    height: 60px;
+    width: 15%
   }
+  #dropdown-header {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+.heading-div {
+  color: #018c26;
+  padding: 20px 10px 20px 10px;
+  margin-top: 40px;
+  max-width: 100%
+}
 
   .heading-div h1 {
     margin: 0 auto;
   }
 
-  .container {
+  .mobile {
     display: none
   }
 
@@ -523,7 +569,7 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .container {
+  .mobile {
     display: block;
   }
   .table {
@@ -534,10 +580,10 @@ body {
     border-radius: 5px;
     margin: 10px 0 10px 0;
   }
-  .container div {
+  .mobile div {
     text-align: center;
   }
-  .container div a {
+  .mobile div a {
     margin: 20px 0 20px 0;
   }
 }
@@ -710,8 +756,13 @@ $(document).ready(function(){
 });
 
 
-
-
+function goToNewPage()
+{
+    var url = document.getElementById('list').value;
+    if(url != 'none') {
+        window.location = url;
+    }
+}
 
 
 </script>
