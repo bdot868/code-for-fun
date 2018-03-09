@@ -1,3 +1,6 @@
+<h3 id="dropdown-header">
+  CHOOSE A DIFFERENT LOCATION!
+</h3>
 <div class="location-dropdown">
   <select name="list" id="list" accesskey="target">
       <option value='none' selected>Select a Location</option>

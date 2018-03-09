@@ -1,0 +1,20 @@
+<h3 id="dropdown-header">
+  CHOOSE A DIFFERENT LOCATION!
+</h3>
+<div class="location-dropdown">
+  <select name="list" id="list" accesskey="target">
+      <option value='none' selected>Select a Location</option>
+      <option value="/fremont-sp">Fremont 42</option>
+      <option value="/fremont-city">Fremont City Rec Center</option>
+      <option value="/lgs">LGS</option>
+      <option value="/menlo_park">Menlo Park</option>
+      <option value="/milpitas">Milpitas</option>
+      <option value="/mountain-view-1">Mountain View</option>
+      <option value="/palo_alto">Palo Alto</option>
+      <option value="/redwood_city">Redwood City</option>
+      <option value="/sunnyvale">Menlo Park</option>
+      <option value="/union-city">Union City</option>
+    	<option> More Locations coming soon! </option>
+    <select>
+    <input class="btn" type=button value="Go" onclick="goToNewPage()" />
+</div>
