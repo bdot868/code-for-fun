@@ -19,8 +19,8 @@
       <option value="/mountain-view-1">Mountain View</option>
       <option value="/palo_alto">Palo Alto</option>
       <option value="/redwood_city">Redwood City</option>
-      <option value="/sunnyvale">Menlo Park</option>
-      <option value="/union-city">Union City</option>
+      <option value="/sunnyvale">Sunnyvale</option>
+      <!-- <option value="/union-city">Union City</option> -->
     <select>
     <input class="btn" type=button value="Go" onclick="goToNewPage()" />
 </div>
@@ -516,6 +516,10 @@ body {
 /* feedback text */
   .modal1 .sqs-block-content {
     display: none;
+  }
+
+  .modal-info p:last-child {
+    visibility: hidden;
   }
 
   /* The Modal (background) */

@@ -18,8 +18,8 @@
       <option value="/mountain-view-1">Mountain View</option>
       <option value="/palo_alto">Palo Alto</option>
       <option value="/redwood_city">Redwood City</option>
-      <option value="/sunnyvale">Menlo Park</option>
-      <option value="/union-city">Union City</option>
+      <option value="/sunnyvale">Sunnyvale</option>
+      <!-- <option value="/union-city">Union City</option> -->
     	<option> More Locations coming soon! </option>
     <select>
     <input class="btn" type=button value="Go" onclick="goToNewPage()" />
