@@ -2,8 +2,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <h3 id="dropdown-header">
   CHOOSE A DIFFERENT LOCATION!
@@ -21,28 +21,31 @@
       <option value="/redwood_city">Redwood City</option>
       <option value="/sunnyvale">Sunnyvale</option>
       <!-- <option value="/union-city">Union City</option> -->
-    	<option> More Locations coming soon! </option>
     <select>
     <input class="btn" type=button value="Go" onclick="goToNewPage()" />
 </div>
 
-<squarespace:query collection="summer-2018" limit="10" category="menlo park">
+
+<squarespace:query collection="summer-2018" limit="30" category="mountain view">
 
 <div class="heading-div">
-  <h2 id="pageTitle">Menlo Park</h2>
+  <h2 id="pageTitle">Mountain View</h2>
 </div>
 
 
   <!-- Mobile view container of camps -->
-  <div class="container">
+  <div class="container mobile">
     <div class="row">
       {.repeated section items}
       <div class="col-sm">
         <div class="item-img">
           {.main-image?}<img src="{fullUrl}?format=300w" />{.end}
         </div>
+        <!-- <div class="video">
+          {body}
+        </div> -->
         <h3 class="item-title">{title}</h3>
-        <p><span>{tags}</span></p>
+        <!-- <p><span><strong>Ages: </strong>{tags.0}</span></p> -->
         <div class="item-descr">
           {excerpt}
         </div>
@@ -53,16 +56,19 @@
       {.end}
     </div>
   </div>
-
 </squarespace:query>
 
-<squarespace:query collection="summer-2018" limit="30" category="menlo park" tag="5-10">
+
+<squarespace:query collection="summer-2018" limit="30" category="mountain view" tag="5-10">
 <!-- Table view of camps for desktop  -->
+<div class="container">
+
+
   <table class="table table-bordered course_table">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2">Course Promo</th>
+      <th class="course_video_head" rowspan="2"></th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -81,7 +87,7 @@
   </thead>
     <tbody> <!-- Table body -->
       <td colspan="14" class="course_divider" style=" ">
-        Code For Fun: Ages 5 - 10
+        Camps for Ages 5 - 10
       </td>
     {.repeated section items} <!-- looping through camps -->
     <tr>
@@ -90,6 +96,9 @@
         <p id="product-title">{title}</p>
         <div id="product-body">{excerpt}</div>
         <p id="product-url">{fullUrl}</p>
+        <div class="video">
+          {body}
+        </div>
       </td>
       <td class="table_data image">
           {.main-image?}
@@ -97,127 +106,105 @@
           {.end}
       </td>
       <td class="table_data course_name">
-        <a href="#exampleModalCenter" class="launch">{title|truncate 20}</a>
+        <a href="#" class="launch">{title|truncate 30}</a>
       </td>
       <td class="table_data tags">{tags.0}</td>
       <td class="table_data cells">
         {.repeated section variants}
           {.equal?:attributes.Date:"June 11-15"}
-            {.equal?:attributes.Location:"Fremont"}
               {.equal?:attributes.After Care:"No"}
                 <div class="enroll">Enroll Now</div>
               {.end}
-            {.end}
            {.end}
         {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 18-22"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 25-29"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 2-6"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 9-13"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 16-20"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 23-27"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"July 30-Aug 3"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 6-10"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 13-17"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
       <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"Aug 20-24"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
       </td>
@@ -226,13 +213,12 @@
 
   </squarespace:query>
 
-
   <!-- 10-15 Year Olds table -->
-  <squarespace:query collection="summer-2018" limit="30" category="menlo park" tag="10-15">
+  <squarespace:query collection="summer-2018" limit="30" category="mountain view" tag="10-15">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-      <th class="course_video_head" rowspan="2">Course Promo</th>
+      <th class="course_video_head" rowspan="2"></th>
       <th class="course_name_head" rowspan="2">Course Name</th>
       <th class="age_head">Age</th>
       <th class="date">June <br> 11-15</th>
@@ -249,17 +235,19 @@
     </tr>
   </thead>
   <td colspan="14" class="course_divider">
-    Code For Fun: Ages 10 - 15
+    Camps for Ages 10 - 15
   </td>
 
   {.repeated section items} <!-- looping through camps -->
-
   <tr>
     <td id="all-info" style="display: none;">
       <a href="#">{.main-image?}<img src="{fullUrl}" />{.end}</a>
       <p id="product-title">{title}</p>
       <div id="product-body">{excerpt}</div>
       <p id="product-url">{fullUrl}</p>
+      <div class="video">
+        {body}
+      </div>
     </td>
     <td class="table_data image">
         {.main-image?}
@@ -267,127 +255,105 @@
         {.end}
     </td>
     <td class="table_data course_name">
-      <a href="#exampleModalCenter" class="launch">{title|truncate 20}</a>
+      <a href="#" class="launch">{title|truncate 30}</a>
     </td>
     <td class="table_data tags">{tags.0}</td>
     <td class="table_data cells">
       {.repeated section variants}
         {.equal?:attributes.Date:"June 11-15"}
-          {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-          {.end}
          {.end}
       {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"June 18-22"}
-        {.equal?:attributes.Location:"Fremont"}
             {.equal?:attributes.After Care:"No"}
               <div class="enroll">Enroll Now</div>
             {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"June 25-29"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 2-6"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 9-13"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 16-20"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 23-27"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"July 30-Aug 3"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 6-10"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 13-17"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
     <td class="table_data cells">
     {.repeated section variants}
       {.equal?:attributes.Date:"Aug 20-24"}
-        {.equal?:attributes.Location:"Fremont"}
           {.equal?:attributes.After Care:"No"}
             <div class="enroll">Enroll Now</div>
           {.end}
-        {.end}
        {.end}
     {.end}
     </td>
@@ -395,11 +361,9 @@
 {.end}
   </tbody>
 </table>
+</div>
 
 </squarespace:query>
-
-
-
 
 <style media="screen">
 
@@ -407,19 +371,60 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-  .heading-div {
-    color: #018c26;
-    display: inline-block;
-    padding: 20px 10px 20px 10px;
-    margin-bottom: 40px
+.dropdown-header {
+  max-width: 100%;
+}
+/* dropdown menu */
+.location-dropdown {
+  display: -webkit-inline-box;
+}
+	select {
+    color: #fff;
+    border: 1px solid #f7941e;
+    background-color: #f7941e;
+    padding: 5px;
+    font-size: 21px;
+    line-height: 50px;
+    font-weight: bold;
+    height: 60px;
+      width: 80%;
+}
+  .location-dropdown .btn {
+    background-color: rgba(36,143,0,.6);
+    color: #fff;
+    vertical-align: top;
+    height: 60px;
+    width: 15%
+  }
+  #dropdown-header {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 0px;
+}
+    #block-yui_3_17_2_1_1520410602260_70605 .sqs-block-content {
+      display: inline;
+      text-align: center
   }
 
-  .heading-div h1 {
+/* page */
+  .heading-div {
+    color: #018c26;
+    padding: 20px 10px 20px 10px;
+    margin-top: 40px;
+    max-width: 100%
+  }
+
+  .heading-div h2 {
     margin: 0 auto;
   }
 
   .container {
-    display: none
+    max-width: 100%;
+  }
+  .mobile {
+    display: none;
+
   }
 
   .course_table {
@@ -427,15 +432,22 @@ body {
     vertical-align: middle;
   }
   .table {
-    height: 40px;
+    /* height: 40px; */
     width: 100%;
     margin-bottom: 20px;
   }
   table {
     max-width: 100%;
   }
+
+  .table {
+    overflow-y: auto;
+    height: 450px;
+  }
+
+
   .course_table .head {
-    background-color: #f7941e;
+    background-color: #F58220;
     color: #fff;
     padding: 12px !important;
   }
@@ -501,6 +513,13 @@ body {
     font-size: 10px;
   }
 
+/* feedback text */
+  /* .modal1 .sqs-block-content {
+    display: none;
+  } */
+
+
+
   /* The Modal (background) */
 .modal, .modal2, .modal1 {
     display: none; /* Hidden by default */
@@ -522,9 +541,18 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
+    /* height: 100%; */
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 100%
 }
 .modal-header {
-  background-color: #f7941e;
+  background-color: #F58220;
   color: #fff
 }
 
@@ -543,8 +571,8 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
-  .container {
+@media only screen and (max-width: 740px) {
+  .mobile {
     display: block;
   }
   .table {
@@ -555,51 +583,19 @@ body {
     border-radius: 5px;
     margin: 10px 0 10px 0;
   }
-  .container div {
+  .mobile div {
     text-align: center;
   }
-  .container div a {
+  .mobile div a {
     margin: 20px 0 20px 0;
+  }
+  .item-img{
+    margin: 20px;
   }
 }
 </style>
 
-<script type="text/javascript">
-var boy = 'brandon'
-console.log(boy)
 
-
-var $cells = $('.cells')
-
-for(var i = 0; i < $cells.length; i++){
-  if($cells[i].innerText === ""){
-    $($cells[i]).html('<p class="na">N/A</p>')
-  console.log('yo');
-  }
-}
-
-</script>
-
-
-
-<!-- Enroll Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal-content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>Select This Amazing Course!</h3>
-      <span id="closeBtn" class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <h4 id="course-title"></h4>
-      <p id="modal-info"></p>
-    </div>
-    <div class="modal-footer">
-      <a href="https://www.regerec.com/Activities/ActivitiesDetails.asp?aid=70216" id="enrollBtn" class="btn btn-success" target="_blank">Enroll Now</a>
-    </div>
-  </div>
-</div>
 
 <!-- Course Details Modal -->
 <div id="titleModal" class="modal2">
@@ -607,12 +603,11 @@ for(var i = 0; i < $cells.length; i++){
   <!-- Modal-content -->
   <div class="modal-content">
     <div class="modal-header">
-      <h3>Course Details</h3>
+      <h3 id="course-title2"></h3>
       <span id="closeBtn2" class="close">&times;</span>
     </div>
     <div class="modal-body">
-      <h4 id="course-title2"></h4>
-      <p id="modal-info2"></p>
+      <div id="modal-info2"></div>
     </div>
   </div>
 </div>
@@ -623,7 +618,7 @@ for(var i = 0; i < $cells.length; i++){
   <!-- Modal-content -->
   <div class="modal-content">
     <div class="modal-header">
-      <h3>Course Video</h3>
+      <h3>Course Media</h3>
       <span id="closeBtn1" class="close">&times;</span>
     </div>
     <div class="modal-body">
@@ -635,46 +630,35 @@ for(var i = 0; i < $cells.length; i++){
 <script>
 
 $(document).ready(function(){
-
-
   // Get the modal
-  var modal = document.getElementById('myModal');
+  // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
+  var content = document.getElementById('modal-info2');
   var modal1 = document.getElementById('videoModal');
+  var vid = document.getElementById('modal-image')
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
   var $btns2 = $('.launch');
   var $btns1 = $('.imgModal');
 
+
   // Get the <span> element that closes the modal
-  var span = document.getElementById("closeBtn");
+  // var span = document.getElementById("closeBtn");
   var span2 = document.getElementById("closeBtn2");
   var span1 = document.getElementById("closeBtn1");
 
-  // When the user clicks on the button, open the modal
-  /* window.onload = function(){
-    btn.onclick = function() {
-      modal.style.display = "block";
 
-    }
-  } */
   //Enroll Button Modal
   $btns.click(function(){
-      modal.style.display = "block";
       var $row = $(this).parent().parent()
-      var imgSrc = $row.find('#all-info').children().first().children().first().attr('src')
-      var courseName = $row.find('#all-info').children().eq(1).text()
-      var desc = $row.find('#all-info').children().eq(2).first().children().text()
-      var url = "https://www.regerec.com/Activities/ActivitiesDetails.asp?aid=70216"
+      var url = $row.find('#all-info').children().eq(2).first().children().last().html()
+      var link = $(url).attr('href')
       // console.log(desc)
-      console.log(imgSrc)
-      // console.log(courseName)
-      // console.log(url)
-      $('#course-title').text(courseName)
-      $('#modal-info').text(desc)
-      $('#enrollBtn').attr("href", url)
+      console.log($(url).attr('href'))
 
+      // $('#enrollBtn').attr("href", link)
+      window.open(link, '_blank');
   });
 
 //Course Image Modal
@@ -686,53 +670,88 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var video = $row.find('#all-info').children().eq(4).first().children().html()
 
+
+      console.log(imgSrc);
+      console.log(video);
       var img = document.createElement("IMG");
        img.src = imgSrc+'?format=300w'
        if(video == undefined){
          $('#modal-image').html(img);
        } else {
          $('#modal-image').html(video);
+
        }
 
   });
 
   //Course Name Modal
-  $btns2.click(function(){
+  $btns2.click(function(evt){
+    evt.preventDefault()
       modal2.style.display = "block";
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
+      var dbox = $row.find('#all-info').children().eq(2).first().children()
 
+      $('#modal-info2').html('')
+
+      $.each(dbox, function(e) {
+        if(e === dbox.length - 1){
+          return;
+        }
+          $('#modal-info2').append($(this));
+          $('#modal-info2').append('<br>')
+      })
       $('#course-title2').text(courseName)
-      $('#modal-info2').text(desc)
 
   });
 
 // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  span1.onclick = function() {
-    modal1.style.display = "none";
-  }
+
   span2.onclick = function() {
     modal2.style.display = "none";
   }
+  span1.onclick = function() {
+    modal1.style.display = "none";
+    vid.innerHTML = ''
+  }
+
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == modal || event.target == modal1 || event.target == modal2) {
-        modal.style.display = "none";
+    if ( event.target == modal1 || event.target == modal2) {
+
         modal1.style.display = "none";
         modal2.style.display = "none";
+        vid.innerHTML = ''
     }
   }
 });
 
 
+var boy = 'brandon'
+console.log(boy)
 
 
+var $cells = $('.cells')
+
+for(var i = 0; i < $cells.length; i++){
+  if($cells[i].innerText === ""){
+    $($cells[i]).html('<p class="na">N/A</p>')
+  }
+}
+
+
+
+
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
 
 
 </script>
