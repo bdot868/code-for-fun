@@ -518,9 +518,7 @@ body {
     display: none;
   } */
 
-  #modal-info2 p:last-child {
-    visibility: hidden;
-  }
+
 
   /* The Modal (background) */
 .modal, .modal2, .modal1 {
@@ -556,6 +554,9 @@ body {
 .modal-header {
   background-color: #F58220;
   color: #fff
+}
+.modal-body #modal-info2 p:last-child {
+  visibility: hidden;
 }
 
 /* The Close Button */
