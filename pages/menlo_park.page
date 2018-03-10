@@ -514,9 +514,9 @@ body {
   }
 
 /* feedback text */
-  /* .modal1 .sqs-block-content {
+  .modal1 .html-block {
     display: none;
-  } */
+  }
 
 
 
