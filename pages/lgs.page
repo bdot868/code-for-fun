@@ -695,7 +695,7 @@ $(document).ready(function(){
 
       $('#modal-info2').html('')
 
-      $.each(dbox, function() {
+      $.each(dbox, function(e) {
         if(e === dbox.length - 1){
           return;
         }
