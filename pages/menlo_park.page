@@ -26,10 +26,10 @@
 </div>
 
 
-<squarespace:query collection="summer-2018" limit="30" category="mountain view">
+<squarespace:query collection="summer-2018" limit="30" category="menlo park">
 
 <div class="heading-div">
-  <h2 id="pageTitle">Mountain View</h2>
+  <h2 id="pageTitle">Menlo Park</h2>
 </div>
 
 
@@ -59,7 +59,7 @@
 </squarespace:query>
 
 
-<squarespace:query collection="summer-2018" limit="30" category="mountain view" tag="5-10">
+<squarespace:query collection="summer-2018" limit="30" category="menlo park" tag="5-10">
 <!-- Table view of camps for desktop  -->
 <div class="container">
 
@@ -214,7 +214,7 @@
   </squarespace:query>
 
   <!-- 10-15 Year Olds table -->
-  <squarespace:query collection="summer-2018" limit="30" category="mountain view" tag="10-15">
+  <squarespace:query collection="summer-2018" limit="30" category="menlo park" tag="10-15">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
