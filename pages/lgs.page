@@ -515,9 +515,9 @@ body {
   }
 
 /* feedback text */
-  .modal1 .sqs-block-content {
+  /* .modal1 .sqs-block-content {
     display: none;
-  }
+  } */
 
   /* The Modal (background) */
 .modal, .modal2, .modal1 {
@@ -696,6 +696,9 @@ $(document).ready(function(){
       $('#modal-info2').html('')
 
       $.each(dbox, function() {
+        if(e === dbox.length - 1){
+          return;
+        }
           $('#modal-info2').append($(this));
           $('#modal-info2').append('<br>')
       })
