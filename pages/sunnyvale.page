@@ -556,7 +556,7 @@ body {
   color: #fff
 }
 .modal-body #modal-info2 p:last-child {
-  visibility: hidden;
+  display: none;
 }
 
 /* The Close Button */
