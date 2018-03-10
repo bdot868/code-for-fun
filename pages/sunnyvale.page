@@ -555,9 +555,6 @@ body {
   background-color: #F58220;
   color: #fff
 }
-.modal-body #modal-info2 p:last-child {
-  background: black
-}
 
 /* The Close Button */
 .close {
@@ -699,9 +696,12 @@ $(document).ready(function(){
 
       $('#modal-info2').html('')
 
-      $.each(dbox, function() {
+      $.each(dbox, function(e) {
+        if(e === dbox.length - 1){
           $('#modal-info2').append($(this));
           $('#modal-info2').append('<br>')
+        }
+
       })
       $('#course-title2').text(courseName)
 
