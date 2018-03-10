@@ -698,10 +698,10 @@ $(document).ready(function(){
 
       $.each(dbox, function(e) {
         if(e === dbox.length - 1){
+          return;
+        }
           $('#modal-info2').append($(this));
           $('#modal-info2').append('<br>')
-        }
-
       })
       $('#course-title2').text(courseName)
 
