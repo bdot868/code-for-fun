@@ -627,25 +627,13 @@ $(document).ready(function(){
   var span2 = document.getElementById("closeBtn2");
   var span1 = document.getElementById("closeBtn1");
 
-  // When the user clicks on the button, open the modal
-  /* window.onload = function(){
-    btn.onclick = function() {
-      modal.style.display = "block";
 
-    }
-  } */
   //Enroll Button Modal
   $btns.click(function(){
 
 
       var url = "https://www.regerec.com/Activities/ActivitiesDetails.asp?aid=70216"
-      // var $row = $(this).parent().parent()
-      // var url = $row.find('#all-info').children().eq(2).first().children().last().html()
-      // var link = $(url).attr('href')
-      // console.log(desc)
-      // console.log($(url).attr('href'))
 
-      // $('#enrollBtn').attr("href", link)
       window.open(url, '_blank');
 
   });
@@ -680,10 +668,8 @@ $(document).ready(function(){
 
       $('#modal-info2').html('')
 
-      $.each(dbox, function(e) {
-        if(e === dbox.length - 1){
-          return;
-        }
+      $.each(dbox, function() {
+
           $('#modal-info2').append($(this));
           $('#modal-info2').append('<br>')
       })
