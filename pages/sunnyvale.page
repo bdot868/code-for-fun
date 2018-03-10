@@ -518,7 +518,7 @@ body {
     display: none;
   }
 
-  .modal-info p:last-child {
+  .modal-info2 p:last-child {
     visibility: hidden;
   }
 
