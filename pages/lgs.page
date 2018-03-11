@@ -372,9 +372,6 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-#item-descr {
-  display: none;
-}
 
 .dropdown-header {
   max-width: 100%;
@@ -594,6 +591,9 @@ body {
   }
   .item-img{
     margin: 20px;
+  }
+  .item-descr p:last-child{
+    background-color: red
   }
 
 }
