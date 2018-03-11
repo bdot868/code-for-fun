@@ -595,7 +595,7 @@ body {
   .item-img{
     margin: 20px;
   }
-  
+
 }
 </style>
 
@@ -636,7 +636,7 @@ body {
 $(document).ready(function(){
 
   var $mbtn = $('.enrollBtn')
-  console.log($mdesc);
+  
   // Get the modal
   // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
