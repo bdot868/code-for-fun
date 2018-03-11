@@ -50,7 +50,7 @@
           {excerpt}
         </div>
         <div class="">
-          <a href="#" class="enrollBtn btn btn-success enroll">Enroll</a>
+          <a href="" class="enrollBtn btn btn-success enroll">Enroll</a>
         </div>
       </div>
       {.end}
@@ -652,14 +652,14 @@ $(document).ready(function(){
 
   // mobile enroll button
   $mbtn.click(function() {
-    var row = $(this).parent().prev().children().last().html()
+    var url = $(this).parent().prev().children().last().html()
     // var url = row.find('.item-descr').children()
-    console.log(row);
+    console.log(url);
     // console.log(url);
-    // var link = $(url).attr('href')
+    var link = $(url).attr('href')
     // // console.log(desc)
     // console.log($(url).attr('href'))
-    // window.open(link, '_blank');
+    window.open(link, '_blank');
   })
 
 
