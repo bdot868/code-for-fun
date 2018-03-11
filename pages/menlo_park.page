@@ -653,9 +653,9 @@ $(document).ready(function(){
   // mobile enroll button
   $mbtn.click(function() {
     var row = $(this).parent().prev().children().last().html()
-    var url = row.find('.item-descr').children()
+    // var url = row.find('.item-descr').children()
     console.log(row);
-    console.log(url);
+    // console.log(url);
     // var link = $(url).attr('href')
     // // console.log(desc)
     // console.log($(url).attr('href'))
