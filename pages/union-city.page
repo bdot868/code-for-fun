@@ -21,7 +21,6 @@
       <option value="/redwood_city">Redwood City</option>
       <option value="/sunnyvale">Sunnyvale</option>
       <!-- <option value="/union-city">Union City</option> -->
-			<option> More Locations coming soon! </option>
     <select>
     <input class="btn" type=button value="Go" onclick="goToNewPage()" />
 </div>
