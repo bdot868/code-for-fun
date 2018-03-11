@@ -47,7 +47,7 @@
           {excerpt}
         </div>
         <div class="">
-          <a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a>
+          <a href="https://www.regerec.com/Activities/ActivitiesDetails.asp?aid=70216" class="enrollBtn btn btn-success">Enroll</a>
         </div>
       </div>
       {.end}
@@ -537,7 +537,7 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 740px) {
   .mobile {
     display: block;
   }
@@ -555,6 +555,13 @@ body {
   .mobile div a {
     margin: 20px 0 20px 0;
   }
+  .item-img{
+    margin: 20px;
+  }
+  .item-descr p:last-child{
+    display: none;
+  }
+
 }
 </style>
 
