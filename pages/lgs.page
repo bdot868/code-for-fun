@@ -593,7 +593,7 @@ body {
     margin: 20px;
   }
   .item-descr p:last-child{
-    background-color: red
+    display: none;
   }
 
 }
