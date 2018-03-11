@@ -47,7 +47,7 @@
         </div> -->
         <h3 class="item-title">{title}</h3>
         <!-- <p><span><strong>Ages: </strong>{tags.0}</span></p> -->
-        <div id="item-descr">
+        <div class="item-descr">
           {excerpt}
         </div>
         <div class="">
@@ -636,7 +636,7 @@ body {
 $(document).ready(function(){
 
   var $mbtn = $('.enrollBtn')
-  
+
   // Get the modal
   // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
