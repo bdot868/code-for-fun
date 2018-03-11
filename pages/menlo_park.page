@@ -630,6 +630,8 @@ body {
 <script>
 
 $(document).ready(function(){
+
+  var $mbtn = $('.enrollBtn')
   // Get the modal
   // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
@@ -647,6 +649,14 @@ $(document).ready(function(){
   // var span = document.getElementById("closeBtn");
   var span2 = document.getElementById("closeBtn2");
   var span1 = document.getElementById("closeBtn1");
+
+  // mobile enroll button
+  $mbtn.click(function() {
+    var row = $(this).parent().prev()
+    var url = row.find('.item-descr')
+    console.log(row);
+    console.log(url);
+  })
 
 
   //Enroll Button Modal
