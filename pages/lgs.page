@@ -51,7 +51,7 @@
           {excerpt}
         </div>
         <div class="">
-          <a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a>
+          <a href="" class="enrollBtn btn btn-success">Enroll</a>
         </div>
       </div>
       {.end}
@@ -629,6 +629,10 @@ body {
 <script>
 
 $(document).ready(function(){
+
+  var $mdesc = $('#item-descr')
+  var $mbtn = $('.enrollBtn')
+  console.log($mdesc);
   // Get the modal
   // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
@@ -646,6 +650,14 @@ $(document).ready(function(){
   // var span = document.getElementById("closeBtn");
   var span2 = document.getElementById("closeBtn2");
   var span1 = document.getElementById("closeBtn1");
+
+
+  // mobile enroll button
+  $mbtn.click(function() {
+    var url = $(this).parent().prev().children().last().html()
+    var link = $(url).attr('href')
+    window.open(link, '_blank');
+  })
 
 
   //Enroll Button Modal
