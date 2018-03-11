@@ -652,7 +652,7 @@ $(document).ready(function(){
 
   // mobile enroll button
   $mbtn.click(function() {
-    var row = $(this).parent().prev().children()
+    var row = $(this).parent().prev().children().last().html()
     var url = row.find('.item-descr').children()
     console.log(row);
     console.log(url);
