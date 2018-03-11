@@ -50,7 +50,7 @@
           {excerpt}
         </div>
         <div class="">
-          <a href="{fullUrl}" class="enrollBtn btn btn-success">Enroll</a>
+          <a href="#" class="enrollBtn btn btn-success enroll">Enroll</a>
         </div>
       </div>
       {.end}
