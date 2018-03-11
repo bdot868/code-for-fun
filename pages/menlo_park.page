@@ -50,7 +50,7 @@
           {excerpt}
         </div>
         <div class="">
-          <a href="" class="enrollBtn btn btn-success enroll">Enroll</a>
+          <a href="" class="enrollBtn btn btn-success">Enroll</a>
         </div>
       </div>
       {.end}
@@ -592,6 +592,10 @@ body {
   .item-img{
     margin: 20px;
   }
+  .item-descr p:last-child{
+    display: none;
+  }
+
 }
 </style>
 
