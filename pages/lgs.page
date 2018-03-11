@@ -595,9 +595,9 @@ body {
   .item-img{
     margin: 20px;
   }
-  #item-descr p:last-child {
+  /* #item-descr p:last-child {
     background: red
-  }
+  } */
 }
 </style>
 
@@ -638,7 +638,7 @@ body {
 $(document).ready(function(){
 
   var $mbtn = $('.enrollBtn')
-  
+
   // Get the modal
   // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
