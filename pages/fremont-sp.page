@@ -449,7 +449,7 @@ body {
   }
 
   tbody {
-    overflow-y: auto;
+    overflow-y: scroll;
     height: 400px;
   }
 
