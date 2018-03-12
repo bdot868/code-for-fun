@@ -212,12 +212,17 @@
       </td>
     </tr>
   {.end}
+  </tbody>
+  </table>
+</div>
 
   </squarespace:query>
 
   <!-- 10-15 Year Olds table -->
   <squarespace:query collection="summer-2018" limit="30" category="fremont-42" tag="10-15">
-  <thead>
+    <div class="container">
+    <table class="table table-bordered course_table">
+    <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
       <th class="course_video_head" rowspan="2"></th>
@@ -236,6 +241,7 @@
       <th class="date">Aug <br>20-24</th>
     </tr>
   </thead>
+  <tbody> <!-- Table body -->
   <td colspan="14" class="course_divider">
     Camps for Ages 10 - 15
   </td>
@@ -423,6 +429,8 @@ body {
 
   .container {
     max-width: 100%;
+    overflow-y: auto;
+    height: 400px;
   }
   .mobile {
     display: none;
@@ -486,7 +494,9 @@ body {
   }
 
   th {
-    width: 200px;
+    height: 0;
+  line-height: 0;
+    white-space: nowrap;
   }
   .head .age {
     width: 70px;
