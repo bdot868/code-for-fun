@@ -496,7 +496,6 @@ body {
   th {
     height: 0;
   line-height: 0;
-    white-space: nowrap;
   }
   .head .age {
     width: 70px;
