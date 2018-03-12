@@ -448,10 +448,6 @@ body {
     max-width: 100%;
   }
 
-  tbody {
-    overflow-y: scroll;
-    height: 300px;
-  }
 
 
   .course_table .head {
