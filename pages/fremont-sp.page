@@ -450,10 +450,10 @@ body {
     max-width: 100%;
   }
 
-  .table {
+  /* .table {
     overflow-y: auto;
     height: 450px;
-  }
+  } */
 
 
   .course_table .head {
