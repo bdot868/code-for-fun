@@ -226,19 +226,34 @@
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
       <th class="course_video_head" rowspan="2"></th>
-      <th class="course_name_head" rowspan="2">Course Name</th>
-      <th class="age_head">Age</th>
-      <th class="date">June <br> 11-15</th>
-      <th class="date">June <br> 18-22</th>
-      <th class="date">June <br> 25-29</th>
-      <th class="date">July <br> 2-6</th>
-      <th class="date">July <br> 9-13</th>
-      <th class="date">July <br> 16-20</th>
-      <th class="date">July <br> 23-27</th>
-      <th class="date">July <br> 30-Aug 3</th>
-      <th class="date">Aug <br> 6-10</th>
-      <th class="date">Aug <br> 13-17</th>
-      <th class="date">Aug <br>20-24</th>
+      <th class="course_name_head" rowspan="2">
+        Course Name
+        <div>Course Name</div>
+      </th>
+      <th class="age_head">Age
+      <div>Age</div></th>
+      <th class="date">June <br> 11-15
+      <div>June <br> 11-15</div></th>
+      <th class="date">June <br> 18-22
+      <div>June <br> 18-22</div></th>
+      <th class="date">June <br> 25-29
+      <div>June <br> 25-29</div></th>
+      <th class="date">July <br> 2-6
+      <div>July <br> 2-6</div></th>
+      <th class="date">July <br> 9-13
+      <div>July <br> 9-13</div></th>
+      <th class="date">July <br> 16-20
+      <div>July <br> 16-20</div></th>
+      <th class="date">July <br> 23-27
+      <div>July <br> 23-27</div></th>
+      <th class="date">July <br> 30-Aug 3
+      <div>July <br> 30-Aug 3</div></th>
+      <th class="date">Aug <br> 6-10
+      <div>Aug <br> 6-10</div></th>
+      <th class="date">Aug <br> 13-17
+      <div>Aug <br> 13-17</div></th>
+      <th class="date">Aug <br>20-24
+      <div>Aug <br>20-24</div></th>
     </tr>
   </thead>
   <tbody> <!-- Table body -->
@@ -494,8 +509,23 @@ body {
   }
 
   th {
-  
+    height: 0;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
   }
+  th div{
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  padding: 9px 25px;
+  top: 0;
+  margin-left: -25px;
+  line-height: normal;
+  border-left: 1px solid #800;
+}
   .head .age {
     width: 70px;
   }
