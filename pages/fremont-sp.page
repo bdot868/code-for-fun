@@ -68,7 +68,7 @@
 
   <table class="table table-bordered course_table">
   <thead>
-    <tr class="head" style="position:static"> <!-- Table header -->
+    <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
       <th class="course_video_head" rowspan="2"></th>
       <th class="course_name_head" rowspan="2">Course Name</th>
@@ -494,7 +494,7 @@ body {
   }
 
   th {
-    white-space: nowrap;
+    /* white-space: nowrap; */
   }
   .head .age {
     width: 70px;
