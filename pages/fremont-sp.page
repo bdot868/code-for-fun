@@ -360,8 +360,8 @@
 <div class="location-dropdown">
   <select name="list" id="list" accesskey="target">
       <option value='none' selected>Select a Location</option>
-      <option value="/fremont-sp">Fremont 42</option>
-      <option value="/fremont-city">Fremont City Rec Center</option>
+      <option value="/fremont-sp">Fremont Code For Fun</option>
+      <option value="/fremont-city">Fremont City</option>
       <option value="/lgs">LGS Saratoga</option>
       <option value="/menlo-park">Menlo Park</option>
       <option value="/milpitas">Milpitas</option>
@@ -381,8 +381,14 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-.dropdown-header {
+/* .dropdown-header {
   max-width: 100%;
+} */
+#dropdown-header {
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 50px;
 }
 /* dropdown menu */
 .location-dropdown {
@@ -406,12 +412,7 @@ body {
     height: 60px;
     width: 15%
   }
-  #dropdown-header {
-    font-family: Nunito, sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    margin-top: 0px;
-}
+
     #block-yui_3_17_2_1_1520410602260_70605 .sqs-block-content {
       display: inline;
       text-align: center
