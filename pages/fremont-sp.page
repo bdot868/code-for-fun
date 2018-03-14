@@ -597,7 +597,7 @@ body {
   .mobile {
     display: block;
   }
-  .table {
+  .container {
     display: none;
   }
   .col-sm {
