@@ -11,7 +11,7 @@
 <squarespace:query collection="summer-2018" limit="30" category="fremont-42">
 
 <div class="heading-div">
-  <h2 id="pageTitle">Fremont: <br> Code for fun learning center @42 USA</h2>
+  <h2 id="pageTitle"><span>Fremont</span><br> Code for fun learning center @42 USA</h2>
 </div>
 
 
@@ -589,8 +589,8 @@ body {
     max-width: 100%;
     font-family: Nunito, sans-serif;
     font-weight: 700;
-    font-size: 36px;
-    margin-top: 60px;
+    font-size: 28px;
+    margin-top: 50px;
     text-align: center;
   }
   .location-dropdown {
