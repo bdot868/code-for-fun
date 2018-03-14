@@ -593,6 +593,9 @@ body {
     margin-top: 60px;
     text-align: center;
   }
+  .location-dropdown {
+    text-align: center;
+  }
 
   .mobile {
     display: block;
