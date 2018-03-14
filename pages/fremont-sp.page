@@ -385,10 +385,11 @@ body {
   max-width: 100%;
 } */
 #dropdown-header {
+  max-width: 100%;
   font-family: Nunito, sans-serif;
   font-weight: 700;
   font-size: 36px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 /* dropdown menu */
 .location-dropdown {
@@ -434,6 +435,7 @@ body {
     max-width: 100%;
     overflow-y: auto;
     height: 400px;
+    border-bottom: 1px solid #F58220;
   }
   .mobile {
     display: none;
