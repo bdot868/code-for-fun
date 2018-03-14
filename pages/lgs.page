@@ -355,7 +355,7 @@
       <option value="/fremont-sp">Fremont Code For Fun</option>
       <option value="/fremont-city">Fremont City</option>
       <option value="/lgs">LGS Saratoga</option>
-      <option value="/menlo-park">Menlo Park</option>
+      <option value="/menlo_park">Menlo Park</option>
       <option value="/milpitas">Milpitas</option>
       <option value="/mountain-view-1">Mountain View</option>
       <option value="/palo_alto">Palo Alto</option>
@@ -573,6 +573,17 @@ body {
 }
 
 @media only screen and (max-width: 740px) {
+  #dropdown-header {
+    max-width: 100%;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .location-dropdown {
+    display: block;
+  }
   .mobile {
     display: block;
   }
