@@ -5,25 +5,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<h3 id="dropdown-header">
-  CHOOSE A DIFFERENT LOCATION!
-</h3>
-<div class="location-dropdown">
-  <select name="list" id="list" accesskey="target">
-      <option value='none' selected>Select a Location</option>
-      <option value="/fremont-sp">Fremont 42</option>
-      <option value="/fremont-city">Fremont City Rec Center</option>
-      <option value="/lgs">LGS</option>
-      <option value="/menlo_park">Menlo Park</option>
-      <option value="/milpitas">Milpitas</option>
-      <option value="/mountain-view-1">Mountain View</option>
-      <option value="/palo_alto">Palo Alto</option>
-      <option value="/redwood_city">Redwood City</option>
-      <option value="/sunnyvale">Sunnyvale</option>
-      <option> Union City coming soon! </option>
-    <select>
-    <input class="btn" type=button value="Go" onclick="goToNewPage()" />
-</div>
+
 
 
 <squarespace:query collection="summer-2018" limit="30" category="menlo park">
@@ -365,6 +347,27 @@
 
 </squarespace:query>
 
+<h3 id="dropdown-header">
+  CHOOSE A DIFFERENT LOCATION!
+</h3>
+<div class="location-dropdown">
+  <select name="list" id="list" accesskey="target">
+      <option value='none' selected>Select a Location</option>
+      <option value="/fremont-sp">Fremont Code For Fun</option>
+      <option value="/fremont-city">Fremont City</option>
+      <option value="/lgs">LGS Saratoga</option>
+      <option value="/menlo-park">Menlo Park</option>
+      <option value="/milpitas">Milpitas</option>
+      <option value="/mountain-view-1">Mountain View</option>
+      <option value="/palo_alto">Palo Alto</option>
+      <option value="/redwood_city">Redwood City</option>
+      <option value="/sunnyvale">Sunnyvale</option>
+      <!-- <option value="/union-city">Union City</option> -->
+    	<option> Union City coming soon! </option>
+    <select>
+    <input class="btn" type=button value="Go" onclick="goToNewPage()" />
+</div>
+
 <style media="screen">
 
 body {
@@ -572,6 +575,17 @@ body {
 }
 
 @media only screen and (max-width: 740px) {
+  #dropdown-header {
+    max-width: 100%;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .location-dropdown {
+    display: block;
+  }
   .mobile {
     display: block;
   }
