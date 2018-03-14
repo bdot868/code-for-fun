@@ -17,7 +17,7 @@
 
 
   <!-- Mobile view container of camps -->
-  <div class="container mobile">
+  <div class="mobile">
     <div class="row">
       {.repeated section items}
       <div class="col-sm">
@@ -585,6 +585,15 @@ body {
 }
 
 @media only screen and (max-width: 740px) {
+  #dropdown-header {
+    max-width: 100%;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
   .mobile {
     display: block;
   }
