@@ -653,6 +653,7 @@ body {
 $(document).ready(function(){
 
   var $mbtn = $('.enrollBtn')
+  var output = []
   // Get the modal
   // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
@@ -716,7 +717,8 @@ $(document).ready(function(){
 
   //Course Name Modal
   $btns2.click(function(evt){
-    // evt.preventDefault()
+    evt.preventDefault()
+    // var output = []
       modal2.style.display = "block";
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
@@ -727,13 +729,14 @@ $(document).ready(function(){
       // $('#modal-info2').html('')
 
       console.log(dbox);
-      var output = []
+
       // // dbox.each(function(e) {
       for(var i = 0; i < dbox.length; i++){
         output.push(dbox[i])
         console.log(dbox[i]);
         content.append(output[i]);
       }
+      // output = []
       console.log(output);
       //   if(e === dbox.length - 1){
       //     // console.log(dbox);
@@ -748,7 +751,7 @@ $(document).ready(function(){
       //     $('#modal-info2').append('<br>')
       // })
       $('#course-title2').text(courseName)
-      evt.preventDefault()
+
   });
 
 // When the user clicks on <span> (x), close the modal
