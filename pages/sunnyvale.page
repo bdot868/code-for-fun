@@ -733,7 +733,7 @@ $(document).ready(function(){
       for(var i = 0; i < dbox.length; i++){
         output.push(dbox[i])
         // output.push('<br>')
-        console.log(dbox[i]);
+        // console.log(dbox[i]);
       }
       // console.log(output);
       //   if(e === dbox.length - 1){
@@ -747,7 +747,8 @@ $(document).ready(function(){
       //     $('#modal-info2').append('<br>')
       // })
       console.log(output);
-      tempDiv.html(output)
+      console.log(tempDiv);
+      // tempDiv.html(output)
       $('#modal-info2').html(tempDiv)
       $('#course-title2').text(courseName)
       console.log(dbox);
