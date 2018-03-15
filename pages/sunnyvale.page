@@ -728,16 +728,16 @@ $(document).ready(function(){
 
       console.log(dbox);
       dbox.each(function(e) {
-        console.log(this);
-      //   // if(e === dbox.length - 1){
-      //   //   console.log(dbox);
-      //   //   console.log(dbox.length);
-      //   //   console.log('im here with: ' + e)
-      //   //   return;
-      //   // }
-      //   console.log('im inside');
-      //     $('#modal-info2').append($(this));
-      //     $('#modal-info2').append('<br>')
+
+        if(e === dbox.length - 1){
+          // console.log(dbox);
+          // console.log(dbox.length);
+          // console.log('im here with: ' + e)
+          return;
+        }
+        console.log('im inside');
+          $('#modal-info2').append($(this));
+          $('#modal-info2').append('<br>')
       })
       $('#course-title2').text(courseName)
 
