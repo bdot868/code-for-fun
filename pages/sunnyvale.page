@@ -727,8 +727,8 @@ $(document).ready(function(){
       $('#modal-info2').html('')
 
       console.log(dbox);
-      // $.each(dbox, function(e) {
-      //   console.log(this);
+      $.map(dbox, function(e) {
+        console.log(this);
       //   // if(e === dbox.length - 1){
       //   //   console.log(dbox);
       //   //   console.log(dbox.length);
@@ -738,7 +738,7 @@ $(document).ready(function(){
       //   console.log('im inside');
       //     $('#modal-info2').append($(this));
       //     $('#modal-info2').append('<br>')
-      // })
+      })
       $('#course-title2').text(courseName)
 
   });
