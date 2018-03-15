@@ -731,7 +731,7 @@ $(document).ready(function(){
       var output = []
       // // dbox.each(function(e) {
       for(var i = 0; i < dbox.length; i++){
-        output.push(dbox[i])
+        tempDiv.append(dbox[i])
         // output.push('<br>')
         // console.log(dbox[i]);
       }
