@@ -372,6 +372,14 @@ body {
 .dropdown-header {
   max-width: 100%;
 }
+
+#dropdown-header {
+  max-width: 100%;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 60px;
+}
 /* dropdown menu */
 .location-dropdown {
   display: -webkit-inline-box;
@@ -394,13 +402,7 @@ body {
     height: 60px;
     width: 15%
   }
-  #dropdown-header {
-    font-family: Nunito, sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    margin-top: 0px;
-}
-
+  
 .heading-div {
   color: #018c26;
   padding: 20px 10px 20px 10px;

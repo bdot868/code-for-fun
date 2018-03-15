@@ -377,6 +377,14 @@ body {
 .dropdown-header {
   max-width: 100%;
 }
+
+#dropdown-header {
+  max-width: 100%;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 60px;
+}
 /* dropdown menu */
 .location-dropdown {
   display: -webkit-inline-box;
@@ -399,12 +407,7 @@ body {
     height: 60px;
     width: 15%
   }
-  #dropdown-header {
-    font-family: Nunito, sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    margin-top: 0px;
-}
+  
     #block-yui_3_17_2_1_1520410602260_70605 .sqs-block-content {
       display: inline;
       text-align: center
