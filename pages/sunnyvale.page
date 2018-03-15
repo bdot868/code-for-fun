@@ -741,7 +741,7 @@ $(document).ready(function(){
       //     return;
       //   }
       //   console.log('im inside');
-          $('#modal-info2').append(output);
+          $('#modal-info2').html(output);
       //     $('#modal-info2').append('<br>')
       // })
       $('#course-title2').text(courseName)
