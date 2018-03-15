@@ -727,7 +727,7 @@ $(document).ready(function(){
       $('#modal-info2').html('')
 
       console.log(dbox);
-      dbox = $.map(dbox, function(e) {
+      dbox.each(function(e) {
         console.log(this);
       //   // if(e === dbox.length - 1){
       //   //   console.log(dbox);
@@ -736,8 +736,8 @@ $(document).ready(function(){
       //   //   return;
       //   // }
       //   console.log('im inside');
-          $('#modal-info2').append($(this));
-          $('#modal-info2').append('<br>')
+      //     $('#modal-info2').append($(this));
+      //     $('#modal-info2').append('<br>')
       })
       $('#course-title2').text(courseName)
 
