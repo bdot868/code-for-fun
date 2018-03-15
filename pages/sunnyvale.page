@@ -748,7 +748,7 @@ $(document).ready(function(){
       //     $('#modal-info2').append('<br>')
       // })
       $('#course-title2').text(courseName)
-
+      evt.preventDefault()
   });
 
 // When the user clicks on <span> (x), close the modal
