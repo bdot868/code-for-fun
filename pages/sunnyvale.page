@@ -727,13 +727,13 @@ $(document).ready(function(){
       // $('#modal-info2').html('')
 
       console.log(dbox);
-      var output = []
-      // dbox.each(function(e) {
-      for(var i = 0; i < dbox.length; i++){
-        output.push(dbox[i])
-        console.log(dbox[i]);
-      }
-      console.log(output);
+      // var output = []
+      // // dbox.each(function(e) {
+      // for(var i = 0; i < dbox.length; i++){
+      //   output.push(dbox[i])
+      //   console.log(dbox[i]);
+      // }
+      // console.log(output);
       //   if(e === dbox.length - 1){
       //     // console.log(dbox);
       //     // console.log(dbox.length);
@@ -741,7 +741,7 @@ $(document).ready(function(){
       //     return;
       //   }
       //   console.log('im inside');
-          content.html(output);
+          // content.html(output);
       //     $('#modal-info2').append('<br>')
       // })
       $('#course-title2').text(courseName)
@@ -753,6 +753,7 @@ $(document).ready(function(){
   span2.click(function() {
     modal2.style.display = "none";
   })
+
   span1.onclick = function() {
     modal1.style.display = "none";
     vid.innerHTML = ''
