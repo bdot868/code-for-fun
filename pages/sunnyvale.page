@@ -736,8 +736,9 @@ $(document).ready(function(){
         //   return;
         // }
         console.log('im inside');
-          $('#modal-info2').append($(this));
-          $('#modal-info2').append('<br>')
+        $(this).appendTo($('#modal-info2'))
+          // $('#modal-info2').append($(this));
+          // $('#modal-info2').append('<br>')
       })
       $('#course-title2').text(courseName)
 
