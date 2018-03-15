@@ -730,6 +730,7 @@ $(document).ready(function(){
         if(e === dbox.length - 1){
           return;
         }
+        console.log('im inside');
           $('#modal-info2').append($(this));
           $('#modal-info2').append('<br>')
       })

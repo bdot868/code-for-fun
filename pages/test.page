@@ -402,7 +402,7 @@ body {
     height: 60px;
     width: 15%
   }
-  
+
 .heading-div {
   color: #018c26;
   padding: 20px 10px 20px 10px;
@@ -689,8 +689,10 @@ $(document).ready(function(){
 
       $('#modal-info2').html('')
 
-      $.each(dbox, function() {
-
+      $.each(dbox, function(e) {
+        if(e === dbox.length - 1){
+          return;
+        }
           $('#modal-info2').append($(this));
           $('#modal-info2').append('<br>')
       })
