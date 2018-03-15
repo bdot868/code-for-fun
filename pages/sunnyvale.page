@@ -724,23 +724,23 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var dbox = $row.find('#all-info').children().eq(2).first().children()
 
-      $('#modal-info2').text('')
+      $('#modal-info2').html('')
 
       console.log(dbox);
-      dbox.each(function() {
-        var p = this
-        console.log(p);
-        // if(e === dbox.length - 1){
-        //   // console.log(dbox);
-        //   // console.log(dbox.length);
-        //   // console.log('im here with: ' + e)
-        //   return;
-        // }
-        console.log('im inside');
-
-          $('#modal-info2').append(p);
-          // $('#modal-info2').append('<br>')
-      })
+      // dbox.each(function(e) {
+      for(var i = 0; i < dbox.length; i++){
+        $('#modal-info2').append(dbox[i]);
+      }
+      //   if(e === dbox.length - 1){
+      //     // console.log(dbox);
+      //     // console.log(dbox.length);
+      //     // console.log('im here with: ' + e)
+      //     return;
+      //   }
+      //   console.log('im inside');
+      //     $('#modal-info2').append($(this));
+      //     $('#modal-info2').append('<br>')
+      // })
       $('#course-title2').text(courseName)
 
   });
