@@ -742,7 +742,7 @@ $(document).ready(function(){
       //   }
       //   console.log('im inside');
         console.log(content);
-          content.text(output);
+          content.innerHTML(output);
           console.log(content);
       //     $('#modal-info2').append('<br>')
       // })
