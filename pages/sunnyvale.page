@@ -746,7 +746,8 @@ $(document).ready(function(){
           // content.html(output);
       //     $('#modal-info2').append('<br>')
       // })
-      tempDiv.text(output)
+      console.log(output);
+      tempDiv.html(output)
       $('#modal-info2').html(tempDiv)
       $('#course-title2').text(courseName)
       console.log(dbox);
