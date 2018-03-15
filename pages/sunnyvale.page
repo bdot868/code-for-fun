@@ -732,6 +732,7 @@ $(document).ready(function(){
       for(var i = 0; i < dbox.length; i++){
         output.push(dbox[i])
         console.log(dbox[i]);
+        content.append(output[i]);
       }
       console.log(output);
       //   if(e === dbox.length - 1){
@@ -742,7 +743,7 @@ $(document).ready(function(){
       //   }
       //   console.log('im inside');
         console.log(content);
-          content.append(output);
+
           console.log(content);
       //     $('#modal-info2').append('<br>')
       // })
