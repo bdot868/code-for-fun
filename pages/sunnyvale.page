@@ -728,7 +728,8 @@ $(document).ready(function(){
 
       console.log(dbox);
       dbox.each(function() {
-
+        var p = this
+        console.log(p);
         // if(e === dbox.length - 1){
         //   // console.log(dbox);
         //   // console.log(dbox.length);
@@ -736,8 +737,8 @@ $(document).ready(function(){
         //   return;
         // }
         console.log('im inside');
-        $(this).appendTo($('#modal-info2'))
-          // $('#modal-info2').append($(this));
+
+          $('#modal-info2').append(p);
           // $('#modal-info2').append('<br>')
       })
       $('#course-title2').text(courseName)
