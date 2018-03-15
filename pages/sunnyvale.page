@@ -725,10 +725,11 @@ $(document).ready(function(){
       var dbox = $row.find('#all-info').children().eq(2).first().children()
 
       // $('#modal-info2').html('')
-
+      if(dbox.length === 0){
+        dbox = $row.find('#all-info').children().eq(2).first().children()
+      }
       console.log(dbox);
       var tempDiv = document.createElement('div')
-      var output = []
       // // dbox.each(function(e) {
       for(var i = 0; i < dbox.length; i++){
         tempDiv.append(dbox[i])
@@ -746,7 +747,6 @@ $(document).ready(function(){
           // content.html(output);
       //     $('#modal-info2').append('<br>')
       // })
-      console.log(output);
       console.log(tempDiv);
       // tempDiv.html(output)
       $('#modal-info2').html(tempDiv)
