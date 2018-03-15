@@ -724,13 +724,16 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var dbox = $row.find('#all-info').children().eq(2).first().children()
 
-      $('#modal-info2').html('')
+      // $('#modal-info2').html('')
 
       console.log(dbox);
+      var output = []
       // dbox.each(function(e) {
       for(var i = 0; i < dbox.length; i++){
+        output.push(dbox[i])
         console.log(dbox[i]);
       }
+      console.log(output);
       //   if(e === dbox.length - 1){
       //     // console.log(dbox);
       //     // console.log(dbox.length);
@@ -738,7 +741,7 @@ $(document).ready(function(){
       //     return;
       //   }
       //   console.log('im inside');
-      //     $('#modal-info2').append($(this));
+          $('#modal-info2').append(output);
       //     $('#modal-info2').append('<br>')
       // })
       $('#course-title2').text(courseName)
