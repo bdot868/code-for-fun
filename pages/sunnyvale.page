@@ -725,8 +725,9 @@ $(document).ready(function(){
       var dbox = $row.find('#all-info').children().eq(2).first().children()
 
       // $('#modal-info2').html('')
-
+      console.log('im always running');
       $.each(dbox, function(e) {
+        console.log('im in the loop');
         // if(e === dbox.length - 1){
         //   console.log(dbox);
         //   console.log(dbox.length);
