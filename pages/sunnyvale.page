@@ -732,7 +732,7 @@ $(document).ready(function(){
       // // dbox.each(function(e) {
       for(var i = 0; i < dbox.length; i++){
         output.push(dbox[i])
-        output.push('<br>')
+        // output.push('<br>')
         console.log(dbox[i]);
       }
       // console.log(output);
