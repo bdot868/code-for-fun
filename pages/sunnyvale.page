@@ -727,10 +727,10 @@ $(document).ready(function(){
       // $('#modal-info2').html('')
 
       console.log(dbox);
-
+      var tempDiv = document.createElement('div')
       // // dbox.each(function(e) {
       for(var i = 0; i < dbox.length; i++){
-
+        tempDiv.append(dbox[i])
         console.log(dbox[i]);
       }
       // console.log(output);
@@ -744,8 +744,10 @@ $(document).ready(function(){
           // content.html(output);
       //     $('#modal-info2').append('<br>')
       // })
+      $('#modal-info2').html(tempDiv)
       $('#course-title2').text(courseName)
       console.log(dbox);
+      tempDiv = null
   });
 
 // When the user clicks on <span> (x), close the modal
