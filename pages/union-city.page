@@ -43,7 +43,6 @@
 
 <squarespace:query collection="summer-2018" limit="30" category="union city" tag="5-10">
 <!-- Table view of camps for desktop  -->
-
 <div class="container">
   <table class="table table-bordered course_table">
   <thead>
@@ -191,17 +190,11 @@
       </td>
     </tr>
   {.end}
-</tbody>
-</table>
-</div>
-
 
   </squarespace:query>
 
   <!-- 10-15 Year Olds table -->
   <squarespace:query collection="summer-2018" limit="30" category="union city" tag="10-15">
-  <div class="container">
-    <table class="table table-bordered course_table">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
@@ -224,7 +217,6 @@
   <td colspan="14" class="course_divider">
     Camps for Ages 10 - 15
   </td>
-  <tbody>
 
   {.repeated section items} <!-- looping through camps -->
   <tr>
