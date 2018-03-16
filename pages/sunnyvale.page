@@ -724,12 +724,7 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var dbox = $row.find('#all-info').children().eq(2).first().children().clone()
 
-      // $('#modal-info2').html('')
-      if(dbox.length === 0){
-        console.log('im here');
-        console.log(this);
-        dbox = $row.find('#all-info').children().eq(2).first().children()
-      }
+
       console.log(dbox);
       var tempDiv = document.createElement('div')
       // // dbox.each(function(e) {
