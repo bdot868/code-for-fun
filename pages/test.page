@@ -442,23 +442,23 @@ td, th {
   padding: 10px 25px; */
 }
 th {
-  /* height: 20;
-  line-height: 0;
+  height: 20;
+  /* line-height: 0;
   padding-top: 0;
   padding-bottom: 0;
   color: transparent;
-  border: none;
-  white-space: nowrap; */
+  border: none; */
+  white-space: nowrap;
 }
 th div{
-  /* position: absolute;
+  position: absolute;
   background: transparent;
   color: #fff;
   padding: 9px 25px;
   top: 0;
   margin-left: -25px;
   line-height: normal;
-  border-left: 1px solid #800; */
+  border-left: 1px solid #800;
 }
 
 .dropdown-header {
