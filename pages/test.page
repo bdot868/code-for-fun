@@ -39,6 +39,8 @@
 
 <squarespace:query collection="summer-2018" limit="30" category="fremont" tag="5-10">
 <!-- Table view of camps for desktop  -->
+<section class="">
+  <div class="container">
   <table class="table table-bordered course_table">
   <thead>
     <tr class="head"> <!-- Table header -->
@@ -338,6 +340,8 @@
 {.end}
   </tbody>
 </table>
+</div>
+</section>
 
 </squarespace:query>
 
