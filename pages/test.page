@@ -39,68 +39,25 @@
 
 <squarespace:query collection="summer-2018" limit="30" category="fremont" tag="5-10">
 <!-- Table view of camps for desktop  -->
-<section class="">
-  <div class="container">
+
   <table class="table table-bordered course_table">
   <thead>
-    <tr class="head header"> <!-- Table header -->
+    <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
-          <th class="course_video_head" rowspan="2">
-            Course Promo
-            <div>Course Promo</div>
-          </th>
-          <th class="course_name_head" rowspan="2">
-            Course Name
-            <div>Course Name</div>
-          </th>
-          <th class="age_head">
-            Age
-            <div>Age</div>
-          </th>
-          <th class="date">
-            June <br> 11-15
-            <div>June <br> 11-15</div>
-          </th>
-          <th class="date">
-            June <br> 18-22
-            <div>June <br> 18-22</div>
-          </th>
-          <th class="date">
-            June <br> 25-29
-            <div>June <br> 25-29</div>
-          </th>
-          <th class="date">
-            July <br> 2-6
-            <div>July <br> 2-6</div>
-          </th>
-          <th class="date">
-            July <br> 9-13
-            <div>July <br> 9-13</div>
-          </th>
-          <th class="date">
-            July <br> 16-20
-            <div>July <br> 16-20</div>
-          </th>
-          <th class="date">
-            July <br> 23-27
-            <div>July <br> 23-27</div>
-          </th>
-          <th class="date">
-            July <br> 30-Aug 3
-            <div>July <br> 30-Aug 3</div>
-          </th>
-          <th class="date">
-            Aug <br> 6-10
-            <div>Aug <br> 6-10</div>
-          </th>
-          <th class="date">
-            Aug <br> 13-17
-            <div>Aug <br> 13-17</div>
-          </th>
-          <th class="date">
-            Aug <br>20-24
-            <div>Aug <br>20-24</div>
-          </th>
+      <th class="course_video_head" rowspan="2">Course Promo</th>
+      <th class="course_name_head" rowspan="2">Course Name</th>
+      <th class="age_head">Age</th>
+      <th class="date">June <br> 11-15</th>
+      <th class="date">June <br> 18-22</th>
+      <th class="date">June <br> 25-29</th>
+      <th class="date">July <br> 2-6</th>
+      <th class="date">July <br> 9-13</th>
+      <th class="date">July <br> 16-20</th>
+      <th class="date">July <br> 23-27</th>
+      <th class="date">July <br> 30-Aug 3</th>
+      <th class="date">Aug <br> 6-10</th>
+      <th class="date">Aug <br> 13-17</th>
+      <th class="date">Aug <br>20-24</th>
     </tr>
 
   </thead>
@@ -382,8 +339,6 @@
 {.end}
   </tbody>
 </table>
-</div>
-</section>
 
 </squarespace:query>
 
@@ -413,52 +368,6 @@
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-/* Table styling */
-section {
-  position: relative;
-  /* border: 1px solid #000; */
-  /* padding-top: 37px; */
-  /* background: #f7941e; */
-}
-section.positioned {
-  position: absolute;
-  /* top:100px;
-  left:100px;
-  width:800px; */
-  /* box-shadow: 0 0 15px #333; */
-}
-.container {
-  overflow-y: auto;
-  height: 400px;
-}
-td + td {
-  border: 1px solid #f7941e
-}
-td, th {
-  /* border: 1px solid #FFDBB1;
-  background: #fff;
-  color: #000;
-  padding: 10px 25px; */
-}
-th {
-  height: 20;
-  /* line-height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  color: transparent;
-  border: none; */
-  white-space: nowrap;
-}
-th div{
-  position: absolute;
-  background: #f7941e;
-  color: #fff;
-  padding: 9px 25px;
-  top: 0;
-  margin-left: -25px;
-  line-height: normal;
-  /* border-left: 1px solid #800; */
 }
 
 .dropdown-header {
@@ -521,7 +430,6 @@ th div{
   }
   table {
     max-width: 100%;
-    border-spacing: 0;
   }
   .course_table .head {
     background-color: #f7941e;
@@ -532,6 +440,7 @@ th div{
     margin-left: 45px;
     margin-right: 45px;
     width: 85%;
+
   }
 
   .course_table .course_divider {
@@ -543,9 +452,9 @@ th div{
     text-align: left;
 }
 
-  /* .table tr, td {
+  .table tr, td {
     border: 1px solid #FFDBB1 !important;
-  } */
+  }
   .table td, .table th {
     padding: 0.50rem;
     vertical-align: middle;
