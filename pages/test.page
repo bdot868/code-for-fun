@@ -40,7 +40,7 @@
 <squarespace:query collection="summer-2018" limit="30" category="fremont" tag="5-10">
 <!-- Table view of camps for desktop  -->
 
-  <table class="table table-bordered course_table table-fixed">
+  <table class="table table-bordered course_table">
   <thead>
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
@@ -368,22 +368,6 @@
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-
-.table-fixed thead {
-  /* width: 97%; */
-}
-.table-fixed tbody {
-  height: 430px;
-  overflow-y: auto;
-  width: 100%;
-}
-.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
-  display: block;
-}
-.table-fixed tbody td, .table-fixed thead > tr> th {
-  /* float: left;
-  border-bottom-width: 0; */
 }
 
 .dropdown-header {
