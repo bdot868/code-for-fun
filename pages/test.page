@@ -192,7 +192,7 @@
 
   <!-- 10-15 Year Olds table -->
   <squarespace:query collection="summer-2018" limit="30" category="fremont" tag="10-15">
-  <thead>
+  <thead class="header">
     <tr class="head"> <!-- Table header -->
       <th id="all-info" style="display: none;"></th>
       <th class="course_video_head" rowspan="2">Course Promo</th>
