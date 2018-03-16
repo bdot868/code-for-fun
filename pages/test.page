@@ -371,19 +371,19 @@ body {
 }
 
 .table-fixed thead {
-  width: 97%;
+  /* width: 97%; */
 }
 .table-fixed tbody {
-  height: 230px;
+  height: 430px;
   overflow-y: auto;
   width: 100%;
 }
 .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
-  display: block;
+  /* display: block; */
 }
 .table-fixed tbody td, .table-fixed thead > tr> th {
-  float: left;
-  border-bottom-width: 0;
+  /* float: left;
+  border-bottom-width: 0; */
 }
 
 .dropdown-header {
