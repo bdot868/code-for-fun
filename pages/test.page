@@ -414,6 +414,13 @@
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
+/* Table styling */
+section {
+  position: relative;
+  border: 1px solid #000;
+  padding-top: 37px;
+  background: #500;
+}
 
 .dropdown-header {
   max-width: 100%;
