@@ -632,20 +632,19 @@ for(var i = 0; i < $cells.length; i++){
 
 $(document).ready(function(){
 
-
   // Get the modal
   var modal2 = document.getElementById('titleModal');
   var modal1 = document.getElementById('videoModal');
   var vid = document.getElementById('modal-image')
-
 
   // Get the button that opens the modal
   var $btns = $('.enroll');
   var $btns2 = $('.launch');
   var $btns1 = $('.imgModal');
 
-  // Get the <span> element that closes the modal
 
+  // Get the <span> element that closes the modal
+  // var span = document.getElementById("closeBtn");
   var span2 = $("#closeBtn2");
   var span1 = document.getElementById("closeBtn1");
 
@@ -680,7 +679,8 @@ $(document).ready(function(){
   });
 
   //Course Name Modal
-  $btns2.click(function(){
+  $btns2.click(function(evt){
+    evt.preventDefault()
       modal2.style.display = "block";
       var $row = $(this).parent().parent()
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
@@ -688,48 +688,61 @@ $(document).ready(function(){
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
       var dbox = $row.find('#all-info').children().eq(2).first().children().clone()
 
-      $('#modal-info2').html('')
 
-      $.each(dbox, function(e) {
-        if(e === dbox.length - 1){
-          return;
-        }
-          $('#modal-info2').append($(this));
-          $('#modal-info2').append('<br>')
-      })
+      console.log(dbox);
+      var tempDiv = document.createElement('div')
+
+      for(var i = 0; i < dbox.length-1; i++){
+        tempDiv.append(dbox[i])
+      }
+      $('#modal-info2').html(tempDiv)
       $('#course-title2').text(courseName)
-
 
   });
 
-// When the user clicks on <span> (x), close the modal
-  span2.click(function() {
-    modal2.style.display = "none";
-  })
-  span1.onclick = function() {
-    modal1.style.display = "none";
-    vid.innerHTML = ''
-  }
+
+  // When the user clicks on <span> (x), close the modal
+
+    span2.click(function() {
+      modal2.style.display = "none";
+    })
+
+    span1.onclick = function() {
+      modal1.style.display = "none";
+      vid.innerHTML = ''
+    }
 
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if ( event.target == modal1 || event.target == modal2) {
-        modal1.style.display = "none";
-        modal2.style.display = "none";
-        vid.innerHTML = ''
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if ( event.target == modal1 || event.target == modal2) {
+
+          modal1.style.display = "none";
+          modal2.style.display = "none";
+          vid.innerHTML = ''
+      }
+    }
+  });
+
+
+  var boy = 'brandon'
+  console.log(boy)
+
+
+  var $cells = $('.cells')
+
+  for(var i = 0; i < $cells.length; i++){
+    if($cells[i].innerText === ""){
+      $($cells[i]).html('<p class="na">N/A</p>')
     }
   }
-});
 
 
-function goToNewPage()
-{
-    var url = document.getElementById('list').value;
-    if(url != 'none') {
-        window.location = url;
-    }
-}
-
-
+  function goToNewPage()
+      {
+          var url = document.getElementById('list').value;
+          if(url != 'none') {
+              window.location = url;
+          }
+      }
 </script>
