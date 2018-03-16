@@ -224,6 +224,7 @@
   <td colspan="14" class="course_divider">
     Camps for Ages 10 - 15
   </td>
+  <tbody>
 
   {.repeated section items} <!-- looping through camps -->
   <tr>
