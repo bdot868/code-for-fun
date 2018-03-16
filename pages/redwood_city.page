@@ -702,11 +702,10 @@ $(document).ready(function(){
       console.log(video);
       var img = document.createElement("IMG");
        img.src = imgSrc+'?format=300w'
-       if(video == undefined){
-         $('#modal-image').html(img);
+       if(video !== undefined){
+          $('#modal-image').html(video);
        } else {
-         $('#modal-image').html(video);
-
+         $('#modal-image').html(img);
        }
 
   });
