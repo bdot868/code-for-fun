@@ -670,7 +670,7 @@ $(document).ready(function(){
 
   // Get the <span> element that closes the modal
   // var span = document.getElementById("closeBtn");
-  var span2 = document.getElementById("closeBtn2");
+  var span2 = $("#closeBtn2");
   var span1 = document.getElementById("closeBtn1");
 
 
@@ -729,9 +729,9 @@ $(document).ready(function(){
   // span.onclick = function() {
   //   modal.style.display = "none";
   // }
-  span2.onclick = function() {
+  span2.click(function() {
     modal2.style.display = "none";
-  }
+  })
   span1.onclick = function() {
     modal1.style.display = "none";
     vid.innerHTML = ''
