@@ -430,7 +430,25 @@ section.positioned {
 }
 .container {
   overflow-y: auto;
-  height: 300px;
+  height: 400px;
+}
+td + td {
+  border: 1px solid #FFDBB1
+}
+td, th {
+  border: 1px solid #FFDBB1;
+  background: #fff;
+  color: #000;
+  padding: 10px 25px;
+}
+th {
+  height: 20;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
 }
 
 .dropdown-header {
@@ -493,6 +511,7 @@ section.positioned {
   }
   table {
     max-width: 100%;
+    border-spacing: 0;
   }
   .course_table .head {
     background-color: #f7941e;
@@ -503,7 +522,6 @@ section.positioned {
     margin-left: 45px;
     margin-right: 45px;
     width: 85%;
-
   }
 
   .course_table .course_divider {
@@ -515,9 +533,9 @@ section.positioned {
     text-align: left;
 }
 
-  .table tr, td {
+  /* .table tr, td {
     border: 1px solid #FFDBB1 !important;
-  }
+  } */
   .table td, .table th {
     padding: 0.50rem;
     vertical-align: middle;
