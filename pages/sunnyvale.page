@@ -656,7 +656,6 @@ $(document).ready(function(){
   // Get the modal
   // var modal = document.getElementById('myModal');
   var modal2 = document.getElementById('titleModal');
-  var content = $('#modal-info2');
   var modal1 = document.getElementById('videoModal');
   var vid = document.getElementById('modal-image')
 
