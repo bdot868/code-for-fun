@@ -727,29 +727,13 @@ $(document).ready(function(){
 
       console.log(dbox);
       var tempDiv = document.createElement('div')
-      // // dbox.each(function(e) {
+
       for(var i = 0; i < dbox.length-1; i++){
         tempDiv.append(dbox[i])
-        // output.push('<br>')
-        // console.log(dbox[i]);
       }
-      // console.log(output);
-      //   if(e === dbox.length - 1){
-      //     // console.log(dbox);
-      //     // console.log(dbox.length);
-      //     // console.log('im here with: ' + e)
-      //     return;
-      //   }
-      //   console.log('im inside');
-          // content.html(output);
-      //     $('#modal-info2').append('<br>')
-      // })
-      console.log(tempDiv);
-      // tempDiv.html(output)
       $('#modal-info2').html(tempDiv)
       $('#course-title2').text(courseName)
-      console.log(dbox);
-      // tempDiv = null
+
   });
 
 // When the user clicks on <span> (x), close the modal

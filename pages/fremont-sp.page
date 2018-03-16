@@ -621,24 +621,6 @@ body {
 </style>
 
 
-<!-- Enroll Modal -->
-<!-- <div id="myModal" class="modal">
-
--  Modal-content -
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="course-title"></h3>
-      <span id="closeBtn" class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <div id="variants"></div>
-      <div id="quantity"></div>
-    </div>
-    <div id="cartBtn" class="modal-footer">
-
-    </div>
-  </div>
-</div> -->
 
 <!-- Course Details Modal -->
 <div id="titleModal" class="modal2">
@@ -731,7 +713,7 @@ $(document).ready(function(){
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
-      var dbox = $row.find('#all-info').children().eq(2).first().children()
+      var dbox = $row.find('#all-info').children().eq(2).first().children().clone()
 
       $('#modal-info2').html('')
 

@@ -407,7 +407,7 @@ body {
     height: 60px;
     width: 15%
   }
-  
+
     #block-yui_3_17_2_1_1520410602260_70605 .sqs-block-content {
       display: inline;
       text-align: center
@@ -719,7 +719,7 @@ $(document).ready(function(){
       var imgSrc = $row.find('.table_data.image').children().first().children().first().attr('src')
       var courseName = $row.find('#all-info').children().eq(1).text()
       var desc = $row.find('#all-info').children().eq(2).first().children().text()
-      var dbox = $row.find('#all-info').children().eq(2).first().children()
+      var dbox = $row.find('#all-info').children().eq(2).first().children().clone()
 
       $('#modal-info2').html('')
 
