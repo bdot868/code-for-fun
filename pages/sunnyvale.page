@@ -727,6 +727,7 @@ $(document).ready(function(){
       // $('#modal-info2').html('')
       if(dbox.length === 0){
         console.log('im here');
+        console.log(this);
         dbox = $row.find('#all-info').children().eq(2).first().children()
       }
       console.log(dbox);
