@@ -452,13 +452,13 @@ th {
 }
 th div{
   position: absolute;
-  background: transparent;
+  background: #f7941e;
   color: #fff;
   padding: 9px 25px;
   top: 0;
   margin-left: -25px;
   line-height: normal;
-  border-left: 1px solid #800;
+  /* border-left: 1px solid #800; */
 }
 
 .dropdown-header {
