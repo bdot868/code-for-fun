@@ -11,7 +11,7 @@
 <squarespace:query collection="summer-2018" limit="30" category="fremont-42">
 
 <div class="heading-div">
-  <h2 id="pageTitle"><span>Fremont</span><br> Code for fun learning center @42 USA</h2>
+  <h2 id="pageTitle">Fremont Code for fun</h2>
 </div>
 
 
@@ -377,6 +377,9 @@
     <input class="btn" type=button value="Go" onclick="goToNewPage()" />
 </div>
 
+  <div class="showCart">
+    
+  </div>
 <style media="screen">
 
 body {
