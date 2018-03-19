@@ -378,8 +378,8 @@
 </div>
 
   <div class="showCart">
-    {@|apply cart.block}
-    Cart
+    <!-- {@|apply cart.block}
+    Cart -->
     <a href="/cart" class="Cart sqs-custom-cart sqs-template-integrated-shopping-cart sqs-cart-initialized" data-nc-element="cart" data-test="continue-to-cart">
     <span class="Cart-inner">
       <span class="Cart-label">Cart</span>
@@ -393,7 +393,7 @@
       <span class="sqs-cart-quantity">4</span>
     </span>
   </a>
-    {shoppingCart}
+    <!-- {shoppingCart} -->
   </div>
 <style media="screen">
 
