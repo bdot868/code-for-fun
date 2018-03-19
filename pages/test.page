@@ -438,7 +438,7 @@ body {
   }
   tbody {
     display: block;
-    height: 450px;
+    height: 430px;
     overflow: auto;
   }
   .course_video_head {
