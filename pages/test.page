@@ -431,6 +431,29 @@ body {
   table {
     max-width: 100%;
   }
+  thead {
+    display: block;
+    width: 100%;
+    /* overflow: auto; */
+  }
+  tbody {
+    display: block;
+    height: 450px;
+    overflow: auto;
+  }
+  .course_video_head {
+    width: 9.5%;
+  }
+  .course_name_head {
+    width: 19%;
+  }
+  .cells, .date {
+    width: 6%;
+  }
+  .tags {
+    width: 5.7%;
+  }
+
   .course_table .head {
     background-color: #f7941e;
     color: #fff;
@@ -439,8 +462,6 @@ body {
   .table tr {
     margin-left: 45px;
     margin-right: 45px;
-    width: 85%;
-
   }
 
   .course_table .course_divider {
