@@ -6,7 +6,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
+<div class="showCart">
+  {@|apply cart.block}
 
+  <a href="/cart" class="Cart sqs-custom-cart sqs-template-integrated-shopping-cart sqs-cart-initialized" data-nc-element="cart" data-test="continue-to-cart">
+  <span class="Cart-inner">
+    <span class="Cart-label">Cart</span>
+
+    <span class="sqs-cart-quantity"></span>
+  </span>
+</a>
+
+  {website.shoppingCart}
+</div>
 
 <squarespace:query collection="summer-2018" limit="30" category="union city">
 
