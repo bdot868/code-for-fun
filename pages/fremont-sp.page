@@ -474,6 +474,9 @@ body {
   .cells, .date {
     width: 6%;
   }
+  .tags {
+    width: 5.7%;
+  }
 
   .course_table .head {
     background-color: #F58220;
