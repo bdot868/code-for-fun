@@ -472,7 +472,7 @@ body {
     width: 19%;
   }
   .cells, .date {
-    width: 70px;
+    width: 6%;
   }
 
   .course_table .head {
