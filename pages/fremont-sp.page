@@ -466,10 +466,10 @@ body {
     overflow: auto;
   }
   .course_video_head {
-    width: 134px;
+    width: 9.5%;
   }
   .course_name_head {
-    width: 272px;
+    width: 19%;
   }
   .cells, .date {
     width: 70px;
