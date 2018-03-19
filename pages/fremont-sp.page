@@ -465,7 +465,15 @@ body {
     height: 450px;
     overflow: auto;
   }
-
+  .course_video_head {
+    width: 109px;
+  }
+  .course_name_head {
+    width: 272px;
+  }
+  .cells, .date {
+    width: 70px;
+  }
 
   .course_table .head {
     background-color: #F58220;
