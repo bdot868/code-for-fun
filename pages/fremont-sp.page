@@ -378,7 +378,7 @@
 </div>
 
   <div class="showCart">
-    {@|apply cart.block}
+    {shoppingCart}
   </div>
 <style media="screen">
 
