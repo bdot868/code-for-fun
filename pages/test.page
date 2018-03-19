@@ -445,7 +445,7 @@ body {
     width: 9.3%;
   }
   .course_name_head {
-    width: 20%;
+    width: 19.3%;
   }
   .image {
     width: 9%;
