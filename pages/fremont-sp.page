@@ -465,6 +465,9 @@ body {
     height: 450px;
     overflow: auto;
   }
+  th, td {
+    padding: .5em 1em;
+  }
 
   .course_table .head {
     background-color: #F58220;
