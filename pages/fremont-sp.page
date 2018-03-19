@@ -66,12 +66,12 @@
         <th class="date">Aug <br> 13-17</th>
         <th class="date">Aug <br>20-24</th>
       </tr>
-      <td colspan="14" class="course_divider" style=" ">
-        Camps for Ages 5 - 10
-      </td>
+
     </thead>
       <tbody> <!-- Table body -->
-
+        <td colspan="14" class="course_divider" style=" ">
+          Camps for Ages 5 - 10
+        </td>
       {.repeated section items} <!-- looping through camps -->
       <tr>
         <td id="all-info" style="display: none;">
