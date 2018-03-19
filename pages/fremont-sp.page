@@ -387,7 +387,8 @@
       <span class="sqs-cart-quantity"></span>
     </span>
   </a>
-    <!-- {shoppingCart} -->
+
+    {website.shoppingCart}
   </div>
 <style media="screen">
 
