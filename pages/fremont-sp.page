@@ -466,7 +466,7 @@ body {
     overflow: auto;
   }
   .course_video_head {
-    width: 109px;
+    width: 134px;
   }
   .course_name_head {
     width: 272px;
@@ -479,6 +479,7 @@ body {
     background-color: #F58220;
     color: #fff;
     padding: 12px !important;
+    font-size: 12px;
   }
   .table tr {
     margin-left: 45px;
