@@ -62,9 +62,9 @@
 
   </thead>
     <tbody> <!-- Table body -->
-      <tr colspan="14" class="course_divider" style=" ">
+      <td colspan="14" class="course_divider" style=" ">
         Code For Fun: Ages 5 - 10
-      </tr>
+      </td>
     {.repeated section items} <!-- looping through camps -->
     <tr>
       <td id="all-info" style="display: none;">
@@ -211,9 +211,9 @@
       <th class="date">Aug <br>20-24</th>
     </tr>
   </thead>
-  <tr colspan="14" class="course_divider">
+  <td colspan="14" class="course_divider">
     Code For Fun: Ages 10 - 15
-  </tr>
+  </td>
 
   {.repeated section items} <!-- looping through camps -->
 
