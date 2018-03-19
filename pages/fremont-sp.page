@@ -455,11 +455,16 @@ body {
     max-width: 100%;
   }
 
-  .table {
-    overflow-y: auto;
-    height: 450px;
+  thead {
+    display: block;
+    width: 100%;
+    overflow: auto;
   }
-
+  tbody {
+    display: block;
+    height: 450px;
+    overflow: auto;
+  }
 
   .course_table .head {
     background-color: #F58220;
