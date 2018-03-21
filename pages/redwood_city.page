@@ -446,9 +446,27 @@ body {
     max-width: 100%;
   }
 
-  .table {
-    overflow-y: auto;
+  thead {
+    display: block;
+    width: 100%;
+    /* overflow: auto; */
+  }
+  tbody {
+    display: block;
     height: 450px;
+    overflow: auto;
+  }
+  .course_video_head {
+    width: 9.5%;
+  }
+  .course_name_head {
+    width: 19%;
+  }
+  .cells, .date {
+    width: 6%;
+  }
+  .tags {
+    width: 5.7%;
   }
 
 
